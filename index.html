@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Offline Anki V3</title>
+<title>Offline Flashcards V3</title>
 
 <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -14,66 +13,45 @@
 <header>
     <div>🌿 Flashcards V3</div>
 
-    <div>
-        <a href="add.html" style="color:white;text-decoration:none;margin-right:10px;">
-            ➕ Add cards
-        </a>
+    <div class="header-actions">
+        <a href="add.html" class="link-btn">➕ Add cards</a>
 
         <button onclick="goHome()">Home</button>
-        <button onclick="resetProgress()">Reset cards</button>
+        <button onclick="resetProgress()">Reset</button>
         <button onclick="toggleStats()">Stats</button>
     </div>
 </header>
 
 <div class="container">
 
-<!-- DECK SELECTOR -->
-<div class="decks">
-    <label><input type="checkbox" value="flowers" checked> Flowers</label>
-    <label><input type="checkbox" value="biology" checked> Biology</label>
-</div>
-
 <!-- STUDY -->
 <div id="study">
 
-    <div class="card">
-        <img id="img">
+    <div class="card" id="card">
+        <img id="img" alt="flashcard image">
         <div class="answer" id="answer"></div>
+    </div>
 
-        <div>
-            <button class="show" onclick="showAnswer()">Show</button>
-<button class="fail" onclick="grade(1)">Failed</button>
-<button class="partial" onclick="grade(3)">Partial</button>
-<button class="hard" onclick="grade(4)">Hard</button>
-<button class="easy" onclick="grade(5)">Easy</button>
-        </div>
-
-        <!-- ===================== -->
-        <!-- WEAK MODE (NEW) -->
-        <!-- ===================== -->
-        <div style="margin-top:10px;">
-            <button onclick="startWeakTest()" style="
-                width:100%;
-                background:#222;
-                color:white;
-            ">
-                🎯 Study weak cards
-            </button>
-        </div>
-
+    <div class="buttons">
+        <button class="btn-show" onclick="showAnswer()">Show</button>
+        <button class="fail" onclick="grade(1)">Failed</button>
+        <button class="partial" onclick="grade(3)">Partial</button>
+        <button class="hard" onclick="grade(4)">Hard</button>
+        <button class="easy" onclick="grade(5)">Easy</button>
     </div>
 
 </div>
+
+<!-- DECKS -->
+<div class="decks" id="deckContainer"></div>
 
 <!-- STATS -->
 <div id="stats" class="stats"></div>
 
 </div>
 
-
-
-</body>
-
 <script src="cards.js"></script>
 <script src="app.js"></script>
+
+</body>
 </html>

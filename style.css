@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(135deg, #f6f7fb, #eef2f7);
-    overflow-x: hidden;
 }
 
 /* HEADER */
@@ -12,13 +11,9 @@ header {
     padding: 12px 14px;
     background: rgba(20,20,20,0.95);
     color: white;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    backdrop-filter: blur(8px);
 }
 
-/* CONTAINER */
+/* LAYOUT */
 .container {
     padding: 14px;
 }
@@ -26,110 +21,66 @@ header {
 /* CARD */
 .card {
     background: white;
-    padding: 22px;
+    padding: 20px;
     border-radius: 18px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.12);
 }
 
-.card.show {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-}
-
-#study .card {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.35s ease;
-}
-
-#study .card.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.answer {
-    margin-top: 14px;
-    font-size: 20px;
-
-    opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.2s ease;
-    visibility: hidden;
-}
-
-.answer.show {
-    opacity: 1;
-    transform: translateY(0);
-    visibility: visible;
-}
-
 /* IMAGE */
-img {
+#img {
     max-width: 100%;
     max-height: 320px;
     border-radius: 14px;
-    transition: transform 0.3s ease;
-}
-
-img:active {
-    transform: scale(0.97);
 }
 
 /* ANSWER */
 .answer {
+    opacity: 0;
     margin-top: 14px;
     font-size: 20px;
-
     opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.25s ease;
+    transition: 0.2s;
+    color: #111;
 }
 
-.answer.show {
+.answer.visible {
     opacity: 1;
-    transform: translateY(0);
 }
 
 /* BUTTONS */
-button {
-    margin: 6px;
-    padding: 11px 14px;
-    border: none;
-    border-radius: 12px;
-    font-size: 14px;
-    cursor: pointer;
-
-    transition: transform 0.15s ease, opacity 0.15s ease;
+.buttons {
+    margin-top: 12px;
+    text-align: center;
 }
 
-button:active {
-    transform: scale(0.93);
-    opacity: 0.85;
+button {
+    margin: 6px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
 }
 
 /* COLORS */
-.show { background:#444; color:white; }
+.btn-show { background:#444; color:white; }
 .fail { background:#e74c3c; color:white; }
 .partial { background:#f39c12; color:white; }
-.hard { background:#2ecc71; color:white; opacity:0.85; }
+.hard { background:#3498db; color:white; }
 .easy { background:#27ae60; color:white; }
 
 /* DECKS */
 .decks {
-    margin: 12px 0;
-    font-size: 14px;
+    margin-top: 15px;
+}
+
+.deck-label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
 }
 
 /* STATS */
 .stats {
     display: none;
-}
-
-.stat-card {
-    background: white;
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 12px;
-    box-shadow: 0 6px 16px rgba(0,0,0,0.08);
 }

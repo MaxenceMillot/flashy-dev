@@ -1,10 +1,13 @@
-let saved = JSON.parse(localStorage.getItem("cards"));
+// =====================
+// LOAD STATE
+// =====================
+let saved = JSON.parse(localStorage.getItem("cards") || "null");
 
 if (typeof cards === "undefined") {
     alert("cards.js not loaded!");
 }
 
-if (saved) {
+if (saved && Array.isArray(saved)) {
     cards = saved;
 } else {
     cards = cards.map(c => ({
@@ -17,142 +20,173 @@ if (saved) {
     }));
 }
 
-// ------------------
+// =====================
 let current = null;
 let now = Date.now();
-let weakMode = false;
-let weakPool = [];
+let answerShown = false;
 
-// ------------------
+// =====================
 function save(){
     localStorage.setItem("cards", JSON.stringify(cards));
 }
 
-// ------------------
+// =====================
 function goHome(){
     document.getElementById("stats").style.display = "none";
     document.getElementById("study").style.display = "block";
 }
 
-// ------------------
+// =====================
 function getSelectedDecks(){
     let boxes = document.querySelectorAll(".decks input");
     return [...boxes].filter(b => b.checked).map(b => b.value);
 }
 
-// ------------------
+// =====================
 function getNext(){
-    let pool;
 
-    if(weakMode){
-        pool = weakPool.filter(c => c.due <= now);
-        if(pool.length === 0) pool = weakPool;
-    } else {
-        let decks = getSelectedDecks();
-        pool = cards.filter(c =>
-            decks.includes(c.deck) && c.due <= now
-        );
-        if(pool.length === 0) pool = cards;
+    now = Date.now();
+
+    let decks = getSelectedDecks();
+
+    let pool = cards.filter(c =>
+        decks.includes(c.deck) && c.due <= now
+    );
+
+    if(pool.length === 0){
+        pool = cards.filter(c => decks.includes(c.deck));
     }
 
-    current = pool[Math.floor(Math.random()*pool.length)];
+    if(pool.length === 0){
+        console.warn("No cards available");
+        return;
+    }
+
+    current = pool[Math.floor(Math.random() * pool.length)];
+
     render();
 }
 
-// ------------------
+// =====================
 function render(){
-    const card = document.querySelector(".card");
+
     const answer = document.getElementById("answer");
+    const img = document.getElementById("img");
 
-    answer.classList.remove("show");
-    answer.innerText = "";
-    answer.style.visibility = "hidden";
+    if(!current) return;
 
-    card.classList.remove("show");
-    void card.offsetWidth;
+    //  HARD RESET FIRST (critical)
+    answerShown = false;
 
-    document.getElementById("img").src = current.img;
+    // 💥 Force immediate hide BEFORE anything renders
+    answer.style.display = "none";
+    answer.classList.remove("visible");
 
-    setTimeout(() => {
-        card.classList.add("show");
-    }, 20);
+    // 💥 Force DOM update NOW
+    void answer.offsetHeight;
+
+    // ==========================
+    // Now update content
+    // ==========================
+    img.onerror = () => {
+        img.onerror = null;
+        img.src = "images/fallback.svg";
+    };
+
+    img.src = current.img;
+
+    answer.innerHTML = `
+        ${current.text}
+        <div class="deck-label">${current.deck}</div>
+    `;
 }
 
-// ------------------
+// =====================
 function showAnswer(){
+    if(answerShown) return;
+
+    answerShown = true;
+
     const answer = document.getElementById("answer");
-    answer.innerText = current.text;
-    answer.style.visibility = "visible";
-    answer.classList.add("show");
+
+    // show AFTER it's ready
+    answer.style.display = "block";
+
+    // tiny delay ensures clean paint
+    requestAnimationFrame(() => {
+        answer.classList.add("visible");
+    });
 }
 
-// ------------------
+// =====================
+// SM-2
+// =====================
 function grade(q){
 
-    // ==========================
-    // FUTURE UPGRADE HOOK
-    // (2-axis system: correctness + difficulty)
-    // ==========================
-    /*
-    const correctness = (q >= 3); // partial+ = correct-ish
-    const effort = q; // 1–5 scale independent
+    if(!current) return;
 
-    // later:
-    // - separate memory strength
-    // - separate retrieval effort
-    */
+    // FORCE RESET BEFORE NEXT CARD
+    answerShown = false;
 
-    if(q <= 2){ // Failed
+    if(q <= 2){
         current.repetitions = 0;
         current.interval = 1;
     }
-    else if(q === 3){ // Partial
+    else if(q === 3){
         current.repetitions = Math.max(0, current.repetitions - 1);
         current.interval = 1;
     }
-    else if(q === 4){ // Hard
+    else if(q === 4){
         current.repetitions++;
         if(current.repetitions === 1) current.interval = 1;
         else if(current.repetitions === 2) current.interval = 4;
         else current.interval = Math.round(current.interval * current.EF);
     }
-    else if(q === 5){ // Easy
+    else if(q === 5){
         current.repetitions++;
         if(current.repetitions === 1) current.interval = 2;
         else if(current.repetitions === 2) current.interval = 6;
         else current.interval = Math.round(current.interval * current.EF * 1.2);
     }
 
-    // ==========================
-    // EF UPDATE (SM-2 core)
-    // ==========================
     current.EF = current.EF + (0.1 - (5-q)*(0.08 + (5-q)*0.02));
     if(current.EF < 1.3) current.EF = 1.3;
 
     current.due = Date.now() + current.interval * 86400000;
 
     save();
-    now = Date.now();
-    getNext();
-}
-// ------------------
-function startWeakTest(){
-
-    weakPool = [...cards]
-        .sort((a,b)=> (a.EF*a.repetitions + a.interval) - (b.EF*b.repetitions + b.interval))
-        .slice(0, Math.max(5, Math.floor(cards.length * 0.25)));
-
-    weakMode = true;
-
-    alert("🎯 Weak mode started (" + weakPool.length + " cards)");
-
-    document.getElementById("stats").style.display = "none";
-    document.getElementById("study").style.display = "block";
-
     getNext();
 }
 
-// ------------------
+// =====================
+function renderDecks(){
+
+    const container = document.getElementById("deckContainer");
+
+    const decks = [...new Set(cards.map(c => c.deck))];
+
+    container.innerHTML = "";
+
+    decks.forEach(deck => {
+        const label = document.createElement("label");
+
+        label.innerHTML = `
+            <input type="checkbox" value="${deck}" checked>
+            ${deck}
+        `;
+
+        container.appendChild(label);
+    });
+}
+
+// =====================
+function resetProgress(){
+    if(!confirm("Reset all progress?")) return;
+    localStorage.removeItem("cards");
+    location.reload();
+}
+
+// =====================
 function toggleStats(){
     let el = document.getElementById("stats");
     let study = document.getElementById("study");
@@ -163,98 +197,9 @@ function toggleStats(){
     } else {
         study.style.display="none";
         el.style.display="block";
-        renderStats();
     }
 }
 
-// ------------------
-function getScore(c){
-    return c.EF * (c.interval+1) - (3 - c.repetitions);
-}
-
-// ------------------
-function renderStats(){
-    let el = document.getElementById("stats");
-
-    let sorted = [...cards].sort((a,b)=>getScore(a)-getScore(b));
-
-    let worst = sorted.slice(0,5);
-    let best = sorted.slice(-5).reverse();
-
-    let enriched = cards.map(c => ({
-        ...c,
-        errorRate: c.repetitions === 0 ? 1 : (1 / c.EF)
-    }));
-
-    let mostError = [...enriched].sort((a,b)=>b.errorRate-a.errorRate).slice(0,5);
-
-    el.innerHTML = "<h3>📊 Learning statistics</h3>";
-
-    el.innerHTML += `
-    <div class="stat-card">
-        <b>How scoring works</b><br><br>
-        EF = ease factor<br>
-        Interval = days<br>
-        Repetitions = success streak<br><br>
-        Lower score = harder card
-    </div>
-    `;
-
-    el.innerHTML += "<h4>🟢 Most known cards</h4>";
-    best.forEach(c=>{
-        el.innerHTML += `<div class="stat-card"><b>${c.text}</b></div>`;
-    });
-
-    el.innerHTML += "<h4>🔴 Most difficult cards</h4>";
-    worst.forEach(c=>{
-        el.innerHTML += `<div class="stat-card"><b>${c.text}</b></div>`;
-    });
-
-    el.innerHTML += "<h4>⚠️ Most error-prone cards</h4>";
-    mostError.forEach(c=>{
-        el.innerHTML += `<div class="stat-card"><b>${c.text}</b></div>`;
-    });
-}
-
-// ------------------
-function resetProgress(){
-    if(!confirm("Reset all progress?")) return;
-    localStorage.removeItem("cards");
-    location.reload();
-}
-
-// ------------------
+// =====================
+renderDecks();
 getNext();
-
-// ------------------
-// SWIPE FUNCTIONS
-// ------------------
-let touchStartX = 0;
-let touchStartY = 0;
-
-document.addEventListener("touchstart", e => {
-    touchStartX = e.changedTouches[0].screenX;
-    touchStartY = e.changedTouches[0].screenY;
-});
-
-document.addEventListener("touchend", e => {
-    let dx = e.changedTouches[0].screenX - touchStartX;
-    let dy = e.changedTouches[0].screenY - touchStartY;
-
-    // horizontal swipe
-    if(Math.abs(dx) > Math.abs(dy)){
-
-        if(dx > 50){
-            grade(4); // swipe right = good
-        }
-
-        if(dx < -50){
-            grade(2); // swipe left = hard
-        }
-    }
-
-    // vertical swipe
-    if(dy < -60){
-        showAnswer(); // swipe up = reveal
-    }
-});
