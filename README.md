@@ -57,8 +57,6 @@ Ainsi, les cartes difficiles reviennent plus souvent, tandis que les plus facile
 
 ---
 
----
-
 ## 🤝 Contribution
 
-Les contributions, retours et idées sont les bienvenus !
+Les retours et idées sont les bienvenus !
