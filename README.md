@@ -16,15 +16,17 @@ Le **SM-2** est un algorithme qui permet de cibler votre apprentissage sur les c
 
 ## ✨ Fonctionnalités
 
-- 🪽 **Rapide et léger** Pas besoin de compte, de connexion ou d'accès à internet !
-- 🗂️ **Ajoutez vos propre cartes et créé vos propre decks**  
+- 🪽 **Rapide et léger** - pas besoin de compte, de connexion ou d'accès à internet !
+- 🗂️ **Ajoutez vos propre cartes et créez vos propre decks**  
 - 🔀 **Fusionnez et mélangez les decks** pour des sessions flexibles  
-- 📖 **Répétition espacée (algorithme SM-2)** pour un apprentissage optimisé 
-- 📊 **Suivi de progression et statistiques (En cours)** – visualisation des cartes les moins bien maîtrisées
-- 📖 **Session d'étude suivie : barre de progression** : 
-- ⚙️ **Sessions d’étude personnalisables (à venir)** – choix du nombre de cartes par session
-- 📤 **Export (prévu)** – récupération de vos cartes pour les partager
-- 📤 **Notification et rappels (prévu)** – notifications configurable (fréquence et horaire) pour rappel
+- 📖 **Répétition espacée (algorithme SM-2)** pour un apprentissage optimisé
+
+**en cours...**
+- 📊 **Suivi de progression et statistiques** pour visualiser les cartes les moins bien maîtrisées et admirer son score !
+- 📖 **Session d'étude suivie et barre de progression** pour des séances efficaces et regulières 
+- ⚙️ **Sessions d’étude personnalisables** pour costumiser vos sessions
+- 📤 **Export** pour récupérer vos cartes et les partager
+- 📤 **Notification et rappels** – notifications configurable (fréquence et horaire) pour rappel
 
 ---
 
