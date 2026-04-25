@@ -272,6 +272,11 @@ mainImg.addEventListener("click", () => {
 
     zoomImg.src = src;
 
+    // Prevent zooming placeholder
+    if(!src || src.includes("placeholder")){
+        return;
+    }
+
     // Detect PNG and add white background
     if(src.toLowerCase().endsWith(".png")){
         zoomImg.classList.add("has-bg");
