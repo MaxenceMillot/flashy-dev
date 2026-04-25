@@ -9,7 +9,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Achillée_2",
@@ -21,7 +22,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Achillée_3",
@@ -33,7 +35,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Achillée_4",
@@ -45,7 +48,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aconit, Casque de Jupiter_1",
@@ -57,7 +61,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aconit, Casque de Jupiter_2",
@@ -69,7 +74,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aconit, Casque de Jupiter_3",
@@ -81,7 +87,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aconit, Casque de Jupiter_4",
@@ -93,7 +100,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aechmea_1",
@@ -105,7 +113,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aechmea_2",
@@ -117,7 +126,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aechmea_3",
@@ -129,7 +139,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aeschynanthus_1",
@@ -141,7 +152,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aeschynanthus_2",
@@ -153,7 +165,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aeschynanthus_3",
@@ -165,7 +178,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aeschynanthus_4",
@@ -177,7 +191,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agapanthe_1",
@@ -189,7 +204,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agapanthe_2",
@@ -201,7 +217,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agapanthe_3",
@@ -213,7 +230,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agave_1",
@@ -225,7 +243,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agave_2",
@@ -237,7 +256,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agave_3",
@@ -249,7 +269,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Agave_4",
@@ -261,7 +282,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ageratum_1",
@@ -273,7 +295,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ageratum_2",
@@ -285,7 +308,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ageratum_3",
@@ -297,7 +321,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ageratum_4",
@@ -309,7 +334,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aglaonema_1",
@@ -321,7 +347,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aglaonema_2",
@@ -333,7 +360,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aglaonema_3",
@@ -345,7 +373,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aglaonema_4",
@@ -357,7 +386,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ail d'ornement, Allium_1",
@@ -369,7 +399,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ail d'ornement, Allium_2",
@@ -381,7 +412,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ail d'ornement, Allium_3",
@@ -393,7 +425,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ail d'ornement, Allium_4",
@@ -405,7 +438,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alchemille_1",
@@ -417,7 +451,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alchemille_2",
@@ -429,7 +464,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alchemille_3",
@@ -441,7 +477,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alchemille_4",
@@ -453,7 +490,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aloe, aloès-Aloe vera_1",
@@ -465,7 +503,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aloe, aloès-Aloe vera_2",
@@ -477,7 +516,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aloe, aloès-Aloe vera_3",
@@ -489,7 +529,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aloe,Aloès-Aloe aristata_1",
@@ -501,7 +542,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aloe,Aloès-Aloe aristata_2",
@@ -513,7 +555,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alpinia_1",
@@ -525,7 +568,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alpinia_2",
@@ -537,7 +581,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alpinia_3",
@@ -549,7 +594,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alstroemère-Alstroemeria hybride_1",
@@ -561,7 +607,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alstroemère-Alstroemeria hybride_2",
@@ -573,7 +620,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Alstroemère-Alstroemeria hybride_3",
@@ -585,7 +633,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe queue de renard-Amaranthus caudatus_1",
@@ -597,7 +646,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe queue de renard-Amaranthus caudatus_2",
@@ -609,7 +659,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe queue de renard-Amaranthus caudatus_3",
@@ -621,7 +672,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe queue de renard-Amaranthus caudatus_4",
@@ -633,7 +685,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe--Amaranthus cruentus_1",
@@ -645,7 +698,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe--Amaranthus cruentus_2",
@@ -657,7 +711,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaranthe--Amaranthus cruentus_3",
@@ -669,7 +724,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaryllis-Hippeastrum hybride_1",
@@ -681,7 +737,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaryllis-Hippeastrum hybride_2",
@@ -693,7 +750,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Amaryllis-Hippeastrum hybride_3",
@@ -705,7 +763,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ananas_1",
@@ -717,7 +776,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ananas_2",
@@ -729,7 +789,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthurium-Anthurium andreanum_1",
@@ -741,7 +802,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthurium-Anthurium andreanum_2",
@@ -753,7 +815,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthurium-Anthurium andreanum_3",
@@ -765,7 +828,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthémis_1",
@@ -777,7 +841,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthémis_2",
@@ -789,7 +854,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthémis_3",
@@ -801,7 +867,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anémone_1",
@@ -813,7 +880,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anémone_2",
@@ -825,7 +893,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anémone_3",
@@ -837,7 +906,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anémone_4",
@@ -849,7 +919,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Areca_1",
@@ -861,7 +932,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Areca_2",
@@ -873,7 +945,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Areca_3",
@@ -885,7 +958,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Arum-Zantedeschia aethiopica_1",
@@ -897,7 +971,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Arum-Zantedeschia aethiopica_2",
@@ -909,7 +984,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Arum-Zantedeschia aethiopica_3",
@@ -921,7 +997,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asclépias_1",
@@ -933,7 +1010,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asclépias_2",
@@ -945,7 +1023,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asclépias_3",
@@ -957,7 +1036,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_1",
@@ -969,7 +1049,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_2",
@@ -981,7 +1062,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_3",
@@ -993,7 +1075,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_1",
@@ -1005,7 +1088,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_2",
@@ -1017,7 +1101,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_3",
@@ -1029,7 +1114,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_4",
@@ -1041,7 +1127,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Astilbe_1",
@@ -1053,7 +1140,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Astilbe_2",
@@ -1065,7 +1153,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Astilbe_3",
@@ -1077,7 +1166,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Astilbe_4",
@@ -1089,7 +1179,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aucuba_1",
@@ -1101,7 +1192,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aucuba_2",
@@ -1113,7 +1205,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aucuba_3",
@@ -1125,7 +1218,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée d'intérieur-Rhododendron simsii_1",
@@ -1137,7 +1231,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée d'intérieur-Rhododendron simsii_2",
@@ -1149,7 +1244,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée d'intérieur-Rhododendron simsii_3",
@@ -1161,7 +1257,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée japonaise_1",
@@ -1173,7 +1270,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée japonaise_2",
@@ -1185,7 +1283,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Azalée japonaise_3",
@@ -1197,7 +1296,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Basilic_1",
@@ -1209,7 +1309,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Basilic_2",
@@ -1221,7 +1322,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Beaucarnea, Nolina_1",
@@ -1233,7 +1335,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Beaucarnea, Nolina_2",
@@ -1245,7 +1348,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Beaucarnea, Nolina_3",
@@ -1257,7 +1361,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Begonia d'intérieur-Begonia elatior_1",
@@ -1269,7 +1374,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Begonia d'intérieur-Begonia elatior_2",
@@ -1281,7 +1387,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Begonia d'intérieur-Begonia elatior_3",
@@ -1293,7 +1400,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Begonia d'intérieur-Begonia elatior_4",
@@ -1305,7 +1413,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bougainvillée-Bougainvillea glabra_1",
@@ -1317,7 +1426,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bougainvillée-Bougainvillea glabra_2",
@@ -1329,7 +1439,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bougainvillée-Bougainvillea glabra_3",
@@ -1341,7 +1452,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bougainvillée-Bougainvillea glabra_4",
@@ -1353,7 +1465,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Boule de neige--Viburnum opulus_1",
@@ -1365,7 +1478,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Boule de neige--Viburnum opulus_2",
@@ -1377,7 +1491,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Boule de neige--Viburnum opulus_3",
@@ -1389,7 +1504,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Boulestrier_1",
@@ -1401,7 +1517,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Boulestrier_2",
@@ -1413,7 +1530,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bouvardia_1",
@@ -1425,7 +1543,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bouvardia_2",
@@ -1437,7 +1556,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bouvardia_3",
@@ -1449,7 +1569,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bruyère_1",
@@ -1461,7 +1582,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bruyère_2",
@@ -1473,7 +1595,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Buis_1",
@@ -1485,7 +1608,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Buis_2",
@@ -1497,7 +1621,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Buis_3",
@@ -1509,7 +1634,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia royal-Begonia rex_1",
@@ -1521,7 +1647,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia royal-Begonia rex_2",
@@ -1533,7 +1660,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia royal-Begonia rex_3",
@@ -1545,7 +1673,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia royal-Begonia rex_4",
@@ -1557,7 +1686,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia tubéreux_1",
@@ -1569,7 +1699,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia tubéreux_2",
@@ -1581,7 +1712,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia tubéreux_3",
@@ -1593,7 +1725,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia tubéreux_4",
@@ -1605,7 +1738,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia à massif_1",
@@ -1617,7 +1751,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bégonia à massif_2",
@@ -1629,7 +1764,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus boule, coussin de belle-mère_1",
@@ -1641,7 +1777,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus boule, coussin de belle-mère_2",
@@ -1653,7 +1790,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus cierge, cierge du Pérou_1",
@@ -1665,7 +1803,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus cierge, cierge du Pérou_2",
@@ -1677,7 +1816,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus de Noel-Schlumbergera hybride_1",
@@ -1689,7 +1829,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus de Noel-Schlumbergera hybride_2",
@@ -1701,7 +1842,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus de Paques-Rhipsalidopsis gaertneri_1",
@@ -1713,7 +1855,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus de Paques-Rhipsalidopsis gaertneri_2",
@@ -1725,7 +1868,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus de Paques-Rhipsalidopsis gaertneri_3",
@@ -1737,7 +1881,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus raquette, figuier de barbarie_1",
@@ -1749,7 +1894,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cactus raquette, figuier de barbarie_2",
@@ -1761,7 +1907,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caladium_1",
@@ -1773,7 +1920,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caladium_2",
@@ -1785,7 +1933,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caladium_3",
@@ -1797,7 +1946,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calamondin_1",
@@ -1809,7 +1959,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calamondin_2",
@@ -1821,7 +1972,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calamondin_3",
@@ -1833,7 +1985,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calathea_1",
@@ -1845,7 +1998,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calathea_2",
@@ -1857,7 +2011,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calathea_3",
@@ -1869,7 +2024,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calla-Zantedeschia hybride_1",
@@ -1881,7 +2037,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calla-Zantedeschia hybride_2",
@@ -1893,7 +2050,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Calla-Zantedeschia hybride_3",
@@ -1905,7 +2063,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Callune_1",
@@ -1917,7 +2076,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Callune_2",
@@ -1929,7 +2089,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camomille_1",
@@ -1941,7 +2102,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camomille_2",
@@ -1953,7 +2115,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camomille_3",
@@ -1965,7 +2128,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camomille_4",
@@ -1977,7 +2141,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule des Carpates_1",
@@ -1989,7 +2154,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule des Carpates_2",
@@ -2001,7 +2167,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule des Carpates_3",
@@ -2013,7 +2180,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule des Carpates_4",
@@ -2025,7 +2193,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_1",
@@ -2037,7 +2206,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_2",
@@ -2049,7 +2219,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_3",
@@ -2061,7 +2232,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_4",
@@ -2073,7 +2245,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_5",
@@ -2085,7 +2258,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Campanule_6",
@@ -2097,7 +2271,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camélia-Camellia japonica_1",
@@ -2109,7 +2284,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camélia-Camellia japonica_2",
@@ -2121,7 +2297,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camélia-Camellia japonica_3",
@@ -2133,7 +2310,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Camélia-Camellia japonica_4",
@@ -2145,7 +2323,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caoutchouc-Ficus elastia_2",
@@ -2157,7 +2336,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caoutchouc-Ficus elastia_3",
@@ -2169,7 +2349,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Caoutchouc-Ficus elastica_1",
@@ -2181,7 +2362,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Capillaire-Adiantum raddianum_1",
@@ -2193,7 +2375,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Capillaire-Adiantum raddianum_2",
@@ -2205,7 +2388,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Capillaire-Adiantum raddianum_3",
@@ -2217,7 +2401,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Carthamus_1",
@@ -2229,7 +2414,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Carthamus_2",
@@ -2241,7 +2427,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Carthamus_3",
@@ -2253,7 +2440,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ceropegia _1",
@@ -2265,7 +2453,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ceropegia _2",
@@ -2277,7 +2466,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ceropegia _3",
@@ -2289,7 +2479,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_1",
@@ -2301,7 +2492,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_2",
@@ -2313,7 +2505,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_3",
@@ -2325,7 +2518,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis obtusa_1",
@@ -2337,7 +2531,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis obtusa_2",
@@ -2349,7 +2544,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaedorea, palmier nain-Chamaedorea elegans_1",
@@ -2361,7 +2557,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaedorea, palmier nain-Chamaedorea elegans_2",
@@ -2373,7 +2570,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaedorea, palmier nain-Chamaedorea elegans_3",
@@ -2385,7 +2583,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaedorea, palmier nain-Chamaedorea elegans_4",
@@ -2397,7 +2596,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_1",
@@ -2409,7 +2609,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_2",
@@ -2421,7 +2622,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_3",
@@ -2433,7 +2635,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_4",
@@ -2445,7 +2648,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cheveux de Vénus, Fille de l'air--Tillandsia usneoides_1",
@@ -2457,7 +2661,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cheveux de Vénus, Fille de l'air--Tillandsia usneoides_2",
@@ -2469,7 +2674,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cheveux de Vénus, Fille de l'air--Tillandsia usneoides_3",
@@ -2481,7 +2687,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cheveux de Vénus, Fille de l'air--Tillandsia usneoides_4",
@@ -2493,7 +2700,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chlorophytum_1",
@@ -2505,7 +2713,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chlorophytum_2",
@@ -2517,7 +2726,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chlorophytum_3",
@@ -2529,7 +2739,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chou_1",
@@ -2541,7 +2752,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chou_2",
@@ -2553,7 +2765,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chou_3",
@@ -2565,7 +2778,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chrysanthème-Chrysanthemum hybride_1",
@@ -2577,7 +2791,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chrysanthème-Chrysanthemum hybride_2",
@@ -2589,7 +2804,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chrysanthème-Chrysanthemum hybride_3",
@@ -2601,7 +2817,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chrysanthème-Chrysanthemum hybride_4",
@@ -2613,7 +2830,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire maritime--Senecio maritima, Cineraria maritima_1",
@@ -2625,7 +2843,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire maritime--Senecio maritima, Cineraria maritima_2",
@@ -2637,7 +2856,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire maritime--Senecio maritima, Cineraria maritima_3",
@@ -2649,7 +2869,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire maritime--Senecio maritima, Cineraria maritima_4",
@@ -2661,7 +2882,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire-Senecio cruentus_1",
@@ -2673,7 +2895,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire-Senecio cruentus_2",
@@ -2685,7 +2908,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cinéraire-Senecio cruentus_3",
@@ -2697,7 +2921,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cissus_1",
@@ -2709,7 +2934,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cissus_2",
@@ -2721,7 +2947,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cissus_3",
@@ -2733,7 +2960,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Citronnier_1",
@@ -2745,7 +2973,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Citronnier_2",
@@ -2757,7 +2986,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Citronnier_3",
@@ -2769,7 +2999,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Clivia, Lis de Saint Joseph_1",
@@ -2781,7 +3012,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Clivia, Lis de Saint Joseph_2",
@@ -2793,7 +3025,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Clivia, Lis de Saint Joseph_3",
@@ -2805,7 +3038,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Clivia, Lis de Saint Joseph_4",
@@ -2817,7 +3051,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cocotier-Cocos nucifera_1",
@@ -2829,7 +3064,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cocotier-Cocos nucifera_2",
@@ -2841,7 +3077,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Columnea_1",
@@ -2853,7 +3090,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Columnea_2",
@@ -2865,7 +3103,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Columnea_3",
@@ -2877,7 +3116,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Columnea_4",
@@ -2889,7 +3129,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline--Cordyline australis_1",
@@ -2901,7 +3142,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline--Cordyline australis_2",
@@ -2913,7 +3155,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline--Cordyline australis_3",
@@ -2925,7 +3168,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline--Cordyline australis_4",
@@ -2937,7 +3181,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline-Cordyline fruticosa_1",
@@ -2949,7 +3194,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline-Cordyline fruticosa_2",
@@ -2961,7 +3207,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline-Cordyline fruticosa_3",
@@ -2973,7 +3220,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline-Cordyline fruticosa_4",
@@ -2985,7 +3233,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cosmos_1",
@@ -2997,7 +3246,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cosmos_2",
@@ -3009,7 +3259,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cosmos_3",
@@ -3021,7 +3272,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crassula, arbre de jade_1",
@@ -3033,7 +3285,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crassula, arbre de jade_2",
@@ -3045,7 +3298,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crassula--variées_1",
@@ -3057,7 +3311,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crocus-Crocus vernus_1",
@@ -3069,7 +3324,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crocus-Crocus vernus_2",
@@ -3081,7 +3337,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Crocus-Crocus vernus_3",
@@ -3093,7 +3350,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Croton_1",
@@ -3105,7 +3363,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Croton_2",
@@ -3117,7 +3376,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Croton_3",
@@ -3129,7 +3389,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ctenanthe_1",
@@ -3141,7 +3402,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ctenanthe_2",
@@ -3153,7 +3415,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ctenanthe_3",
@@ -3165,7 +3428,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Curcuma_1",
@@ -3177,7 +3441,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Curcuma_2",
@@ -3189,7 +3454,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Curcuma_3",
@@ -3201,7 +3467,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Curcuma_4",
@@ -3213,7 +3480,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cyclamen-Cyclamen persicum_1",
@@ -3225,7 +3493,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cyclamen-Cyclamen persicum_2",
@@ -3237,7 +3506,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cyclamen-Cyclamen persicum_3",
@@ -3249,7 +3519,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cyprés-Cupressus macrocarpa_1",
@@ -3261,7 +3532,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cyprés-Cupressus macrocarpa_2",
@@ -3273,7 +3545,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cytise_1",
@@ -3285,7 +3558,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cytise_2",
@@ -3297,7 +3571,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie, crête de coq_1",
@@ -3309,7 +3584,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie, crête de coq_2",
@@ -3321,7 +3597,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie, crête de coq_3",
@@ -3333,7 +3610,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie--Celosia plumosus_1",
@@ -3345,7 +3623,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie--Celosia plumosus_2",
@@ -3357,7 +3636,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie--Celosia plumosus_3",
@@ -3369,7 +3649,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Célosie--Celosia plumosus_4",
@@ -3381,7 +3662,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dahlia_1",
@@ -3393,7 +3675,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dahlia_2",
@@ -3405,7 +3688,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dahlia_3",
@@ -3417,7 +3701,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dahlia_4",
@@ -3429,7 +3714,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dahlia_5",
@@ -3441,7 +3727,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dieffenbachia-Dieffenbachia picta_1",
@@ -3453,7 +3740,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dieffenbachia-Dieffenbachia picta_2",
@@ -3465,7 +3753,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dieffenbachia-Dieffenbachia seguine_1",
@@ -3477,7 +3766,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dieffenbachia-Dieffenbachia seguine_2",
@@ -3489,7 +3779,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dieffenbachia-Dieffenbachia seguine_3",
@@ -3501,7 +3792,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dionée_1",
@@ -3513,7 +3805,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dionée_2",
@@ -3525,7 +3818,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dionée_3",
@@ -3537,7 +3831,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dipladenia,Mandevilla_1",
@@ -3549,7 +3844,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dipladenia,Mandevilla_2",
@@ -3561,7 +3857,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dipladenia,Mandevilla_3",
@@ -3573,7 +3870,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dipladenia,Mandevilla_4",
@@ -3585,7 +3883,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena fragans_1",
@@ -3597,7 +3896,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena fragans_2",
@@ -3609,7 +3909,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena fragans_3",
@@ -3621,7 +3922,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena marginata_1",
@@ -3633,7 +3935,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena marginata_2",
@@ -3645,7 +3948,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dracaena-Dracaena marginata_3",
@@ -3657,7 +3961,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Drosera_1",
@@ -3669,7 +3974,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Drosera_2",
@@ -3681,7 +3987,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Drosera_3",
@@ -3693,7 +4000,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_1",
@@ -3705,7 +4013,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_2",
@@ -3717,7 +4026,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_3",
@@ -3729,7 +4039,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_4",
@@ -3741,7 +4052,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_5",
@@ -3753,7 +4065,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Echeveria_6",
@@ -3765,7 +4078,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eremurus_1",
@@ -3777,7 +4091,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eremurus_2",
@@ -3789,7 +4104,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eremurus_3",
@@ -3801,7 +4117,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucharis_1",
@@ -3813,7 +4130,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucharis_2",
@@ -3825,7 +4143,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucharis_3",
@@ -3837,7 +4156,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe des fleuristes_1",
@@ -3849,7 +4169,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe des fleuristes_2",
@@ -3861,7 +4182,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe des fleuristes_3",
@@ -3873,7 +4195,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe-Euphorbia trigona_1",
@@ -3885,7 +4208,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe-Euphorbia trigona_2",
@@ -3897,7 +4221,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Euphorbe-Euphorbia trigona_3",
@@ -3909,7 +4234,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus bonsaï-Ficus microcarpa_1",
@@ -3921,7 +4247,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus bonsaï-Ficus microcarpa_2",
@@ -3933,7 +4260,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus bonsaï-Ficus microcarpa_3",
@@ -3945,7 +4273,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus bonsaï-Ficus microcarpa_4",
@@ -3957,7 +4286,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus lyre_1",
@@ -3969,7 +4299,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus lyre_2",
@@ -3981,7 +4312,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus lyre_3",
@@ -3993,7 +4325,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus rampant, grimpant-Ficus pumila_1",
@@ -4005,7 +4338,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus rampant, grimpant-Ficus pumila_2",
@@ -4017,7 +4351,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus rampant, grimpant-Ficus pumila_3",
@@ -4029,7 +4364,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus-Ficus benjamina_1",
@@ -4041,7 +4377,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus-Ficus benjamina_2",
@@ -4053,7 +4390,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus-Ficus benjamina_3",
@@ -4065,7 +4403,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus-Ficus benjamina_4",
@@ -4077,7 +4416,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus_1",
@@ -4089,7 +4429,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus_2",
@@ -4101,7 +4442,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ficus_3",
@@ -4113,7 +4455,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Forsythia_1",
@@ -4125,7 +4468,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Forsythia_2",
@@ -4137,7 +4481,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Forsythia_3",
@@ -4149,7 +4494,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Forsythia_4",
@@ -4161,7 +4507,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Freesia-Freesia hybride_1",
@@ -4173,7 +4520,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Freesia-Freesia hybride_2",
@@ -4185,7 +4533,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Freesia-Freesia hybride_3",
@@ -4197,7 +4546,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Freesia-Freesia hybride_4",
@@ -4209,7 +4559,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fuchsia-Fuchsia hybride_1",
@@ -4221,7 +4572,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fuchsia-Fuchsia hybride_2",
@@ -4233,7 +4585,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fuchsia-Fuchsia hybride_3",
@@ -4245,7 +4598,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain rampant-Euonymus fortunei_1",
@@ -4257,7 +4611,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain rampant-Euonymus fortunei_2",
@@ -4269,7 +4624,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain rampant-Euonymus fortunei_3",
@@ -4281,7 +4637,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain rampant-Euonymus fortunei_4",
@@ -4293,7 +4650,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain_1",
@@ -4305,7 +4663,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain_2",
@@ -4317,7 +4676,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fusain_3",
@@ -4329,7 +4689,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gardenia-Gardenia jasminoides_1",
@@ -4341,7 +4702,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gardenia-Gardenia jasminoides_2",
@@ -4353,7 +4715,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gardenia-Gardenia jasminoides_3",
@@ -4365,7 +4728,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gardenia-Gardenia jasminoides_4",
@@ -4377,7 +4741,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gentiane_1",
@@ -4389,7 +4754,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gentiane_2",
@@ -4401,7 +4767,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gentiane_3",
@@ -4413,7 +4780,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Genêt_1",
@@ -4425,7 +4793,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Genêt_2",
@@ -4437,7 +4806,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Genêt_3",
@@ -4449,7 +4819,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gerbera-Gerbera jamesonii_1",
@@ -4461,7 +4832,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gerbera-Gerbera jamesonii_2",
@@ -4473,7 +4845,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gerbera-Gerbera jamesonii_3",
@@ -4485,7 +4858,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gerbera-Gerbera jamesonii_4",
@@ -4497,7 +4871,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Giroflée_1",
@@ -4509,7 +4884,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Giroflée_2",
@@ -4521,7 +4897,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Giroflée_3",
@@ -4533,7 +4910,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Giroflée_4",
@@ -4545,7 +4923,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Glaïeul-Gladiolus hybride_1",
@@ -4557,7 +4936,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Glaïeul-Gladiolus hybride_2",
@@ -4569,7 +4949,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Glaïeul-Gladiolus hybride_3",
@@ -4581,7 +4962,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Glaïeul-Gladiolus hybride_4",
@@ -4593,7 +4975,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloriosa-Gloriosa rotschildiana_1",
@@ -4605,7 +4988,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloriosa-Gloriosa rotschildiana_2",
@@ -4617,7 +5001,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloriosa-Gloriosa rotschildiana_3",
@@ -4629,7 +5014,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloriosa-Gloriosa rotschildiana_4",
@@ -4641,7 +5027,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloxinia_1",
@@ -4653,7 +5040,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloxinia_2",
@@ -4665,7 +5053,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloxinia_3",
@@ -4677,7 +5066,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gloxinia_4",
@@ -4689,7 +5079,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Guzmania_1",
@@ -4701,7 +5092,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Guzmania_2",
@@ -4713,7 +5105,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Guzmania_3",
@@ -4725,7 +5118,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gypsophile-Gypsophila paniculata_1",
@@ -4737,7 +5131,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gypsophile-Gypsophila paniculata_2",
@@ -4749,7 +5144,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gypsophile-Gypsophila paniculata_3",
@@ -4761,7 +5157,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Gypsophile-Gypsophila paniculata_4",
@@ -4773,7 +5170,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier rampant_1",
@@ -4785,7 +5183,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier rampant_2",
@@ -4797,7 +5196,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier rampant_3",
@@ -4809,7 +5209,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier-Juniperus squamata_1",
@@ -4821,7 +5222,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier-Juniperus squamata_2",
@@ -4833,7 +5235,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Génévrier-Juniperus squamata_3",
@@ -4845,7 +5248,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium lierre-Pelargonium peltatum_1",
@@ -4857,7 +5261,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium lierre-Pelargonium peltatum_2",
@@ -4869,7 +5274,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium zonale_1",
@@ -4881,7 +5287,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium zonale_2",
@@ -4893,7 +5300,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium zonale_3",
@@ -4905,7 +5313,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Géranium zonale_4",
@@ -4917,7 +5326,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Heliconia_1",
@@ -4929,7 +5339,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Heliconia_2",
@@ -4941,7 +5352,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Heliconia_3",
@@ -4953,7 +5365,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore, Rose de Noël-Helleborus niger_1",
@@ -4965,7 +5378,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore, Rose de Noël-Helleborus niger_2",
@@ -4977,7 +5391,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore, Rose de Noël-Helleborus niger_3",
@@ -4989,7 +5404,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore, Rose de Noël-Helleborus niger_4",
@@ -5001,7 +5417,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore--Helleborus orientalis_1",
@@ -5013,7 +5430,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore--Helleborus orientalis_2",
@@ -5025,7 +5443,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore--Helleborus orientalis_3",
@@ -5037,7 +5456,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore--Helleborus orientalis_4",
@@ -5049,7 +5469,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore_1",
@@ -5061,7 +5482,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore_2",
@@ -5073,7 +5495,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hellebore_3",
@@ -5085,7 +5508,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hibiscus-Hibiscus rosa sinensis_1",
@@ -5097,7 +5521,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hibiscus-Hibiscus rosa sinensis_2",
@@ -5109,7 +5534,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hibiscus-Hibiscus rosa sinensis_3",
@@ -5121,7 +5547,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hibiscus-Hibiscus rosa sinensis_4",
@@ -5133,7 +5560,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hibiscus-Hibiscus rosa sinensis_5",
@@ -5145,7 +5573,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia--Hydrangea paniculata_1",
@@ -5157,7 +5586,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia--Hydrangea paniculata_2",
@@ -5169,7 +5599,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia--Hydrangea paniculata_3",
@@ -5181,7 +5612,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia-Hydrangea macrophylla_1",
@@ -5193,7 +5625,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia-Hydrangea macrophylla_2",
@@ -5205,7 +5638,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hortensia-Hydrangea macrophylla_3",
@@ -5217,7 +5651,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hypoestes_1",
@@ -5229,7 +5664,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hypoestes_2",
@@ -5241,7 +5677,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hypoestes_3",
@@ -5253,7 +5690,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Hypoestes_4",
@@ -5265,7 +5703,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatience de Nouvelle Guinée_1",
@@ -5277,7 +5716,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatience de Nouvelle Guinée_2",
@@ -5289,7 +5729,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatience de Nouvelle Guinée_3",
@@ -5301,7 +5742,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatiens à massifs_1",
@@ -5313,7 +5755,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatiens à massifs_2",
@@ -5325,7 +5768,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Impatiens à massifs_3",
@@ -5337,7 +5781,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris des fleuristes-Iris xiphium_1",
@@ -5349,7 +5794,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris des fleuristes-Iris xiphium_2",
@@ -5361,7 +5807,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris des fleuristes-Iris xiphium_3",
@@ -5373,7 +5820,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris-Iris germanica_1",
@@ -5385,7 +5833,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris-Iris germanica_2",
@@ -5397,7 +5846,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris-Iris germanica_3",
@@ -5409,7 +5859,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Iris-Iris germanica_4",
@@ -5421,7 +5872,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jacinthe-Hyacinthus orientalis_1",
@@ -5433,7 +5885,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jacinthe-Hyacinthus orientalis_2",
@@ -5445,7 +5898,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin de Madagascar_1",
@@ -5457,7 +5911,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin de Madagascar_2",
@@ -5469,7 +5924,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin de Madagascar_3",
@@ -5481,7 +5937,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin de Madagascar_4",
@@ -5493,7 +5950,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin-Jasminum polyanthum_1",
@@ -5505,7 +5963,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jasmin-Jasminum polyanthum_2",
@@ -5517,7 +5976,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jonquille-Narcissus pseudonarcissus_1",
@@ -5529,7 +5989,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Jonquille-Narcissus pseudonarcissus_2",
@@ -5541,7 +6002,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kalanchoe-Kalanchoe blossfeldiana_1",
@@ -5553,7 +6015,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kalanchoe-Kalanchoe blossfeldiana_2",
@@ -5565,7 +6028,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kalanchoe-Kalanchoe blossfeldiana_3",
@@ -5577,7 +6041,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kentia_1",
@@ -5589,7 +6054,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kentia_2",
@@ -5601,7 +6067,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kentia_3",
@@ -5613,7 +6080,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kniphofia_1",
@@ -5625,7 +6093,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kniphofia_2",
@@ -5637,7 +6106,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Kniphofia_3",
@@ -5649,7 +6119,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier rose-Nerium oleander_1",
@@ -5661,7 +6132,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier rose-Nerium oleander_2",
@@ -5673,7 +6145,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier rose-Nerium oleander_3",
@@ -5685,7 +6158,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier rose-Nerium oleander_4",
@@ -5697,7 +6171,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lavande papillon_1",
@@ -5709,7 +6184,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lavande papillon_2",
@@ -5721,7 +6197,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lavande papillon_3",
@@ -5733,7 +6210,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lavande_1",
@@ -5745,7 +6223,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lavande_2",
@@ -5757,7 +6236,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Liatris, Plume du Kansas_1",
@@ -5769,7 +6249,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Liatris, Plume du Kansas_2",
@@ -5781,7 +6262,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Liatris, Plume du Kansas_3",
@@ -5793,7 +6275,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Liatris, Plume du Kansas_4",
@@ -5805,7 +6288,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_1",
@@ -5817,7 +6301,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_2",
@@ -5829,7 +6314,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_3",
@@ -5841,7 +6327,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_4",
@@ -5853,7 +6340,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lilas_1",
@@ -5865,7 +6353,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lilas_2",
@@ -5877,7 +6366,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lilas_3",
@@ -5889,7 +6379,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lilas_4",
@@ -5901,7 +6392,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Limonium_1",
@@ -5913,7 +6405,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Limonium_2",
@@ -5925,7 +6418,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Limonium_3",
@@ -5937,7 +6431,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Limonium_4",
@@ -5949,7 +6444,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Limonium_5",
@@ -5961,7 +6457,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys) asiatique-Lilium hybride_1",
@@ -5973,7 +6470,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys) asiatique-Lilium hybride_2",
@@ -5985,7 +6483,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys) oriental-Lilium hybride_1",
@@ -5997,7 +6496,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys) oriental-Lilium hybride_2",
@@ -6009,7 +6509,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys)-Lilium longiflorum_1",
@@ -6021,7 +6522,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys)-Lilium longiflorum_2",
@@ -6033,7 +6535,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis (lys)-Lilium longiflorum_3",
@@ -6045,7 +6548,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis, Lys-Lilium hybride_1",
@@ -6057,7 +6561,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lis, Lys-Lilium hybride_2",
@@ -6069,7 +6574,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lisianthus-Eustoma russellianum_1",
@@ -6081,7 +6587,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lisianthus-Eustoma russellianum_2",
@@ -6093,7 +6600,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lisianthus-Eustoma russellianum_3",
@@ -6105,7 +6613,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lisianthus-Eustoma russellianum_4",
@@ -6117,7 +6626,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lupin_1",
@@ -6129,7 +6639,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lupin_2",
@@ -6141,7 +6652,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lupin_3",
@@ -6153,7 +6665,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mammillaire_1",
@@ -6165,7 +6678,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mammillaire_2",
@@ -6177,7 +6691,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mammillaire_3",
@@ -6189,7 +6704,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Maranta_1",
@@ -6201,7 +6717,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Maranta_2",
@@ -6213,7 +6730,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Maranta_3",
@@ -6225,7 +6743,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Marguerite d'automne_1",
@@ -6237,7 +6756,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Marguerite d'automne_2",
@@ -6249,7 +6769,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Marguerite d'automne_3",
@@ -6261,7 +6782,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Marguerite d'automne_4",
@@ -6273,7 +6795,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Medinilla_1",
@@ -6285,7 +6808,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Medinilla_2",
@@ -6297,7 +6821,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Medinilla_3",
@@ -6309,7 +6834,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Menthe_1",
@@ -6321,7 +6847,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Menthe_2",
@@ -6333,7 +6860,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Millepertuis-Hypericum hybride_1",
@@ -6345,7 +6873,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Millepertuis-Hypericum hybride_2",
@@ -6357,7 +6886,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Millepertuis-Hypericum hybride_3",
@@ -6369,7 +6899,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Millepertuis-Hypericum hybride_4",
@@ -6381,7 +6912,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mimosa-Acacia dealbata_1",
@@ -6393,7 +6925,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mimosa-Acacia dealbata_2",
@@ -6405,7 +6938,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mimosa-Acacia dealbata_3",
@@ -6417,7 +6951,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mimosa-Acacia dealbata_4",
@@ -6429,7 +6964,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Misère_1",
@@ -6441,7 +6977,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Misère_2",
@@ -6453,7 +6990,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Misère_3",
@@ -6465,7 +7003,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Misère_4",
@@ -6477,7 +7016,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Molucelle_1",
@@ -6489,7 +7029,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Molucelle_2",
@@ -6501,7 +7042,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Molucelle_3",
@@ -6513,7 +7055,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Monstera-Monstera deliciosa_1",
@@ -6525,7 +7068,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Monstera-Monstera deliciosa_2",
@@ -6537,7 +7081,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Monstera-Monstera deliciosa_3",
@@ -6549,7 +7094,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Montbretia-Crocosmia hybride_1",
@@ -6561,7 +7107,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Montbretia-Crocosmia hybride_2",
@@ -6573,7 +7120,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Montbretia-Crocosmia hybride_3",
@@ -6585,7 +7133,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muflier_1",
@@ -6597,7 +7146,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muflier_2",
@@ -6609,7 +7159,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muflier_3",
@@ -6621,7 +7172,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muguet-Convallaria majalis_1",
@@ -6633,7 +7185,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muguet-Convallaria majalis_2",
@@ -6645,7 +7198,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muguet-Convallaria majalis_3",
@@ -6657,7 +7211,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muscari-Muscari armeniacum_1",
@@ -6669,7 +7224,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muscari-Muscari armeniacum_2",
@@ -6681,7 +7237,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Muscari-Muscari armeniacum_3",
@@ -6693,7 +7250,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrte_1",
@@ -6705,7 +7263,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrte_2",
@@ -6717,7 +7276,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Narcisse-Narcissus hybride_1",
@@ -6729,7 +7289,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Narcisse-Narcissus hybride_2",
@@ -6741,7 +7302,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nepenthes_1",
@@ -6753,7 +7315,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nepenthes_2",
@@ -6765,7 +7328,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nepenthes_3",
@@ -6777,7 +7341,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nephrolepis-Nephrolepis exaltata_1",
@@ -6789,7 +7354,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nephrolepis-Nephrolepis exaltata_2",
@@ -6801,7 +7367,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nephrolepis-Nephrolepis exaltata_3",
@@ -6813,7 +7380,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nephrolepis-Nephrolepis exaltata_4",
@@ -6825,7 +7393,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nertera_1",
@@ -6837,7 +7406,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nertera_2",
@@ -6849,7 +7419,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nertera_3",
@@ -6861,7 +7432,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nid d'oiseau_1",
@@ -6873,7 +7445,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nid d'oiseau_2",
@@ -6885,7 +7458,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nid d'oiseau_3",
@@ -6897,7 +7471,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nid d'oiseau_4",
@@ -6909,7 +7484,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nigelle_1",
@@ -6921,7 +7497,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nigelle_2",
@@ -6933,7 +7510,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nigelle_3",
@@ -6945,7 +7523,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nutans_1",
@@ -6957,7 +7536,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nutans_2",
@@ -6969,7 +7549,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nutans_3",
@@ -6981,7 +7562,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nérine, Lis de Guernesey_1",
@@ -6993,7 +7575,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nérine, Lis de Guernesey_2",
@@ -7005,7 +7588,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Nérine, Lis de Guernesey_3",
@@ -7017,7 +7601,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Olivier-Olea europea_1",
@@ -7029,7 +7614,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Olivier-Olea europea_2",
@@ -7041,7 +7627,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Olivier-Olea europea_3",
@@ -7053,7 +7640,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum arabicum_1",
@@ -7065,7 +7653,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum arabicum_2",
@@ -7077,7 +7666,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum arabicum_3",
@@ -7089,7 +7679,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum arabicum_4",
@@ -7101,7 +7692,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum dubium_1",
@@ -7113,7 +7705,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum dubium_2",
@@ -7125,7 +7718,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum dubium_3",
@@ -7137,7 +7731,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum dubium_4",
@@ -7149,7 +7744,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum thyrsoides_1",
@@ -7161,7 +7757,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum thyrsoides_2",
@@ -7173,7 +7770,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ornithogale-Ornithogalum thyrsoides_3",
@@ -7185,7 +7783,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pachira_1",
@@ -7197,7 +7796,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pachira_2",
@@ -7209,7 +7809,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pachira_3",
@@ -7221,7 +7822,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pachira_4",
@@ -7233,7 +7835,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicaut, Chardon-Eryngium planum_1",
@@ -7245,7 +7848,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicaut, Chardon-Eryngium planum_2",
@@ -7257,7 +7861,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicaut, Chardon-Eryngium planum_3",
@@ -7269,7 +7874,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Papyrus_1",
@@ -7281,7 +7887,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Papyrus_3",
@@ -7293,7 +7900,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Papyrus_3",
@@ -7305,7 +7913,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Papyrus_4",
@@ -7317,7 +7926,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Passiflore_1",
@@ -7329,7 +7939,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Passiflore_2",
@@ -7341,7 +7952,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pavot_1",
@@ -7353,7 +7965,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pavot_2",
@@ -7365,7 +7978,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pavot_3",
@@ -7377,7 +7991,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pensée-Viola hybride_1",
@@ -7389,7 +8004,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Peperomia_1",
@@ -7401,7 +8017,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Peperomia_2",
@@ -7413,7 +8030,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Perce-neige_1",
@@ -7425,7 +8043,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Perce-neige_2",
@@ -7437,7 +8056,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Perce-neige_3",
@@ -7449,7 +8069,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Perce-neige_4",
@@ -7461,7 +8082,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Persil_1",
@@ -7473,7 +8095,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Persil_2",
@@ -7485,7 +8108,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Petite pensée-Viola cornuta_1",
@@ -7497,7 +8121,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Petite pensée-Viola cornuta_2",
@@ -7509,7 +8134,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Petite pensée-Viola cornuta_3",
@@ -7521,7 +8147,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_1",
@@ -7533,7 +8160,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_2",
@@ -7545,7 +8173,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_3",
@@ -7557,7 +8186,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_4",
@@ -7569,7 +8199,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_5",
@@ -7581,7 +8212,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_6",
@@ -7593,7 +8225,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron_7",
@@ -7605,7 +8238,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phlox_1",
@@ -7617,7 +8251,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phlox_2",
@@ -7629,7 +8264,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phlox_3",
@@ -7641,7 +8277,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phoenix_1",
@@ -7653,7 +8290,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phoenix_2",
@@ -7665,7 +8303,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phoenix_3",
@@ -7677,7 +8316,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phoenix_4",
@@ -7689,7 +8329,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Physalis_1",
@@ -7701,7 +8342,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Physalis_2",
@@ -7713,7 +8355,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Physalis_3",
@@ -7725,7 +8368,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette annuel_1",
@@ -7737,7 +8381,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette annuel_2",
@@ -7749,7 +8394,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette annuel_3",
@@ -7761,7 +8407,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette annuel_4",
@@ -7773,7 +8420,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette vivace_1",
@@ -7785,7 +8433,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette vivace_2",
@@ -7797,7 +8446,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied d'alouette vivace_3",
@@ -7809,7 +8459,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied de kangourou_1",
@@ -7821,7 +8472,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied de kangourou_2",
@@ -7833,7 +8485,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pied de kangourou_3",
@@ -7845,7 +8498,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Piment-Capsicum annuum_1",
@@ -7857,7 +8511,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Piment-Capsicum annuum_2",
@@ -7869,7 +8524,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Piment-Capsicum annuum_3",
@@ -7881,7 +8537,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pivoine_1",
@@ -7893,7 +8550,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pivoine_2",
@@ -7905,7 +8563,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pivoine_3",
@@ -7917,7 +8576,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Platycerium, Corne d'élan-Platycerium alcicorne_1",
@@ -7929,7 +8589,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Platycerium, Corne d'élan-Platycerium alcicorne_2",
@@ -7941,7 +8602,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Platycerium, Corne d'élan-Platycerium alcicorne_3",
@@ -7953,7 +8615,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Poinsettia, étoile de Noël_1",
@@ -7965,7 +8628,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Poinsettia, étoile de Noël_2",
@@ -7977,7 +8641,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Poinsettia, étoile de Noël_3",
@@ -7989,7 +8654,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pois de senteur_1",
@@ -8001,7 +8667,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pois de senteur_2",
@@ -8013,7 +8680,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pois de senteur_3",
@@ -8025,7 +8693,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pommier d'amour-Solanum pseudocapsicum_1",
@@ -8037,7 +8706,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pommier d'amour-Solanum pseudocapsicum_2",
@@ -8049,7 +8719,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pothos_1",
@@ -8061,7 +8732,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pothos_2",
@@ -8073,7 +8745,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pothos_3",
@@ -8085,7 +8758,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pothos_4",
@@ -8097,7 +8771,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Primevère acaule-Primula acaulis_1",
@@ -8109,7 +8784,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Primevère acaule-Primula acaulis_2",
@@ -8121,7 +8797,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Primevère obconique_1",
@@ -8133,7 +8810,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Primevère obconique_2",
@@ -8145,7 +8823,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Protea_1",
@@ -8157,7 +8836,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Protea_2",
@@ -8169,7 +8849,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Protea_3",
@@ -8181,7 +8862,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prunus, rameau fleuri, cerisier à fleurs_1",
@@ -8193,7 +8875,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prunus, rameau fleuri, cerisier à fleurs_2",
@@ -8205,7 +8888,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prunus, rameau fleuri, cerisier à fleurs_3",
@@ -8217,7 +8901,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pteris_1",
@@ -8229,7 +8914,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pteris_2",
@@ -8241,7 +8927,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pteris_3",
@@ -8253,7 +8940,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pâquerette-Bellis perennis_1",
@@ -8265,7 +8953,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pâquerette-Bellis perennis_2",
@@ -8277,7 +8966,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pâquerette-Bellis perennis_3",
@@ -8289,7 +8979,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pâquerette-Bellis perennis_4",
@@ -8301,7 +8992,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pétunia, Surfinia-Petunia hybride_1",
@@ -8313,7 +9005,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pétunia, Surfinia-Petunia hybride_2",
@@ -8325,7 +9018,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pétunia, Surfinia-Petunia hybride_3",
@@ -8337,7 +9031,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Reine marguerite, Aster de Chine_1",
@@ -8349,7 +9044,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Reine marguerite, Aster de Chine_2",
@@ -8361,7 +9057,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Reine marguerite, Aster de Chine_3",
@@ -8373,7 +9070,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Reine marguerite, Aster de Chine_4",
@@ -8385,7 +9083,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Renoncule_1",
@@ -8397,7 +9096,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Renoncule_2",
@@ -8409,7 +9109,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Renoncule_3",
@@ -8421,7 +9122,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhododendron_1",
@@ -8433,7 +9135,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhododendron_2",
@@ -8445,7 +9148,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhododendron_3",
@@ -8457,7 +9161,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhoicissus_1",
@@ -8469,7 +9174,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhoicissus_2",
@@ -8481,7 +9187,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhoicissus_3",
@@ -8493,7 +9200,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rhoicissus_4",
@@ -8505,7 +9213,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Romarin_1",
@@ -8517,7 +9226,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Romarin_2",
@@ -8529,7 +9239,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Romarin_3",
@@ -8541,7 +9252,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose d'Inde_1",
@@ -8553,7 +9265,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose d'Inde_3",
@@ -8565,7 +9278,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose d'nde_2",
@@ -8577,7 +9291,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de Noël-Helleborus niger_1",
@@ -8589,7 +9304,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de Noël-Helleborus niger_2",
@@ -8601,7 +9317,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de Noël-Helleborus niger_3",
@@ -8613,7 +9330,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de porcelaine_1",
@@ -8625,7 +9343,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de porcelaine_2",
@@ -8637,7 +9356,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose de porcelaine_3",
@@ -8649,7 +9369,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose-Rosa hybride_1",
@@ -8661,7 +9382,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose-Rosa hybride_2",
@@ -8673,7 +9395,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose-Rosa hybride_3",
@@ -8685,7 +9408,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rose-Rosa hybride_4",
@@ -8697,7 +9421,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rosier, mini-rosier_1",
@@ -8709,7 +9434,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rosier, mini-rosier_2",
@@ -8721,7 +9447,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rudbeckia_1",
@@ -8733,7 +9460,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rudbeckia_2",
@@ -8745,7 +9473,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Rudbeckia_3",
@@ -8757,7 +9486,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Saintpaulia, violette du Cap_1",
@@ -8769,7 +9499,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Saintpaulia, violette du Cap_2",
@@ -8781,7 +9512,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sansevière, langue de belle-mère-Sansevieria trifasciata_1",
@@ -8793,7 +9525,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sansevière, langue de belle-mère-Sansevieria trifasciata_2",
@@ -8805,7 +9538,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sansevière, langue de belle-mère-Sansevieria cylindrica_3",
@@ -8817,7 +9551,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sansevière, langue de belle-mère-Sansevieria cylindrica_4",
@@ -8829,7 +9564,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Saintpaulia, violette du Cap_3",
@@ -8841,7 +9577,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sauge_1",
@@ -8853,7 +9590,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sauge_2",
@@ -8865,7 +9603,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sauge_3",
@@ -8877,7 +9616,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse--Scabiosa stellata_1",
@@ -8889,7 +9629,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse--Scabiosa stellata_2",
@@ -8901,7 +9642,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse--Scabiosa stellata_3",
@@ -8913,7 +9655,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse_1",
@@ -8925,7 +9668,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse_2",
@@ -8937,7 +9681,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse_3",
@@ -8949,7 +9694,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scabieuse_4",
@@ -8961,7 +9707,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Schefflera_1",
@@ -8973,7 +9720,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Schefflera_2",
@@ -8985,7 +9733,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Schefflera_3",
@@ -8997,7 +9746,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Schefflera_4",
@@ -9009,7 +9759,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scille_1",
@@ -9021,7 +9772,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scille_2",
@@ -9033,7 +9785,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scille_3",
@@ -9045,7 +9798,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Scille_4",
@@ -9057,7 +9811,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum-Sedum spectabile_1",
@@ -9069,7 +9824,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum-Sedum spectabile_2",
@@ -9081,7 +9837,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum-Sedum spectabile_3",
@@ -9093,7 +9850,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum_1",
@@ -9105,7 +9863,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum_2",
@@ -9117,7 +9876,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum_2",
@@ -9129,7 +9889,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum_3",
@@ -9141,7 +9902,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sedum_4",
@@ -9153,7 +9915,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selaginelle_1",
@@ -9165,7 +9928,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selaginelle_2",
@@ -9177,7 +9941,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selaginelle_3",
@@ -9189,7 +9954,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selloum_1",
@@ -9201,7 +9967,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selloum_2",
@@ -9213,7 +9980,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Selloum_3",
@@ -9225,7 +9993,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Senecio _1",
@@ -9237,7 +10006,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Senecio _2",
@@ -9249,7 +10019,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Skimmia_1",
@@ -9261,7 +10032,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Skimmia_2",
@@ -9273,7 +10045,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Skimmia_3",
@@ -9285,7 +10058,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Skimmia_4",
@@ -9297,7 +10071,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidago, Verge d'or-Solidago hybride_1",
@@ -9309,7 +10084,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidago, Verge d'or-Solidago hybride_2",
@@ -9321,7 +10097,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidago, Verge d'or-Solidago hybride_3",
@@ -9333,7 +10110,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidaster_1",
@@ -9345,7 +10123,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidaster_2",
@@ -9357,7 +10136,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Solidaster_3",
@@ -9369,7 +10149,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Souci_1",
@@ -9381,7 +10162,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Souci_2",
@@ -9393,7 +10175,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Souci_3",
@@ -9405,7 +10188,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Souci_4",
@@ -9417,7 +10201,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Spathiphyllum-Spathiphyllum hybride_1",
@@ -9429,7 +10214,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Spathiphyllum-Spathiphyllum hybride_2",
@@ -9441,7 +10227,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Spathiphyllum-Spathiphyllum hybride_3",
@@ -9453,7 +10240,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Strelitzia, Oiseau de paradis-Strelitzia reginae_1",
@@ -9465,7 +10253,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Strelitzia, Oiseau de paradis-Strelitzia reginae_2",
@@ -9477,7 +10266,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Strelitzia, Oiseau de paradis-Strelitzia reginae_3",
@@ -9489,7 +10279,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Strelitzia, Oiseau de paradis-Strelitzia reginae_4",
@@ -9501,7 +10292,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Streptocarpus_1",
@@ -9513,7 +10305,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Streptocarpus_2",
@@ -9525,7 +10318,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Streptocarpus_3",
@@ -9537,7 +10331,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Streptocarpus_4",
@@ -9549,7 +10344,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Streptocarpus_5",
@@ -9561,7 +10357,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Symphorine_1",
@@ -9573,7 +10370,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Symphorine_2",
@@ -9585,7 +10383,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Symphorine_3",
@@ -9597,7 +10396,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Syngonium_1",
@@ -9609,7 +10409,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Syngonium_2",
@@ -9621,7 +10422,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Syngonium_3",
@@ -9633,7 +10435,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_1",
@@ -9645,7 +10448,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_2",
@@ -9657,7 +10461,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_3",
@@ -9669,7 +10474,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thym_1",
@@ -9681,7 +10487,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thym_2",
@@ -9693,7 +10500,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thym_3",
@@ -9705,7 +10513,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia cyanea_1",
@@ -9717,7 +10526,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia cyanea_2",
@@ -9729,7 +10539,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia cyanea_3",
@@ -9741,7 +10552,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia xerographica_1",
@@ -9753,7 +10565,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia xerographica_2",
@@ -9765,7 +10578,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tillandsia--Tillandsia xerographica_3",
@@ -9777,7 +10591,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tournesol-Helianthus annuus_1",
@@ -9789,7 +10604,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tournesol-Helianthus annuus_2",
@@ -9801,7 +10617,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tournesol-Helianthus annuus_3",
@@ -9813,7 +10630,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Trachelium_1",
@@ -9825,7 +10643,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Trachelium_2",
@@ -9837,7 +10656,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Trachelium_3",
@@ -9849,7 +10669,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tubéreuse_1",
@@ -9861,7 +10682,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tubéreuse_2",
@@ -9873,7 +10695,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tubéreuse_3",
@@ -9885,7 +10708,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tulipe-Tulipa hybride_1",
@@ -9897,7 +10721,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tulipe-Tulipa hybride_2",
@@ -9909,7 +10734,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tulipe-Tulipa hybride_3",
@@ -9921,7 +10747,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Verveine_1",
@@ -9933,7 +10760,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Verveine_2",
@@ -9945,7 +10773,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vriesea--Vriesea poelmanii_1",
@@ -9957,7 +10786,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vriesea--Vriesea splendens_2",
@@ -9969,7 +10799,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vriesea--Vriesea splendens_3",
@@ -9981,7 +10812,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vriesea-Vriesea poelmanii_2",
@@ -9993,7 +10825,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique arbustive_1",
@@ -10005,7 +10838,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique arbustive_2",
@@ -10017,7 +10851,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique arbustive_3",
@@ -10029,7 +10864,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique_1",
@@ -10041,7 +10877,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique_2",
@@ -10053,7 +10890,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique_3",
@@ -10065,7 +10903,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Véronique_4",
@@ -10077,7 +10916,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Wax-flower_1",
@@ -10089,7 +10929,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Wax-flower_2",
@@ -10101,7 +10942,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Wax-flower_3",
@@ -10113,7 +10955,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Xanadu_1",
@@ -10125,7 +10968,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Xanadu_2",
@@ -10137,7 +10981,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Xanadu_3",
@@ -10149,7 +10994,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Yucca_1",
@@ -10161,7 +11007,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Yucca_2",
@@ -10173,7 +11020,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Yucca_3",
@@ -10185,7 +11033,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Yucca_4",
@@ -10197,7 +11046,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Zamioculcas _2",
@@ -10209,7 +11059,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Zamioculcas_1",
@@ -10221,7 +11072,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Épine du Christ-Euphorbia milii_1",
@@ -10233,7 +11085,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Épine du Christ-Euphorbia milii_2",
@@ -10245,7 +11098,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Épine du Christ-Euphorbia milii_3",
@@ -10257,7 +11111,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet d'Inde_1",
@@ -10269,7 +11124,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet d'Inde_2",
@@ -10281,7 +11137,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet d'Inde_3",
@@ -10293,7 +11150,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet d'Inde_4",
@@ -10305,7 +11163,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet, Mini-œillet-Dianthus caryophyllus_1",
@@ -10317,7 +11176,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet, Mini-œillet-Dianthus caryophyllus_2",
@@ -10329,7 +11189,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet, Mini-œillet-Dianthus caryophyllus_3",
@@ -10341,7 +11202,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet de poète-Dianthus barbatus_1",
@@ -10353,7 +11215,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet de poète-Dianthus barbatus_2",
@@ -10365,7 +11228,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Œillet de poète-Dianthus barbatus_3",
@@ -10377,7 +11241,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cattleya-Cattleya hybride_1",
@@ -10389,7 +11254,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cattleya-Cattleya hybride_2",
@@ -10401,7 +11267,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cattleya-Cattleya hybride_3",
@@ -10413,7 +11280,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cymbidium -Cymbidium hybride_1",
@@ -10425,7 +11293,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cymbidium -Cymbidium hybride_2",
@@ -10437,7 +11306,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cymbidium -Cymbidium hybride_3",
@@ -10449,7 +11319,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cymbidium -Cymbidium hybride_4",
@@ -10461,7 +11332,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium hybride_1",
@@ -10473,7 +11345,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium hybride_2",
@@ -10485,7 +11358,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium hybride_3",
@@ -10497,7 +11371,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium nobile_1",
@@ -10509,7 +11384,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium nobile_2",
@@ -10521,7 +11397,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium nobile_3",
@@ -10533,7 +11410,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Dendrobium-Dendrobium nobile_4",
@@ -10545,7 +11423,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Miltonia-Miltonia hybride_1",
@@ -10557,7 +11436,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Miltonia-Miltonia hybride_2",
@@ -10569,7 +11449,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Miltonia-Miltonia hybride_3",
@@ -10581,7 +11462,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Miltonia-Miltonia hybride_4",
@@ -10593,7 +11475,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Miltonia-Miltonia hybride_5",
@@ -10605,7 +11488,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Odontoglossum Cambria-Odontoglossum hybride_1",
@@ -10617,7 +11501,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Odontoglossum Cambria-Odontoglossum hybride_2",
@@ -10629,7 +11514,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Odontoglossum Cambria-Odontoglossum hybride_3",
@@ -10641,7 +11527,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Oncidium-Oncidium hybride_1",
@@ -10653,7 +11540,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Oncidium-Oncidium hybride_2",
@@ -10665,7 +11553,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Oncidium-Oncidium hybride_3",
@@ -10677,7 +11566,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Oncidium-Oncidium hybride_4",
@@ -10689,7 +11579,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Orchidée araignée_1",
@@ -10701,7 +11592,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Orchidée araignée_2",
@@ -10713,7 +11605,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phalaenopsis-Phalaenopsis hybride_1",
@@ -10725,7 +11618,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phalaenopsis-Phalaenopsis hybride_2",
@@ -10737,7 +11631,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phalaenopsis-Phalaenopsis hybride_3",
@@ -10749,7 +11644,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phalaenopsis-Phalaenopsis hybride_4",
@@ -10761,7 +11657,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phalaenopsis-Phalaenopsis hybride_5",
@@ -10773,7 +11670,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus--Cypripedium calceolus_1",
@@ -10785,7 +11683,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus-Cypripedium calceolus_2",
@@ -10797,7 +11696,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus-Cypripedium calceolus_3",
@@ -10809,7 +11709,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus-Paphiopedilum hybride_1",
@@ -10821,7 +11722,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus-Paphiopedilum hybride_2",
@@ -10833,7 +11735,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sabot de Vénus-Paphiopedilum hybride_3",
@@ -10845,7 +11748,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vanda-Vanda hybride_1",
@@ -10857,7 +11761,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vanda-Vanda hybride_2",
@@ -10869,7 +11774,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vanda-Vanda hybride_3",
@@ -10881,7 +11787,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Vanda-Vanda hybride_4",
@@ -10893,7 +11800,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthurium-Anthurium andreanum_1",
@@ -10905,7 +11813,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Anthurium-Anthurium andreanum_2",
@@ -10917,7 +11826,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_1",
@@ -10929,7 +11839,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_2",
@@ -10941,7 +11852,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus densiflorus_3",
@@ -10953,7 +11865,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus setaceus_1",
@@ -10965,7 +11878,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus setaceus_2",
@@ -10977,7 +11891,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Asparagus-Asparagus setaceus_3",
@@ -10989,7 +11904,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_1",
@@ -11001,7 +11917,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_2",
@@ -11013,7 +11930,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Aspidistra-Aspidistra elatior_3",
@@ -11025,7 +11943,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bear-grass_1",
@@ -11037,7 +11956,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bear-grass_2",
@@ -11049,7 +11969,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Bear-grass_3",
@@ -11061,7 +11982,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Blé_1",
@@ -11073,7 +11995,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Blé_2",
@@ -11085,7 +12008,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Blé_3",
@@ -11097,7 +12021,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_1",
@@ -11109,7 +12034,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_2",
@@ -11121,7 +12047,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "chamaecyparis-Chamaecyparis lawsoniana_3",
@@ -11133,7 +12060,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_1",
@@ -11145,7 +12073,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chamaerops_2",
@@ -11157,7 +12086,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chico-Chamaedorea elegans_1",
@@ -11169,7 +12099,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chico-Chamaedorea elegans_2",
@@ -11181,7 +12112,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chico-Chamaedorea elegans_3",
@@ -11193,7 +12125,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chêne d'Amérique_1",
@@ -11205,7 +12138,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chêne d'Amérique_2",
@@ -11217,7 +12151,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chêne des marais_1",
@@ -11229,7 +12164,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chêne des marais_2",
@@ -11241,7 +12177,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Chêne des marais_3",
@@ -11253,7 +12190,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cocotier-Cocos nucifera_1",
@@ -11265,7 +12203,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cocotier-Cocos nucifera_2",
@@ -11277,7 +12216,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline_1",
@@ -11289,7 +12229,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline_2",
@@ -11301,7 +12242,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cordyline_3",
@@ -11313,7 +12255,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cycas_1",
@@ -11325,7 +12268,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cycas_2",
@@ -11337,7 +12281,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Cycas_3",
@@ -11349,7 +12294,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus cinerea_1",
@@ -11361,7 +12307,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus cinerea_2",
@@ -11373,7 +12320,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus cinerea_3",
@@ -11385,7 +12333,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus populus_1",
@@ -11397,7 +12346,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus populus_2",
@@ -11409,7 +12359,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Eucalyptus-Eucalyptus populus_3",
@@ -11421,7 +12372,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Faux aralia-Fatsia japonica_1",
@@ -11433,7 +12385,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Faux aralia-Fatsia japonica_2",
@@ -11445,7 +12398,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Faux aralia-Fatsia japonica_3",
@@ -11457,7 +12411,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Faux aralia-Fatsia japonica_4",
@@ -11469,7 +12424,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fougère USA, Fougère américaine-Rumorha adiantiformis_1",
@@ -11481,7 +12437,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fougère USA, Fougère américaine-Rumorha adiantiformis_2",
@@ -11493,7 +12450,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fougère USA, Fougère américaine-Rumorha adiantiformis_3",
@@ -11505,7 +12463,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Fougère USA, Fougère américaine-Rumorha adiantiformis_4",
@@ -11517,7 +12476,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Galax-Galax urceolata_1",
@@ -11529,7 +12489,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Galax-Galax urceolata_2",
@@ -11541,7 +12502,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Galax-Galax urceolata_3",
@@ -11553,7 +12515,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Galax-Galax urceolata_4",
@@ -11565,7 +12528,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Grevillea_1",
@@ -11577,7 +12541,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Grevillea_2",
@@ -11589,7 +12554,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Grevillea_3",
@@ -11601,7 +12567,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier d’Alexandrie_1",
@@ -11613,7 +12580,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier d’Alexandrie_2",
@@ -11625,7 +12593,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier d’Alexandrie_3",
@@ -11637,7 +12606,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier plat_1",
@@ -11649,7 +12619,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier plat_2",
@@ -11661,7 +12632,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier plat_3",
@@ -11673,7 +12645,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier plat_4",
@@ -11685,7 +12658,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier tin_1",
@@ -11697,7 +12671,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier tin_2",
@@ -11709,7 +12684,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier tin_3",
@@ -11721,7 +12697,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Laurier tin_4",
@@ -11733,7 +12710,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lentisque, Pistachier_1",
@@ -11745,7 +12723,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lentisque, Pistachier_2",
@@ -11757,7 +12736,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lentisque, Pistachier_3",
@@ -11769,7 +12749,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_1",
@@ -11781,7 +12762,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_2",
@@ -11793,7 +12775,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_3",
@@ -11805,7 +12788,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lierre-Hedera helix_4",
@@ -11817,7 +12801,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lucky bambou_1",
@@ -11829,7 +12814,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lucky bambou_2",
@@ -11841,7 +12827,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Lucky bambou_3",
@@ -11853,7 +12840,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mahonia_1",
@@ -11865,7 +12853,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mahonia_2",
@@ -11877,7 +12866,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Mahonia_3",
@@ -11889,7 +12879,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Monstera-Monstera deliciosa_1",
@@ -11901,7 +12892,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Monstera-Monstera deliciosa_2",
@@ -11913,7 +12905,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrte_1",
@@ -11925,7 +12918,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrte_2",
@@ -11937,7 +12931,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrte_3",
@@ -11949,7 +12944,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrtille-Vaccinium myrtillus_1",
@@ -11961,7 +12957,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Myrtille-Vaccinium myrtillus_2",
@@ -11973,7 +12970,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pandanus_1",
@@ -11985,7 +12983,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pandanus_2",
@@ -11997,7 +12996,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pandanus_3",
@@ -12009,7 +13009,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pandanus_4",
@@ -12021,7 +13022,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicum_1",
@@ -12033,7 +13035,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicum_2",
@@ -12045,7 +13048,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicum_3",
@@ -12057,7 +13061,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Panicum_4",
@@ -12069,7 +13074,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pennisetum_1",
@@ -12081,7 +13087,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pennisetum_2",
@@ -12093,7 +13100,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pennisetum_3",
@@ -12105,7 +13113,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron Xanadu-Philodendron Xanadu_1",
@@ -12117,7 +13126,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron Xanadu-Philodendron Xanadu_2",
@@ -12129,7 +13139,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Philodendron Xanadu-Philodendron Xanadu_3",
@@ -12141,7 +13152,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phormium, Lin de Nouvelle Zélande_1",
@@ -12153,7 +13165,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phormium, Lin de Nouvelle Zélande_2",
@@ -12165,7 +13178,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Phormium, Lin de Nouvelle Zélande_3",
@@ -12177,7 +13191,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pittosporum_1",
@@ -12189,7 +13204,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pittosporum_2",
@@ -12201,7 +13217,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pittosporum_3",
@@ -12213,7 +13230,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pittosporum_4",
@@ -12225,7 +13243,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Pittosporum_5",
@@ -12237,7 +13256,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prêle-Equisetum hyemale_1",
@@ -12249,7 +13269,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prêle-Equisetum hyemale_2",
@@ -12261,7 +13282,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Prêle-Equisetum hyemale_3",
@@ -12273,7 +13295,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ruscus_1",
@@ -12285,7 +13308,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ruscus_2",
@@ -12297,7 +13321,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Ruscus_3",
@@ -12309,7 +13334,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Salal-Gaultheria shallon_1",
@@ -12321,7 +13347,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Salal-Gaultheria shallon_2",
@@ -12333,7 +13360,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Salal-Gaultheria shallon_3",
@@ -12345,7 +13373,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Salal-Gaultheria shallon_4",
@@ -12357,7 +13386,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sapin_1",
@@ -12369,7 +13399,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sapin_2",
@@ -12381,7 +13412,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Sapin_3",
@@ -12393,7 +13425,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Setaria, Millet_1",
@@ -12405,7 +13438,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Setaria, Millet_2",
@@ -12417,7 +13451,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Setaria, Millet_3",
@@ -12429,7 +13464,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Setaria, Millet_4",
@@ -12441,7 +13477,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Steel-grass_1",
@@ -12453,7 +13490,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Steel-grass_2",
@@ -12465,7 +13503,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Steel-grass_3",
@@ -12477,7 +13516,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_1",
@@ -12489,7 +13529,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_2",
@@ -12501,7 +13542,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Thuya-Thuja occidentalis_3",
@@ -12513,7 +13555,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tree-fern_1",
@@ -12525,7 +13568,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tree-fern_2",
@@ -12537,7 +13581,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Tree-fern_3",
@@ -12549,7 +13594,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Typha_1",
@@ -12561,7 +13607,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Typha_2",
@@ -12573,7 +13620,8 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 },
 {
   id: "Typha_3",
@@ -12585,6 +13633,7 @@ let cards = [
   interval: 0,
   repetitions: 0,
   due: 0,
-  score: 0
+  score: 0,
+  custom: false
 }
 ];

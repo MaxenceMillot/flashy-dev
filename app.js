@@ -90,7 +90,7 @@ function render(){
     // ==========================
     img.onerror = () => {
         img.onerror = null;
-        img.src = "images/fallback.svg";
+        img.src = "images/placeholder_image_not_found.png";
     };
 
     img.src = current.img;
