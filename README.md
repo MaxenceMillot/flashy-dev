@@ -10,7 +10,7 @@ Flashy est une application web de fiches révisions facile d'utilisation et sans
 
 Simple et efficace, Flashy vous aide à apprendre et mémoriser du contenu grâce à des "fiches révisions" (flashcards), en utilisant un système de répétition scientifiquement reconnu. Elle s’adapte à vos performances pour afficher les cartes au bon moment.
 
-👉 **Accéder à l’application ici :** _link to the app_
+👉 **Accéder à l’application ici :** https://maxencemillot.github.io/Flashy/
 
 ### 🧠 C'est quoi le SM-2 ?
 Le **SM-2** est un algorithme qui permet de cibler votre apprentissage sur les cartes où vous avez des difficultés. Pour chaque carte, vous pouvez choisir si vous connaissiez la réponse : "_totalement_", "_un peu_" ou "_pas du tout_". Les cartes les moins maîtrisées auront plus de chance de vous être proposées pour travailler efficacement vos lacunes.
