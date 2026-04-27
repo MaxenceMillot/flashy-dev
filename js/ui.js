@@ -45,7 +45,7 @@ export function showAnswer(){
     });
 
     el.btnShow.style.display = "none";
-    el.gradeButtons.style.display = "block";
+    el.gradeButtons.style.display = "flex";
 }
 
 export function fadeOut(callback){

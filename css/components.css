@@ -1,23 +1,132 @@
+/* ===================== */
 /* BUTTON AREA */
+/* ===================== */
 .buttons {
-    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
+/* ===================== */
 /* BUTTON BASE */
+/* ===================== */
 button {
-    margin: 6px;
     padding: 10px 14px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
+
+    font-size: 15px;
+
+    margin: 0;
+
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
-/* BUTTON COLORS */
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ===================== */
+/* SHOW BUTTON */
+/* ===================== */
 .btn-show {
     background: #444;
     color: white;
+
+    width: 150px;
+    max-width: 90%;
 }
 
+/* ===================== */
+/* GRADE BUTTONS */
+/* ===================== */
+#gradeButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    width: 100%;
+    max-width: 420px; /* ✅ closer to card visual width */
+    margin: 0 auto;
+}
+
+/* Equal size buttons */
+#gradeButtons button {
+    flex: 1;
+    text-align: center;
+
+    /* ✅ better than min-width: keeps equality without breaking flex */
+    padding: 12px 8px;
+}
+
+/* ===================== */
+/* MOBILE */
+/* ===================== */
+@media (max-width: 600px) {
+
+    .buttons {
+        position: sticky;
+        bottom: 0;
+
+        width: 100%;
+        padding: 14px 12px;
+
+        background: linear-gradient(
+            to top,
+            rgba(246,247,251,1),
+            rgba(246,247,251,0.95),
+            rgba(246,247,251,0)
+        );
+
+        backdrop-filter: blur(6px);
+        z-index: 10;
+    }
+
+    .btn-show {
+        width: 100%;
+        max-width: 320px;
+
+        padding: 16px;
+        font-size: 16px;
+        border-radius: 14px;
+    }
+
+    #gradeButtons {
+        gap: 10px;
+        width: 100%;
+        max-width: 420px; /* keep consistent with desktop */
+        margin: 0 auto;
+    }
+
+    #gradeButtons button {
+        flex: 1;
+        min-width: 0;
+
+        padding: 14px 6px;
+        font-size: 14px;
+    }
+}
+
+/* ===================== */
+/* SMALL DEVICES */
+/* ===================== */
+@media (max-width: 430px) {
+    #gradeButtons button {
+        font-size: 13px;
+        padding: 12px 4px;
+    }
+}
+
+/* ===================== */
+/* BUTTON COLORS */
+/* ===================== */
 .fail {
     background: #e74c3c;
     color: white;
@@ -33,16 +142,21 @@ button {
     color: white;
 }
 
+/* ===================== */
 /* DECKS */
+/* ===================== */
 .decks {
     margin-top: 15px;
 }
 
+/* ===================== */
 /* ZOOM OVERLAY */
+/* ===================== */
 .zoom-overlay {
     position: fixed;
     inset: 0;
     background: rgba(0,0,0,0.75);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -59,7 +173,6 @@ button {
     pointer-events: auto;
 }
 
-/* ZOOM IMAGE */
 .zoom-overlay img {
     cursor: pointer;
     max-width: 90%;
@@ -70,18 +183,19 @@ button {
     transition: transform 0.25s ease;
 }
 
-/* PNG BACKGROUND FIX */
+.zoom-overlay.active img {
+    transform: scale(1);
+}
+
 .zoom-overlay img.has-bg {
     background: #f8f8f8;
     padding: 10px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
-.zoom-overlay.active img {
-    transform: scale(1);
-}
-
+/* ===================== */
 /* QoL */
+/* ===================== */
 img, button, div {
     -webkit-tap-highlight-color: transparent;
 }
