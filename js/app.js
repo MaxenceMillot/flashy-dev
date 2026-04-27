@@ -44,7 +44,7 @@ function next(){
 
     img.onload = async () => {
         try {
-            await img.decode(); // 👈 HERE
+            await img.decode();
         } catch(e) {
             // decode can fail on some browsers, safe to ignore
         }
