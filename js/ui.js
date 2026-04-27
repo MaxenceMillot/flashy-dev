@@ -17,9 +17,11 @@ export function initHeaderMenu() {
         el.menuBtn.classList.toggle("open");
     });
 
-    // optional: click outside closes menu
     document.addEventListener("click", (e) => {
-        const isClickInside = el.menuBtn.contains(e.target) || el.mobileMenu.contains(e.target);
+        const isClickInside =
+            el.menuBtn.contains(e.target) ||
+            el.mobileMenu.contains(e.target);
+
         if (!isClickInside) {
             el.mobileMenu.classList.remove("open");
             el.menuBtn.classList.remove("open");
@@ -52,30 +54,46 @@ export function render(card){
 
     const wrapper = el.img.parentElement;
 
-    // RESET IMAGE + SKELETON STATE
+    // RESET STATE
     wrapper.classList.remove("loaded");
     el.img.classList.remove("loaded");
 
-    // LOAD HANDLER (success)
+    let slowHintTimer;
+
+    // 🟡 SLOW LOADING HINT (NO TIMEOUT Fallback)
+    slowHintTimer = setTimeout(() => {
+        if (!el.img.classList.contains("loaded")) {
+            wrapper.classList.add("slow"); // subtle visual cue
+        }
+    }, 2000); // 2s feels natural
+
+    // LOAD SUCCESS
     el.img.onload = () => {
+        clearTimeout(slowHintTimer);
+
+        wrapper.classList.remove("slow");
         el.img.classList.add("loaded");
         wrapper.classList.add("loaded");
     };
 
-    // ERROR HANDLER (fallback image)
+    // ERROR FALLBACK
     el.img.onerror = () => {
+        clearTimeout(slowHintTimer);
+
         el.img.onerror = null;
         el.img.src = "images/placeholder_image_not_found.png";
 
+        wrapper.classList.remove("slow");
         el.img.classList.add("loaded");
         wrapper.classList.add("loaded");
     };
 
-    // SET SOURCE LAST (important)
+    // SET IMAGE
     el.img.src = card.img;
 
-    // HANDLE CACHED IMAGES (very important for mobile/PWA)
+    // CACHED IMAGE SAFETY
     if (el.img.complete) {
+        clearTimeout(slowHintTimer);
         el.img.classList.add("loaded");
         wrapper.classList.add("loaded");
     }
@@ -107,7 +125,6 @@ export function fadeOut(callback){
 }
 
 export function fadeIn(){
-    // ensure next frame so browser registers state change
     requestAnimationFrame(() => {
         el.card.classList.remove("fade-out");
     });

@@ -92,6 +92,11 @@
     pointer-events: none;
 }
 
+.image-wrapper.slow .image-skeleton {
+    opacity: 0.6;
+    filter: brightness(0.95);
+}
+
 .image-skeleton {
     transition: opacity 0.2s ease;
 }
