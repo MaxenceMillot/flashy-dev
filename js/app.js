@@ -19,42 +19,43 @@ initHeaderMenu();
 renderDecks(cards, el.deckContainer);
 initZoom(el.img);
 
-function next(){
+function loadImage(src) {
+    return new Promise((resolve) => {
+        const img = new Image();
+
+        img.onload = async () => {
+            try { await img.decode(); } catch(e) {}
+            resolve(src);
+        };
+
+        img.onerror = () => resolve(src);
+
+        img.src = src;
+    });
+}
+
+async function next() {
     const result = getNext(getSelectedDecks());
-    if(!result) return;
+    if (!result) return;
 
     const newCard = result.current;
     nextCard = result.nextCard;
 
-    const img = new Image();
+    // STEP 1: fade out current card
+    fadeOut(async () => {
 
-    const done = () => {
+        // STEP 2: wait image BEFORE render
+        await loadImage(newCard.img);
+
         current = newCard;
         render(current);
 
-        // preload next card
+        // STEP 3: preload next card in background (no blocking)
         if (nextCard?.img) {
-            const preloadNext = new Image();
-            preloadNext.src = nextCard.img;
-            preloadNext.decode().catch(() => {});
+            loadImage(nextCard.img);
         }
 
         fadeIn();
-    };
-
-    img.onload = async () => {
-        try {
-            await img.decode();
-        } catch(e) {
-            // decode can fail on some browsers, safe to ignore
-        }
-        done();
-    };
-
-    img.onerror = done;
-
-    fadeOut(() => {
-        img.src = newCard.img;
     });
 }
 

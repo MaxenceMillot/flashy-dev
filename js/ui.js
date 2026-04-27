@@ -36,6 +36,7 @@ const deckNames = {
 export function render(card){
     if(!card) return;
 
+    // Reset answer state
     el.answer.style.display = "none";
     el.answer.classList.remove("visible");
 
@@ -49,12 +50,35 @@ export function render(card){
         <div class="deck-label">${deckLabel}</div>
     `;
 
-    el.img.src = card.img;
+    const wrapper = el.img.parentElement;
 
+    // RESET IMAGE + SKELETON STATE
+    wrapper.classList.remove("loaded");
+    el.img.classList.remove("loaded");
+
+    // LOAD HANDLER (success)
+    el.img.onload = () => {
+        el.img.classList.add("loaded");
+        wrapper.classList.add("loaded");
+    };
+
+    // ERROR HANDLER (fallback image)
     el.img.onerror = () => {
         el.img.onerror = null;
         el.img.src = "images/placeholder_image_not_found.png";
+
+        el.img.classList.add("loaded");
+        wrapper.classList.add("loaded");
     };
+
+    // SET SOURCE LAST (important)
+    el.img.src = card.img;
+
+    // HANDLE CACHED IMAGES (very important for mobile/PWA)
+    if (el.img.complete) {
+        el.img.classList.add("loaded");
+        wrapper.classList.add("loaded");
+    }
 }
 
 export function showAnswer(){
