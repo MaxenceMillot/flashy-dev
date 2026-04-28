@@ -44,6 +44,7 @@ export function render(card){
 
     el.btnShow.style.display = "inline-block";
     el.gradeButtons.style.display = "none";
+    setButtonsDisabled(false);
 
     const deckLabel = deckNames[card.deck] || card.deck;
 
@@ -60,7 +61,7 @@ export function render(card){
 
     let slowHintTimer;
 
-    // 🟡 SLOW LOADING HINT (NO TIMEOUT Fallback)
+    // SLOW LOADING HINT (NO TIMEOUT Fallback)
     slowHintTimer = setTimeout(() => {
         if (!el.img.classList.contains("loaded")) {
             wrapper.classList.add("slow"); // subtle visual cue
@@ -110,6 +111,17 @@ export function showAnswer(){
     el.gradeButtons.style.display = "flex";
 }
 
+export function setButtonsDisabled(disabled) {
+    // Show answer button
+    el.btnShow.disabled = disabled;
+
+    // Grade buttons
+    const buttons = el.gradeButtons.querySelectorAll("button");
+    buttons.forEach(btn => {
+        btn.disabled = disabled;
+    });
+}
+
 export function fadeOut(callback){
     const card = el.card;
 
@@ -124,8 +136,30 @@ export function fadeOut(callback){
     card.classList.add("fade-out");
 }
 
-export function fadeIn(){
+export function fadeIn(callback){
+    const card = el.card;
+
+    let called = false;
+
+    function done() {
+        if (called) return;
+        called = true;
+
+        card.removeEventListener("transitionend", handleEnd);
+        if (callback) callback();
+    }
+
+    function handleEnd(e){
+        if (e.propertyName !== "opacity") return;
+        done();
+    }
+
+    card.addEventListener("transitionend", handleEnd);
+
     requestAnimationFrame(() => {
-        el.card.classList.remove("fade-out");
+        card.classList.remove("fade-out");
     });
+
+    // fallback safety
+    setTimeout(done, 300);
 }

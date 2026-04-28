@@ -1,6 +1,6 @@
 import { initState, cards } from "./state.js";
 import { getNext, gradeCard } from "./scheduler.js";
-import { initHeaderMenu, render, showAnswer, fadeOut, fadeIn, el } from "./ui.js";
+import { initHeaderMenu, render, showAnswer, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks } from "./decks.js";
 import { initZoom } from "./zoom.js";
 
@@ -18,29 +18,29 @@ function isInstalledPWA() {
 }
 
 // Throttled preload
-function preloadImages() {
+function preloadAllImages() {
     const images = cards.map(c => c.img);
-
     let i = 0;
 
-    function loadNext() {
+    function queue() {
         if (i >= images.length) return;
 
         const img = new Image();
         img.src = images[i++];
 
         // small delay for smoother network usage
-        setTimeout(loadNext, 15);
+        setTimeout(queue, 15);
     }
 
-    loadNext();
+    queue();
+    console.log("Preloading DONE");
 }
 
 // Delayed preload trigger
 setTimeout(() => {
     if (isInstalledPWA()) {
-        console.log("PWA installed: delayed image preload starting");
-        preloadImages();
+        console.log("Preloading all images...");
+        preloadAllImages();
     }
 }, 2000);
 
@@ -64,7 +64,7 @@ renderDecks(cards, el.deckContainer);
 initZoom(el.img);
 
 // Load image with decode safety
-function loadImage(src) {
+function preloadImage(src) {
     return new Promise((resolve) => {
         const img = new Image();
 
@@ -80,28 +80,32 @@ function loadImage(src) {
 }
 
 // NEXT CARD FLOW
-async function next() {
+function next() {
     const result = getNext(getSelectedDecks());
     if (!result) return;
 
     const newCard = result.current;
     nextCard = result.nextCard;
 
-    fadeOut(async () => {
-
-        await loadImage(newCard.img);
-
+    fadeOut(() => {
         current = newCard;
         render(current);
 
-        // background preload (non-blocking)
+        console.log("if (nextCard?.img)")
         if (nextCard?.img) {
-            loadImage(nextCard.img);
+        console.log("preloadImage")
+            preloadImage(nextCard.img);
+        console.log("preloadImage DONE")
         }
 
+        console.log("fadeIn")
+        console.log("isTransitioning: "+isTransitioning);
         fadeIn(() => {
             isTransitioning = false;
+            setButtonsDisabled(false);
         });
+        console.log("fadeIn DONE")
+        console.log("isTransitioning: "+isTransitioning);
     });
 }
 
@@ -109,12 +113,18 @@ async function next() {
 el.btnShow.addEventListener("click", showAnswer);
 
 el.gradeButtons.addEventListener("click", (e) => {
-    if (isTransitioning) return;
+    console.log("in click event");
+    console.log("isTransitioning: "+isTransitioning);
+    console.log("current: ");
+    console.log(current);
+    if (isTransitioning || !current) return;
 
     const btn = e.target.closest("button");
     if (!btn) return;
 
     isTransitioning = true;
+    setButtonsDisabled(true);
+
 
     const grade = Number(btn.dataset.grade);
 

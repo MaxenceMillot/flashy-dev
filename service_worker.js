@@ -43,7 +43,6 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
     const request = event.request;
 
-    // IMAGES: cache-first strategy
     if (request.destination === "image") {
         event.respondWith(
             caches.open(CACHE_NAME).then(async (cache) => {
@@ -51,18 +50,21 @@ self.addEventListener("fetch", (event) => {
                 if (cached) return cached;
 
                 try {
-                    const response = await fetch(request);
+                    const controller = new AbortController();
+                    const timeout = setTimeout(() => controller.abort(), 5000);
+                    const response = await fetch(request, { signal: controller.signal });
+                    clearTimeout(timeout);
                     cache.put(request, response.clone());
                     return response;
+
                 } catch (err) {
-                    return cache.match("/images/placeholder_image_not_found.png");
+                    return cache.match("./images/placeholder_image_not_found.png");
                 }
             })
         );
         return;
     }
-
-    // DEFAULT: network-first for app files
+    
     event.respondWith(
         fetch(request).catch(() => caches.match(request))
     );
