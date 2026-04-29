@@ -19,6 +19,9 @@ if ("serviceWorker" in navigator) {
     });
 }
 
+// LOAD ICONS FROM LIBRARY
+lucide.createIcons();
+
 /*
 / DETECT PWA
 */

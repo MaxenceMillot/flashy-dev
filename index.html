@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/icons/icon_16.png">
     <link rel="icon" href="images/icons/favicon.ico">
     <link rel="apple-touch-icon" href="images/icons/icon_192.png">
+    <script src="https://unpkg.com/lucide@latest"></script>
 
     <title>Flashy</title>
 </head>
@@ -27,29 +28,57 @@
     </div>
 
     <div class="header-right">
+
+        <!-- Desktop actions -->
+        <div class="desktop-nav">
+            <!-- <button class="nav-btn">
+                <i data-lucide="book-copy"></i>
+                Mes Cartes
+            </button>
+            <button class="nav-btn">
+                <i data-lucide="chart-line"></i>
+                Mes Statistiques
+            </button>
+            <button class="nav-btn warning">
+                <i data-lucide="bug"></i>
+                Signaler un bug
+            </button> -->
+            <button class="nav-btn">
+                <i data-lucide="construction"></i>
+                En travaux...
+            </button>
+        </div>
+
+        <!-- Hamburger (mobile only) -->
         <button class="hamburger" id="menuBtn" aria-label="menu">
-            <!-- Hamburger lines -->
             <span></span>
             <span></span>
             <span></span>
         </button>
-<!--         
-        <button class="my-cards-btn">Mes Cartes</button>
-        <button class="my-stats-btn">Mes statistiques</button>
-        <button class="info-btn">Infos</button>
-        <button class="bug-report-btn">🪳 Signaler un Bug</button>
--->
+
     </div>
 
 </header>
 
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-item">Mes Cartes</button>
-    <button class="mobile-item">Mes Statistiques</button>
-    <button class="mobile-item">Infos</button>
-    <button class="mobile-item">🪳 Signaler un Bug</button>
-    <button class="mobile-item">Télécharger l'application</button>
+<!-- Dropdown menu (mobile only) -->
+<div class="dropdown-menu" id="mobileMenu">
+    <!-- <button class="dropdown-item">
+        <i data-lucide="download"></i>
+        Télécharger l'application
+    </button>
+
+    <button class="dropdown-item">
+        <i data-lucide="info"></i>
+        Infos
+    </button>
+    <button class="dropdown-item warning">
+        <i data-lucide="bug"></i>
+        Signaler un Bug
+    </button> -->
+    <button class="dropdown-item warning">
+        <i data-lucide="construction"></i>
+        En travaux...
+    </button>
 </div>
 
 <div class="container">
