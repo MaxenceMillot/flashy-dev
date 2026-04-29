@@ -29,13 +29,10 @@ export function initHeaderMenu() {
     });
 }
 
-const deckNames = {
-    flowers: "Fleurs & Plantes",
-    orchids: "Orchidées",
-    foliages: "Feuillage"
-};
-
-export function render(card, { onImageReady } = {}) {
+// =======================
+// RENDER
+// =======================
+export function render(card, { onImageReady, skeletonTimer } = {}) {
     if (!card) return;
 
     // Reset UI
@@ -50,14 +47,30 @@ export function render(card, { onImageReady } = {}) {
         <div class="deck-label">${card.deck}</div>
     `;
 
+    // Reset handlers
     el.img.onload = null;
     el.img.onerror = null;
 
     let handled = false;
+    let retryCount = 0;
+
+    const FAILSAFE_TIMEOUT = 5000;
+
+    const failSafe = setTimeout(() => {
+        console.warn("Image load timeout:", card.img);
+
+        el.img.onerror = null;
+        el.img.src = "images/placeholder_image_not_found.png";
+
+        done();
+    }, FAILSAFE_TIMEOUT);
 
     function done() {
         if (handled) return;
         handled = true;
+
+        clearTimeout(failSafe);
+        if (skeletonTimer) clearTimeout(skeletonTimer);
 
         el.card.classList.remove("loading");
 
@@ -67,19 +80,36 @@ export function render(card, { onImageReady } = {}) {
     el.img.onload = done;
 
     el.img.onerror = () => {
+        if (retryCount < 1) {
+            retryCount++;
+
+            console.warn("Retrying image:", card.img);
+
+            setTimeout(() => {
+                el.img.src = card.img + "?retry=" + Date.now();
+            }, 300);
+
+            return;
+        }
+
+        el.img.onerror = null;
         el.img.src = "images/placeholder_image_not_found.png";
+
         done();
     };
 
     // Set src LAST
     el.img.src = card.img;
 
-    // Handle cached images (VERY IMPORTANT)
+    // Cached image case
     if (el.img.complete && el.img.naturalWidth !== 0) {
         requestAnimationFrame(done);
     }
 }
 
+// =======================
+// UI ACTIONS
+// =======================
 export function showAnswer(){
     el.answer.style.display = "block";
 
@@ -98,6 +128,9 @@ export function setButtonsDisabled(disabled) {
     buttons.forEach(btn => btn.disabled = disabled);
 }
 
+// =======================
+// ANIMATIONS
+// =======================
 export function fadeOut(callback){
     const card = el.card;
 

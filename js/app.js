@@ -11,13 +11,11 @@ let isTransitioning = false;
 /*
 / PRE LOAD AREA {
 */
-// Detect PWA installed mode
 function isInstalledPWA() {
     return window.matchMedia("(display-mode: standalone)").matches
         || window.navigator.standalone === true;
 }
 
-// Throttled preload
 function preloadAllImages() {
     const images = cards.map(c => c.img);
     let i = 0;
@@ -28,7 +26,6 @@ function preloadAllImages() {
         const img = new Image();
         img.src = images[i++];
 
-        // small delay for smoother network usage
         setTimeout(queue, 15);
     }
 
@@ -36,7 +33,6 @@ function preloadAllImages() {
     console.log("Preloading DONE");
 }
 
-// Delayed preload trigger
 setTimeout(() => {
     if (isInstalledPWA()) {
         console.log("Preloading all images...");
@@ -44,7 +40,7 @@ setTimeout(() => {
     }
 }, 2000);
 
-// Service worker registration
+// SW
 if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
         navigator.serviceWorker.register("./service_worker.js")
@@ -52,9 +48,8 @@ if ("serviceWorker" in navigator) {
             .catch(err => console.error("SW registration failed:", err));
     });
 }
-
 /*
-/ END OF PRE LOAD AREA }
+/ END PRELOAD
 */
 
 // INIT
@@ -63,7 +58,9 @@ initHeaderMenu();
 renderDecks(cards, el.deckContainer);
 initZoom(el.img);
 
+// =======================
 // NEXT CARD FLOW
+// =======================
 async function next() {
     if (isTransitioning) return;
 
@@ -73,13 +70,10 @@ async function next() {
     const result = getNext(getSelectedDecks());
     if (!result) return;
 
-    // use stored nextCard if available
     const newCard = nextCard || result.current;
-
-    // prepare NEXT one
     nextCard = result.nextCard;
 
-    // preload NEXT card (for future)
+    // 🔥 preload NEXT card
     if (nextCard?.img) {
         const img = new Image();
         img.src = nextCard.img;
@@ -88,31 +82,35 @@ async function next() {
     // 1. Fade out
     await new Promise(r => fadeOut(r));
 
-    // 2. Activate skeleton
-    el.card.classList.add("loading");
+    // 2. Delay skeleton (prevents flash)
+    let skeletonTimer = setTimeout(() => {
+        el.card.classList.add("loading");
+    }, 120);
 
     // 3. Render
     current = newCard;
 
     render(current, {
+        skeletonTimer,
         onImageReady: () => {
             isTransitioning = false;
             setButtonsDisabled(false);
         }
     });
 
-    // 4. Fade in
+    // 4. Fade in immediately
     await new Promise(r => fadeIn(r));
 }
 
 // EVENTS
+// SHOW ANSWER BUTTON
 el.btnShow.addEventListener("click", () => {
     if (el.card.classList.contains("loading")) return;
     showAnswer();
 });
 
+// GRADE BUTTON
 el.gradeButtons.addEventListener("click", (e) => {
-    console.log("isTransitioning in clickListener: "+isTransitioning)
     if (isTransitioning || !current || el.card.classList.contains("loading")) return;
 
     const btn = e.target.closest("button");
@@ -124,6 +122,7 @@ el.gradeButtons.addEventListener("click", (e) => {
     next();
 });
 
+// RESET BUTTON
 document.getElementById("resetBtn").addEventListener("click", () => {
     if (confirm("Reset all progress?")) {
         localStorage.removeItem("cards");
@@ -131,5 +130,5 @@ document.getElementById("resetBtn").addEventListener("click", () => {
     }
 });
 
-// START APP
+// START
 next();
