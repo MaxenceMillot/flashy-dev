@@ -29,6 +29,12 @@ export function initHeaderMenu() {
     });
 }
 
+const deckNames = {
+    flowers: "Fleurs & Plantes",
+    orchids: "Orchidées",
+    foliages: "Feuillage"
+};
+
 // =======================
 // RENDER
 // =======================
@@ -47,22 +53,14 @@ export function render(card, { onImageReady, skeletonTimer } = {}) {
         <div class="deck-label">${card.deck}</div>
     `;
 
-    // Reset handlers
-    el.img.onload = null;
-    el.img.onerror = null;
-
     let handled = false;
     let retryCount = 0;
 
     const FAILSAFE_TIMEOUT = 5000;
 
     const failSafe = setTimeout(() => {
-        console.warn("Image load timeout:", card.img);
-
-        el.img.onerror = null;
-        el.img.src = "images/placeholder_image_not_found.png";
-
-        done();
+        console.warn("Image timeout → fallback:", card.img);
+        applyImage("images/placeholder_image_not_found.png");
     }, FAILSAFE_TIMEOUT);
 
     function done() {
@@ -77,34 +75,36 @@ export function render(card, { onImageReady, skeletonTimer } = {}) {
         if (onImageReady) onImageReady();
     }
 
-    el.img.onload = done;
-
-    el.img.onerror = () => {
-        if (retryCount < 1) {
-            retryCount++;
-
-            console.warn("Retrying image:", card.img);
-
-            setTimeout(() => {
-                el.img.src = card.img + "?retry=" + Date.now();
-            }, 300);
-
-            return;
-        }
-
-        el.img.onerror = null;
-        el.img.src = "images/placeholder_image_not_found.png";
-
-        done();
-    };
-
-    // Set src LAST
-    el.img.src = card.img;
-
-    // Cached image case
-    if (el.img.complete && el.img.naturalWidth !== 0) {
+    function applyImage(src) {
+        el.img.src = src;
         requestAnimationFrame(done);
     }
+
+    function load(src) {
+        const img = new Image();
+
+        img.onload = () => {
+            applyImage(src);
+        };
+
+        img.onerror = () => {
+            if (retryCount < 1) {
+                retryCount++;
+                console.warn("Retry image:", src);
+
+                setTimeout(() => load(src + "?retry=" + Date.now()), 300);
+                return;
+            }
+
+            console.warn("Final fallback:", src);
+            applyImage("images/placeholder_image_not_found.png");
+        };
+
+        img.src = src;
+    }
+
+    // 🚀 Start loading WITHOUT touching DOM img
+    load(card.img);
 }
 
 // =======================
