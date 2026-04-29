@@ -38,10 +38,9 @@ const deckNames = {
 // =======================
 // RENDER
 // =======================
-export function render(card, { onImageReady, skeletonTimer } = {}) {
+export function render(card) {
     if (!card) return;
 
-    // Reset UI
     el.answer.style.display = "none";
     el.answer.classList.remove("visible");
 
@@ -52,59 +51,18 @@ export function render(card, { onImageReady, skeletonTimer } = {}) {
         ${card.text}
         <div class="deck-label">${card.deck}</div>
     `;
+}
 
-    let handled = false;
-    let retryCount = 0;
+export function setCardImage(src) {
+    el.img.src = src;
+}
 
-    const FAILSAFE_TIMEOUT = 5000;
+export function startLoading() {
+    el.card.classList.add("loading");
+}
 
-    const failSafe = setTimeout(() => {
-        console.warn("Image timeout → fallback:", card.img);
-        applyImage("images/placeholder_image_not_found.png");
-    }, FAILSAFE_TIMEOUT);
-
-    function done() {
-        if (handled) return;
-        handled = true;
-
-        clearTimeout(failSafe);
-        if (skeletonTimer) clearTimeout(skeletonTimer);
-
-        el.card.classList.remove("loading");
-
-        if (onImageReady) onImageReady();
-    }
-
-    function applyImage(src) {
-        el.img.src = src;
-        requestAnimationFrame(done);
-    }
-
-    function load(src) {
-        const img = new Image();
-
-        img.onload = () => {
-            applyImage(src);
-        };
-
-        img.onerror = () => {
-            if (retryCount < 1) {
-                retryCount++;
-                console.warn("Retry image:", src);
-
-                setTimeout(() => load(src + "?retry=" + Date.now()), 300);
-                return;
-            }
-
-            console.warn("Final fallback:", src);
-            applyImage("images/placeholder_image_not_found.png");
-        };
-
-        img.src = src;
-    }
-
-    // 🚀 Start loading WITHOUT touching DOM img
-    load(card.img);
+export function stopLoading() {
+    el.card.classList.remove("loading");
 }
 
 // =======================
@@ -122,8 +80,6 @@ export function showAnswer(){
 }
 
 export function setButtonsDisabled(disabled) {
-    el.btnShow.disabled = disabled;
-
     const buttons = el.gradeButtons.querySelectorAll("button");
     buttons.forEach(btn => btn.disabled = disabled);
 }

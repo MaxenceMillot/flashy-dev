@@ -1,6 +1,7 @@
 import { initState, cards } from "./state.js";
 import { getNext, gradeCard } from "./scheduler.js";
-import { initHeaderMenu, render, showAnswer, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
+import { loadImage } from "./imageLoader.js";
+import { initHeaderMenu, render, setCardImage, startLoading, stopLoading, showAnswer, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks } from "./decks.js";
 import { initZoom } from "./zoom.js";
 
@@ -9,13 +10,17 @@ let nextCard = null;
 let isTransitioning = false;
 
 /*
-/ PRE LOAD AREA {
+/ DETECT PWA
 */
 function isInstalledPWA() {
     return window.matchMedia("(display-mode: standalone)").matches
         || window.navigator.standalone === true;
 }
 
+/*
+/ PRE LOAD AREA {
+*/
+// PRELOAD ALL IMAGES (in cache)
 function preloadAllImages() {
     const images = cards.map(c => c.img);
     let i = 0;
@@ -49,7 +54,7 @@ if ("serviceWorker" in navigator) {
     });
 }
 /*
-/ END PRELOAD
+/ END PRELOAD }
 */
 
 // INIT
@@ -73,33 +78,37 @@ async function next() {
     const newCard = nextCard || result.current;
     nextCard = result.nextCard;
 
-    // 🔥 preload NEXT card
-    if (nextCard?.img) {
-        const img = new Image();
-        img.src = nextCard.img;
-    }
-
-    // 1. Fade out
+    // 1. Fade OUT
     await new Promise(r => fadeOut(r));
 
-    // 2. Delay skeleton (prevents flash)
-    let skeletonTimer = setTimeout(() => {
-        el.card.classList.add("loading");
+    // 2. Render text immediately
+    current = newCard;
+    render(current);
+
+    // 3. Start skeleton (delayed to avoid flash)
+    const skeletonTimer = setTimeout(() => {
+        startLoading();
     }, 120);
 
-    // 3. Render
-    current = newCard;
+    // 4. Load image (async, controlled)
+    const finalSrc = await loadImage(newCard.img);
 
-    render(current, {
-        skeletonTimer,
-        onImageReady: () => {
-            isTransitioning = false;
-            setButtonsDisabled(false);
-        }
-    });
+    // 5. Apply image
+    clearTimeout(skeletonTimer);
+    setCardImage(finalSrc);
+    stopLoading();
 
-    // 4. Fade in immediately
+    // 6. Fade IN
     await new Promise(r => fadeIn(r));
+
+    // 7. Unlock UI
+    isTransitioning = false;
+    setButtonsDisabled(false);
+
+    // 8. Preload next (non-blocking)
+    if (nextCard?.img) {
+        loadImage(nextCard.img);
+    }
 }
 
 // EVENTS
@@ -108,6 +117,8 @@ el.btnShow.addEventListener("click", () => {
     if (el.card.classList.contains("loading")) return;
     showAnswer();
 });
+
+// el.btnShow.addEventListener("click", showAnswer);
 
 // GRADE BUTTON
 el.gradeButtons.addEventListener("click", (e) => {
