@@ -144,7 +144,7 @@ el.btnSkip.addEventListener("click", () => {
 });
 
 // RESET BUTTON
-document.getElementById("resetBtn").addEventListener("click", () => {
+document.getElementById("btnReset").addEventListener("click", () => {
     if (confirm("Reset all progress?")) {
         localStorage.removeItem("cards");
         location.reload();

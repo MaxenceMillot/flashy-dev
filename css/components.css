@@ -78,6 +78,12 @@ button:active:not(:disabled) {
     width: 150px;
 }
 
+/* RESET BUTTON */
+.btn-reset {
+    background: #545353;
+    color: white;
+}
+
 /* ===================== */
 /* MOBILE */
 /* ===================== */
@@ -160,13 +166,6 @@ button:active:not(:disabled) {
 .correct {
     background: #27ae60;
     color: white;
-}
-
-/* ===================== */
-/* DECKS */
-/* ===================== */
-.decks {
-    margin-top: 15px;
 }
 
 /* ===================== */

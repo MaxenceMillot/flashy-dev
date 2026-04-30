@@ -23,8 +23,33 @@ body {
     align-items: center;
 }
 
-/* RESET BUTTON */
-.reset {
-    background: #545353;
-    color: white;
+/* =========================
+   TITLES
+   ========================= */
+
+#study h1 {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+
+    color: #222;
+    letter-spacing: 0.3px;
+}
+
+#study h1::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    margin: 10px auto 0;
+
+    background: #ddd;
+    border-radius: 2px;
+}
+
+#study h2 {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    color: #666;
 }
