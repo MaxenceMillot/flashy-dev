@@ -1,6 +1,18 @@
 export const PLACEHOLDER = "images/placeholder_image_not_found.png";
 
-export function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+export async function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
+
+    // --- DEBUG ---
+    console.log("START sleep");
+    await sleep(450);
+    console.log("END sleep");
+    // --- DEBUG ---
+
+
     return new Promise((resolve) => {
         let attempts = 0;
         let finished = false;
@@ -45,4 +57,22 @@ export function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
 
         tryLoad(src);
     });
+}
+
+// PRELOAD ALL IMAGES (in cache)
+export function preloadAllImages() {
+    const images = cards.map(c => c.img);
+    let i = 0;
+
+    function queue() {
+        if (i >= images.length) return;
+
+        const img = new Image();
+        img.src = images[i++];
+
+        setTimeout(queue, 15);
+    }
+
+    queue();
+    console.log("Preloading DONE");
 }

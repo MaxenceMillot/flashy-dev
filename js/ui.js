@@ -1,6 +1,5 @@
 import { getDeckLabel } from "./decks.js";
 
-
 export const el = {
     img: document.getElementById("img"),
     answer: document.getElementById("answer"),

@@ -1,6 +1,6 @@
 import { initState, cards } from "./state.js";
 import { getNext, gradeCard } from "./scheduler.js";
-import { loadImage, PLACEHOLDER } from "./imageLoader.js";
+import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
@@ -45,29 +45,14 @@ setTimeout(() => {
     }
 }, 5000);
 
-// PRELOAD ALL IMAGES (in cache)
-function preloadAllImages() {
-    const images = cards.map(c => c.img);
-    let i = 0;
-
-    function queue() {
-        if (i >= images.length) return;
-
-        const img = new Image();
-        img.src = images[i++];
-
-        setTimeout(queue, 15);
-    }
-
-    queue();
-    console.log("Preloading DONE");
-}
-
 // INIT
+console.log("after");
 initState();
 initHeaderMenu();
 renderDecks(cards, el.deckContainer);
 initZoom(el.img);
+
+setTimeout(5000)
 
 // =======================
 // NEXT CARD FLOW
@@ -90,19 +75,28 @@ async function next() {
     // 2. Start skeleton placeholder (delayed to avoid flash)
     const skeletonTimer = setTimeout(() => {
         startLoading();
-    }, 120);
+    }, 150);
 
     // 3. Set answer text (hidden)
     current = newCard;
     setAnswerText(current);
+
+    
+    // 7. Fadein animation
+    setTimeout(() => {
+       new Promise(r => fadeIn(r));
+    }, 150);
+    // await new Promise(r => fadeIn(r));
 
     // 4. Load image
     const finalSrc = await loadImage(newCard.img);
 
     // 5. Apply image
     clearTimeout(skeletonTimer);
-    setCardImage(finalSrc);
-    stopLoading();
+    setTimeout(() => {
+        setCardImage(finalSrc);
+        stopLoading();
+    }, 80);
 
     // 6. standard behavior OR skip mode 
     if (finalSrc === PLACEHOLDER) {
@@ -110,9 +104,6 @@ async function next() {
     } else {
         showNormalMode();
     }
-
-    // 7. Fadein animation
-    await new Promise(r => fadeIn(r));
 
     // 8. Unlock UI
     isTransitioning = false;
