@@ -36,11 +36,12 @@ export function renderDecks(cards, container){
     const decks = [...new Set(cards.map(c => c.deck))];
 
     container.innerHTML = "";
-    selectedDecks = new Set(decks);
+    selectedDecks = new Set([decks[0]]);
 
-    decks.forEach(deck => {
+    decks.forEach((deck, index) => {
         const chip = document.createElement("button");
-        chip.className = "chip selected";
+         // Only first chip is "selected"
+        chip.className = index === 0 ? "chip selected disabled" : "chip";
         chip.dataset.deck = deck;
 
         const config = deckConfig[deck] || { label: deck, icon: "tag" };
