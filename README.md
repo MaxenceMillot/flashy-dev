@@ -20,21 +20,24 @@ Le **SM-2** est un algorithme qui permet de cibler votre apprentissage sur les c
 ## ✨ Fonctionnalités
 
 - 🪽 **Rapide et léger** - pas besoin de compte, de connexion ou d'accès à internet !
-- 🗂️ **Ajoutez vos propre cartes et créez vos propre decks**  
-- 🔀 **Fusionnez et mélangez les decks** pour des sessions flexibles  
+- 🖼️ **+1000 images de végétaux** pour les reconnaitre sous tous les angles
+- 🔀 **Fusionnez et mélangez les cartes** pour des sessions flexibles  
 - 📖 **Répétition espacée (algorithme SM-2)** pour un apprentissage optimisé
 
 **en cours...**
-- 📊 **Suivi de progression et statistiques** pour visualiser les cartes les moins maîtrisées et admirer son score !
+- 📱 **Application mobile offline** pour réviser en toute circonstance ! 
+- 🪴 **UI 2.0** - refonte complète de l'interface et identité visuelle
+
+**à venir...**
 - 📖 **Session d'étude suivie et barre de progression** pour des séances efficaces et regulières 
 - ⚙️ **Sessions d’étude personnalisables** pour costumiser vos sessions
+- 🗂️ **Ajoutez vos propre cartes et créez vos propre decks**  
+- 📊 **Suivi de progression et statistiques** pour visualiser les cartes les moins maîtrisées et admirer son score !
 - 📤 **Export** pour récupérer vos cartes et les partager
 
 **Prévu**
-- Notifications et rappels
-- Gamification
-- Mode enseignant
-- Base de de donnée partagée (administration/mode enseignant)
+- 🚨 Notifications et rappels
+- 🎮 Gamification
 
 ---
 
