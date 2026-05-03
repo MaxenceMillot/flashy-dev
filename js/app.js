@@ -60,7 +60,7 @@ async function next() {
     if (isTransitioning) return;
 
     isTransitioning = true;
-    // setButtonsDisabled(true);
+    setButtonsDisabled(true);
 
     const result = getNext(getSelectedDecks());
     if (!result) return;
@@ -105,7 +105,7 @@ async function next() {
 
     // 8. Unlock UI
     isTransitioning = false;
-    // setButtonsDisabled(false);
+    setButtonsDisabled(false);
 
     // 9. Preload next (non-blocking)
     if (nextCard?.img) {

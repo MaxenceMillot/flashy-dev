@@ -1,7 +1,7 @@
 const deckNames = {
     flowers: "Fleurs & Plantes",
     orchids: "Orchidées",
-    foliages: "Feuillage"
+    foliages: "Feuillages"
 };
 const deckConfig = {
     flowers: {
@@ -13,7 +13,7 @@ const deckConfig = {
         icon: "sprout"
     },
     foliages: {
-        label: "Feuillage",
+        label: "Feuillages",
         icon: "leaf"
     }
 };
