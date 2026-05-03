@@ -4,7 +4,7 @@ import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
-import { isInStandaloneMode, isIos, getAppVersion } from "./utilities.js";
+import { isInStandaloneMode, isIos, getAppVersion, multiClick } from "./utilities.js";
 
 let current = null;
 let nextCard = null;
@@ -157,8 +157,8 @@ el.btnSkip.addEventListener("click", () => {
     next();
 });
 
-// RESET BUTTON
-document.getElementById("btnReset").addEventListener("click", () => {
+// HIDDEN RESET BUTTON
+multiClick(document.getElementById("appVersion"), () => {
     if (confirm("Reset all progress?")) {
         localStorage.removeItem("cards");
         location.reload();
