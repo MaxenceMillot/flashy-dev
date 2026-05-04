@@ -10,14 +10,6 @@ export function isInStandaloneMode() {
     return window.matchMedia("(display-mode: standalone)").matches;
 }
 
-// GET VERSION NUMBER
-export async function getAppVersion() {
-    const res = await fetch("./data/version.json", { cache: "no-store" });
-    const data = await res.json();
-    return data.version;
-}
-
-
 // MULTICLICK detection (for hidden reset)
 export function multiClick(element, callback) {
     let count = 0;

@@ -4,7 +4,8 @@ import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
-import { isInStandaloneMode, isIos, getAppVersion, multiClick } from "./utilities.js";
+import { isInStandaloneMode, isIos, multiClick } from "./utilities.js";
+import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
 
 let current = null;
 let nextCard = null;
@@ -47,10 +48,19 @@ setTimeout(() => {
 }, 5000);
 
 // INIT
-initState();
-initHeaderMenu();
-renderDecks(cards, el.deckContainer);
-initZoom(el.img);
+(async () => {
+    initState();
+    initHeaderMenu();
+    renderDecks(cards, el.deckContainer);
+    initZoom(el.img);
+
+    // START the app
+    next();
+    
+    await initVersion();
+    setVersionInFooter();
+    checkForUpdate();
+})();
 
 setTimeout(5000)
 
@@ -185,12 +195,9 @@ multiClick(document.getElementById("appVersion"), () => {
 //     deferredPrompt = null;
 // });
 
-
-
-// put version number in footer
-getAppVersion().then(version => {
-    document.getElementById("appVersion").textContent += `${version}`;
+// When user comes back to tab
+document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState === "visible") {
+        checkForUpdate();
+    }
 });
-
-// START
-next();
