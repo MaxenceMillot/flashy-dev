@@ -4,7 +4,7 @@ import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
-import { isInStandaloneMode, isIos, multiClick } from "./utilities.js";
+import { isInStandaloneMode, isIos, updateDeckOverflow, multiClick } from "./utilities.js";
 import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
 
 let current = null;
@@ -194,6 +194,9 @@ multiClick(document.getElementById("appVersion"), () => {
 
 //     deferredPrompt = null;
 // });
+
+updateDeckOverflow(el.deckContainer);
+window.addEventListener("resize", () => updateDeckOverflow(el.deckContainer));
 
 // When user comes back to tab
 document.addEventListener("visibilitychange", () => {

@@ -10,6 +10,12 @@ export function isInStandaloneMode() {
     return window.matchMedia("(display-mode: standalone)").matches;
 }
 
+export function updateDeckOverflow(container) {
+    const hasOverflow = container.scrollWidth > container.clientWidth;
+
+    container.classList.toggle("has-overflow", hasOverflow);
+}
+
 // MULTICLICK detection (for hidden reset)
 export function multiClick(element, callback) {
     let count = 0;

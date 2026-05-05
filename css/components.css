@@ -262,6 +262,8 @@ button:active:not(:disabled) {
     align-items: center;
     gap: 4px;
 
+    flex: 0 0 auto;
+
     padding: 8px 14px;
 
     font-size: 12px;
@@ -275,6 +277,8 @@ button:active:not(:disabled) {
 
     cursor: pointer;
     transition: all 0.18s ease;
+
+    scroll-snap-align: start;
 }
 
 /* ICON */
@@ -348,14 +352,10 @@ button:active:not(:disabled) {
         width: 15px;
         height: 15px;
     }
-
-    .decks {
-        gap: 6px;
-    }
 }
 
 /* X-SMALLER CHIPS ON MOBILE */
-@media (max-width: 325px) {
+/* @media (max-width: 325px) {
     .chip {
         padding: 4px 9px;
     }
@@ -364,11 +364,7 @@ button:active:not(:disabled) {
         width: 13px;
         height: 13px;
     }
-
-    .decks {
-        gap: 4px;
-    }
-}
+} */
 
 /* ===================== */
 /* TOAST */

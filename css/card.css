@@ -83,8 +83,32 @@
 /* MOBILE */
 @media (max-width: 600px) {
     .card {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .card {
+        height: 350px;
+        margin-top: 10px;
+    }
+}
+
+/* MOBILE SMALL */
+@media (max-width: 320px) {
+    .card {
+        /* height: 350px; */
+        width: 85%;
+        margin-top: 15px;
+    }
+}
+
+/* MOBILE X-SMALL */
+@media (max-width: 320px) {
+    .card {
         height: 320px;
-        margin-top: 20px;
+        width: 90%;
+        margin-top: 15px;
     }
 
     .container {

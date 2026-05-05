@@ -1,8 +1,19 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* DEBUG OUTLINE */
+/* * { 
+    outline: 1px solid red;
+} */
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden; /* prevents tiny horizontal shift */
+    /* overflow-x: hidden; */
 }
 
 body {
@@ -17,8 +28,7 @@ body {
 
 /* MAIN LAYOUT */
 .container {
-    padding: 14px;
-    flex: 1;
+    width: 100%;
 }
 
 /* STUDY WRAPPER */
@@ -30,11 +40,40 @@ body {
 
 /* FILTERS WRAPPER */
 .deck-filters {
-  display: flex;
-  gap: 8px;
-  justify-content: center;
-  margin: 0 0 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 8px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    flex-wrap: nowrap;
+
+    padding-bottom: 10px;
+    
+    justify-content: flex-start;
+
+    scrollbar-width: thin;
+    scroll-snap-type: x mandatory;
+}
+
+/* fade on edges to hint scroll */
+.deck-filters.has-overflow {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 5%,
+        black 90%,
+        transparent
+    );
+}
+
+.deck-filters::-webkit-scrollbar {
+    height: 4px;
+}
+
+.deck-filters::-webkit-scrollbar-thumb {
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
 }
 
 @media (max-width: 600px) {
@@ -81,14 +120,14 @@ body {
     width: 100%;
     box-sizing: border-box;
 
-    padding: 8px 18px;
+    padding: 6px 8px 18px;
 
     background: rgba(20,20,20,0.9);
     color: rgba(255,255,255,0.75);
 
     backdrop-filter: blur(8px);
 
-    margin-top: 30px;
+    margin-top: auto;
 }
 
 .footer-content {

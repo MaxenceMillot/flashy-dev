@@ -73,6 +73,12 @@ function toggleDeck(deck, chip) {
     } else {
         selectedDecks.add(deck);
         chip.classList.add("selected");
+        
+         // Center selected chip
+        chip.scrollIntoView({
+            behavior: "smooth",
+            inline: "center"
+        });
     }
 
     updateStateUI();
