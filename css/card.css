@@ -1,4 +1,3 @@
-/* CARD CONTAINER */
 .card {
     background: white;
     padding: 20px;
@@ -22,22 +21,19 @@
     overflow: hidden;
 }
 
-/* MOBILE */
 @media (max-width: 600px) {
     .card {
         margin-top: 10px;
     }
 }
 
-/* MOBILE SMALL */
 @media (max-width: 400px) {
     .card {
         height: 350px;
     }
 }
 
-/* MOBILE X-SMALL */
-@media (max-width: 330px) {
+@media (max-width: 320px) {
     .card {
         /* height: 320px; */
         width: 85%;
@@ -60,7 +56,6 @@
     transform: scale(1.02);
 }
 
-/* Hide content while loading */
 .card.loading img,
 .card.loading .answer {
     opacity: 0;
@@ -144,24 +139,24 @@
     z-index: 1;
 }
 
-/* MOBILE IMAGE */
 @media (max-width: 600px) {
     #img {
         max-height: 250px;
     }
 }
 
-/* X-SMALL MOBILE IMAGE */
-@media (max-width: 330px) {
+@media (max-width: 320px) {
     #img {
         max-height: 220px;
     }
 }
 
+/* ===================== */
 /* ANSWER */
+/* ===================== */
 .answer {
     margin-top: 10px;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #111;
 
     min-height: 50px;
@@ -170,14 +165,12 @@
     transition: opacity 0.2s ease;
 }
 
-/* MOBILE ANSWER */
 @media (max-width: 600px) {
     .answer {
-        font-size: 18px;
+        font-size: 1.15rem;
     }
 }
 
-/* ANSWER VISIBLE */
 .answer.visible {
     opacity: 1;
 }
@@ -187,9 +180,8 @@
     font-weight: 500;
 }
 
-/* DECK LABEL INSIDE CARD */
 .deck-label {
-    font-size: 12px;
+    font-size: 0.75rem;
     color: #888;
     margin-top: 5px;
 }
