@@ -23,7 +23,7 @@ const APP_SHELL = [
     "./js/zoom.js",
     "./js/utilities.js",
 
-    "./data/cards.js",
+    "./data/cards.json",
 
     "./images/placeholder_image_not_found.png"
 ];

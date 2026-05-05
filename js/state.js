@@ -1,4 +1,4 @@
-import { cards as baseCards } from "../data/cards.js";
+import { cards as baseCards } from "../data/cards.json";
 
 export let cards = [];
 export let current = null;
