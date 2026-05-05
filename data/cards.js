@@ -3978,19 +3978,6 @@ export const cards = [
   custom: false
 },
 {
-  id: "Drosera_2",
-  deck: "flowers",
-  img: "images/flowers/Drosera_2.jpg",
-  text: "Drosera",
-  notes: "",
-  EF: 2.5,
-  interval: 0,
-  repetitions: 0,
-  due: 0,
-  score: 0,
-  custom: false
-},
-{
   id: "Drosera_3",
   deck: "flowers",
   img: "images/flowers/Drosera_3.webp",
