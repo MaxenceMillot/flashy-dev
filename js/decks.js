@@ -32,7 +32,7 @@ export function setDeckChangeCallback(cb) {
     onDeckChange = cb;
 }
 
-export function renderDecks(cards, container){
+export function initDeckSelector(cards, container){
     const decks = [...new Set(cards.map(c => c.deck))];
 
     container.innerHTML = "";

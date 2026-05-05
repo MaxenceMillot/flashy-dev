@@ -1,18 +1,6 @@
 export const PLACEHOLDER = "images/placeholder_image_not_found.png";
 
-// function sleep(ms) {
-//     return new Promise(resolve => setTimeout(resolve, ms));
-// }
-
-export async function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
-
-    // --- DEBUG ---
-    // console.log("START sleep");
-    // await sleep(300);
-    // console.log("END sleep");
-    // --- DEBUG ---
-
-
+export function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
     return new Promise((resolve) => {
         let attempts = 0;
         let finished = false;

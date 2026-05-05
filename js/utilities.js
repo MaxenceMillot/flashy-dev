@@ -10,6 +10,7 @@ export function isInStandaloneMode() {
     return window.matchMedia("(display-mode: standalone)").matches;
 }
 
+// TODO : COMMENT USAGE ?
 export function updateDeckOverflow(container) {
     const hasOverflow = container.scrollWidth > container.clientWidth;
 

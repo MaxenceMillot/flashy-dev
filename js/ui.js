@@ -33,7 +33,6 @@ export function initHeaderMenu() {
     });
 }
 
-
 export function setAnswerText(card) {
     if (!card) return;
 

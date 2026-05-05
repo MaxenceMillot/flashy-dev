@@ -1,8 +1,8 @@
 import { initState, cards } from "./state.js";
-import { getNext, gradeCard } from "./scheduler.js";
+import { getScheduledCards, gradeCard } from "./scheduler.js";
 import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, fadeOut, fadeIn, el } from "./ui.js";
-import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
+import { initDeckSelector, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
 import { isInStandaloneMode, isIos, updateDeckOverflow, multiClick } from "./utilities.js";
 import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
@@ -51,11 +51,11 @@ setTimeout(() => {
 (async () => {
     initState();
     initHeaderMenu();
-    renderDecks(cards, el.deckContainer);
+    initDeckSelector(cards, el.deckContainer);
     initZoom(el.img);
 
     // START the app
-    next();
+    nextCardFlow();
     
     await initVersion();
     setVersionInFooter();
@@ -65,16 +65,16 @@ setTimeout(() => {
 // =======================
 // NEXT CARD FLOW
 // =======================
-async function next() {
+async function nextCardFlow() {
     if (isTransitioning) return;
 
     isTransitioning = true;
 
-    const result = getNext(getSelectedDecks());
-    if (!result) return;
+    const cards = getScheduledCards(getSelectedDecks());
+    if (!cards) return;
 
-    const newCard = nextCard || result.current;
-    nextCard = result.nextCard;
+    const newCard = nextCard || cards.current;
+    nextCard = cards.nextCard;
 
     // 1. Fadeout animation
     await new Promise(r => fadeOut(r));
@@ -125,16 +125,16 @@ setDeckChangeCallback(() => {
     nextCard = null;
 
     // recompute next preloaded image
-    const result = getNext(getSelectedDecks());
-    if (result?.nextCard?.img) {
-        nextCard = result.nextCard;
+    const cards = getScheduledCards(getSelectedDecks());
+    if (cards?.nextCard?.img) {
+        nextCard = cards.nextCard;
 
         // preload correct image
         loadImage(nextCard.img);
     }
 });
 
-// EVENTS
+// ### --- EVENTS --- ###
 // SHOW ANSWER BUTTON
 el.btnShow.addEventListener("click", () => {
     if (el.card.classList.contains("loading")) return;
@@ -151,7 +151,7 @@ el.gradeButtons.addEventListener("click", (e) => {
     const grade = Number(btn.dataset.grade);
 
     gradeCard(current, grade);
-    next();
+    nextCardFlow();
 });
 
 // SKIP BUTTON
@@ -159,7 +159,7 @@ el.btnSkip.addEventListener("click", () => {
     if (isTransitioning) return;
 
     el.btnSkip.style.display = "none";
-    next();
+    nextCardFlow();
 });
 
 // HIDDEN RESET BUTTON

@@ -1,6 +1,6 @@
 import { cards, current, nextCard, save } from "./state.js";
 
-export function getNext(selectedDecks){
+export function getScheduledCards(selectedDecks){
     let now = Date.now();
 
     let pool = cards.filter(c =>

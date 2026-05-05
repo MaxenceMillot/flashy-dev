@@ -20,6 +20,7 @@ export function initState(){
     }
 }
 
+// Save in local storage
 export function save(){
     localStorage.setItem("cards", JSON.stringify(cards));
 }
