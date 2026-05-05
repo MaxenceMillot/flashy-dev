@@ -107,11 +107,6 @@ export function showSkipMode() {
     el.answer.style.display = "block";
 }
 
-export function setButtonsDisabled(disabled) {
-    const buttons = el.gradeButtons.querySelectorAll("button");
-    buttons.forEach(btn => btn.disabled = disabled);
-}
-
 // =======================
 // ANIMATIONS
 // =======================

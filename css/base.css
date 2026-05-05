@@ -10,9 +10,11 @@
 } */
 
 html, body {
+    min-height: 100dvh;
     margin: 0;
     padding: 0;
     width: 100%;
+    overflow: hidden; /* prevent vertical scrolling */
     /* overflow-x: hidden; */
 }
 
@@ -28,6 +30,7 @@ body {
 
 /* MAIN LAYOUT */
 .container {
+    display: flow-root;
     width: 100%;
 }
 
@@ -103,6 +106,19 @@ body {
     letter-spacing: 0.3px;
 }
 
+@media (max-width: 400px) {
+    #study h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 330px) {
+    #study h1 {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+}
+
 #study h1::after {
     content: "";
     display: block;
@@ -128,7 +144,7 @@ body {
     width: 100%;
     box-sizing: border-box;
 
-    padding: 6px 8px 18px;
+    padding: 6px 8px calc(10px + env(safe-area-inset-bottom));
 
     background: rgba(20,20,20,0.9);
     color: rgba(255,255,255,0.75);

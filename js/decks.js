@@ -77,7 +77,8 @@ function toggleDeck(deck, chip) {
          // Center selected chip
         chip.scrollIntoView({
             behavior: "smooth",
-            inline: "center"
+            inline: "center",
+            block: "nearest"
         });
     }
 

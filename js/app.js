@@ -1,7 +1,7 @@
 import { initState, cards } from "./state.js";
 import { getNext, gradeCard } from "./scheduler.js";
 import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
-import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, setButtonsDisabled, fadeOut, fadeIn, el } from "./ui.js";
+import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, fadeOut, fadeIn, el } from "./ui.js";
 import { renderDecks, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
 import { isInStandaloneMode, isIos, updateDeckOverflow, multiClick } from "./utilities.js";
@@ -62,8 +62,6 @@ setTimeout(() => {
     checkForUpdate();
 })();
 
-setTimeout(5000)
-
 // =======================
 // NEXT CARD FLOW
 // =======================
@@ -71,7 +69,6 @@ async function next() {
     if (isTransitioning) return;
 
     isTransitioning = true;
-    setButtonsDisabled(true);
 
     const result = getNext(getSelectedDecks());
     if (!result) return;
@@ -95,7 +92,6 @@ async function next() {
     setTimeout(() => {
        new Promise(r => fadeIn(r));
     }, 80);
-    // await new Promise(r => fadeIn(r));
 
     // 4. Load image
     const finalSrc = await loadImage(newCard.img);
@@ -116,7 +112,6 @@ async function next() {
 
     // 8. Unlock UI
     isTransitioning = false;
-    setButtonsDisabled(false);
 
     // 9. Preload next (non-blocking)
     if (nextCard?.img) {
