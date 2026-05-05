@@ -1,5 +1,4 @@
 import { cards as baseCards } from "../data/cards.js";
-
 export let cards = [];
 export let current = null;
 export let nextCard = null;
