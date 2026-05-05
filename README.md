@@ -30,7 +30,7 @@ Le **SM-2** est un algorithme qui permet de cibler votre apprentissage sur les c
 
 **à venir...**
 - 📖 **Session d'étude suivie et barre de progression** pour des séances efficaces et regulières 
-- ⚙️ **Sessions d’étude personnalisables** pour costumiser vos sessions
+- ⚙️ **Sessions d’étude personnalisables** pour customiser vos sessions
 - 🗂️ **Ajoutez vos propre cartes et créez vos propre decks**  
 - 📊 **Suivi de progression et statistiques** pour visualiser les cartes les moins maîtrisées et admirer son score !
 - 📤 **Export** pour récupérer vos cartes et les partager
