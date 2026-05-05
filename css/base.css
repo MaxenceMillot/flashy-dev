@@ -83,6 +83,14 @@ body {
     }
 }
 
+@media (max-width: 330px) {
+    .deck-filters {
+        margin-top: 0px;
+        padding-top: 0px;
+        gap: 6px;
+    }
+}
+
 /* =========================
    TITLES
    ========================= */
