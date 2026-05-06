@@ -4,7 +4,7 @@ import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, fadeOut, fadeIn, el } from "./ui.js";
 import { initDeckSelector, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
 import { initZoom } from "./zoom.js";
-import { isInStandaloneMode, isIos, updateDeckOverflow, multiClick } from "./utilities.js";
+import { isInStandaloneMode,isIos, updateDeckOverflow, multiClick } from "./utilities.js";
 import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
 
 let current = null;
@@ -12,7 +12,6 @@ let nextCard = null;
 let isTransitioning = false;
 let deferredPrompt = null;
 const isInStandalone = isInStandaloneMode();
-
 
 // Prevent automatic prompt to install PWA app
 window.addEventListener("beforeinstallprompt", (e) => {
@@ -34,11 +33,6 @@ if ("serviceWorker" in navigator) {
 // LOAD ICONS FROM LIBRARY
 lucide.createIcons();
 
-// HIDE DOWNLOAD BUTTON IN STANDALONE (PWA)
-if(isInStandalone){
-    el.btnDownload.style.display = "none";
-}
-
 // AFTER 5s PRELOAD ALL IMAGES IF PWA
 setTimeout(() => {
     if (isInStandalone) {
@@ -53,12 +47,14 @@ setTimeout(() => {
     initHeaderMenu();
     initDeckSelector(cards, el.deckContainer);
     initZoom(el.img);
+    initEventListeners();
 
     // START the app
     nextCardFlow();
     
     await initVersion();
     setVersionInFooter();
+
     checkForUpdate();
 })();
 
@@ -119,7 +115,7 @@ async function nextCardFlow() {
     }
 }
 
-// DECK CHANGE CALLBACK
+// DECK CHANGE CALLBACK (reload next image on deck change)
 setDeckChangeCallback(() => {
     // Invalidate next preloaded image
     nextCard = null;
@@ -134,33 +130,8 @@ setDeckChangeCallback(() => {
     }
 });
 
-// ### --- EVENTS --- ###
-// SHOW ANSWER BUTTON
-el.btnShow.addEventListener("click", () => {
-    if (el.card.classList.contains("loading")) return;
-    showAnswer();
-});
-
-// GRADE BUTTON
-el.gradeButtons.addEventListener("click", (e) => {
-    if (isTransitioning || !current || el.card.classList.contains("loading")) return;
-
-    const btn = e.target.closest("button");
-    if (!btn) return;
-
-    const grade = Number(btn.dataset.grade);
-
-    gradeCard(current, grade);
-    nextCardFlow();
-});
-
-// SKIP BUTTON
-el.btnSkip.addEventListener("click", () => {
-    if (isTransitioning) return;
-
-    el.btnSkip.style.display = "none";
-    nextCardFlow();
-});
+// DECK OVERFLOW
+updateDeckOverflow(el.deckContainer);
 
 // HIDDEN RESET BUTTON
 multiClick(document.getElementById("appVersion"), () => {
@@ -170,32 +141,68 @@ multiClick(document.getElementById("appVersion"), () => {
     }
 });
 
-// DOWNLOAD BUTTON - COMMENTED BEFORE V1.0
-// el.btnDownload.addEventListener("click", async () => {
-//     if (isIos()) {
-//         alert("Pour installer l'application :\n\n1. Appuyez sur le bouton “Partager”\n2. Puis sur “Ajouter à l'écran d'accueil”");
-//         return;
-//     }
-
-//     if (!deferredPrompt){
-//         console.error("could not trigger manual download : deferredPrompt is null")
-//         alert("Pour installer l'application : utilisez le menu du navigateur ( ⋮ ) puis “Ajouter à l'écran d'accueil”")
-//         return;
-//     }
-
-//     await deferredPrompt.prompt();
-
-//     const { outcome } = await deferredPrompt.userChoice;
-
-//     deferredPrompt = null;
-// });
-
-updateDeckOverflow(el.deckContainer);
-window.addEventListener("resize", () => updateDeckOverflow(el.deckContainer));
-
-// When user comes back to tab
-document.addEventListener("visibilitychange", () => {
-    if (document.visibilityState === "visible") {
-        checkForUpdate();
+// =======================
+// INIT EVENT LISTENERS
+// =======================
+function initEventListeners() {
+    // HIDE DOWNLOAD BUTTON IN STANDALONE (PWA)
+    if(isInStandalone){
+        el.btnDownload.style.display = "none";
     }
-});
+    
+    // "SHOW ANSWER" BUTTON
+    el.btnShow.addEventListener("click", () => {
+        if (el.card.classList.contains("loading")) return;
+        showAnswer();
+    });
+
+    // GRADE BUTTON
+    el.gradeButtons.addEventListener("click", (e) => {
+        if (isTransitioning || !current || el.card.classList.contains("loading")) return;
+
+        const btn = e.target.closest("button");
+        if (!btn) return;
+
+        const grade = Number(btn.dataset.grade);
+
+        gradeCard(current, grade);
+        nextCardFlow();
+    });
+
+    // SKIP BUTTON
+    el.btnSkip.addEventListener("click", () => {
+        if (isTransitioning) return;
+
+        el.btnSkip.style.display = "none";
+        nextCardFlow();
+    });
+
+    // DOWNLOAD BUTTON - COMMENTED BEFORE V1.0
+    // el.btnDownload.addEventListener("click", async () => {
+    //     if (isIos()) {
+    //         alert("Pour installer l'application :\n\n1. Appuyez sur le bouton “Partager”\n2. Puis sur “Ajouter à l'écran d'accueil”");
+    //         return;
+    //     }
+
+    //     if (!deferredPrompt){
+    //         console.error("could not trigger manual download : deferredPrompt is null")
+    //         alert("Pour installer l'application : utilisez le menu du navigateur ( ⋮ ) puis “Ajouter à l'écran d'accueil”")
+    //         return;
+    //     }
+
+    //     await deferredPrompt.prompt();
+
+    //     const { outcome } = await deferredPrompt.userChoice;
+
+    //     deferredPrompt = null;
+    // });
+    
+    window.addEventListener("resize", () => updateDeckOverflow(el.deckContainer));
+
+    // When user comes back to tab
+    document.addEventListener("visibilitychange", () => {
+        if (document.visibilityState === "visible") {
+            checkForUpdate();
+        }
+    });
+}

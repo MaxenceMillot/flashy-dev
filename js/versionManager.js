@@ -8,14 +8,13 @@ export function getCurrentVersion(){
     return CURRENT_VERSION;
 }
 
-// GET LATEST VERSION FROM SERVER
+// get app version from SERVER
 export async function getAppVersion() {
     const res = await fetch("./data/version.json", { cache: "no-store" });
     const data = await res.json();
     return data.version;
 }
 
-// CHECK
 export async function checkForUpdate() {
     try {
         let newVersion = await getAppVersion();

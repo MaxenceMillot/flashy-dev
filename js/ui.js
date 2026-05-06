@@ -13,6 +13,9 @@ export const el = {
     btnDownload: document.getElementById("btnDownload")
 };
 
+// =======================
+// UI INIT
+// =======================
 export function initHeaderMenu() {
     if (!el.menuBtn || !el.mobileMenu) return;
 
@@ -33,6 +36,9 @@ export function initHeaderMenu() {
     });
 }
 
+// =======================
+// UI DOM UPDATE
+// =======================
 export function setAnswerText(card) {
     if (!card) return;
 
@@ -74,9 +80,6 @@ export function stopLoading() {
     el.card.classList.remove("loading");
 }
 
-// =======================
-// UI ACTIONS
-// =======================
 export function showAnswer(){
     el.answer.style.display = "block";
 
