@@ -14,12 +14,9 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow: hidden; /* prevent vertical scrolling */
 }
 
 body {
-    min-height: 100vh;
-    margin: 0;
     display: flex;
     flex-direction: column;
 
@@ -28,37 +25,68 @@ body {
 }
 
 .container {
-    display: flow-root;
-    width: 100%;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+    overflow: hidden;
 }
 
 /* STUDY WRAPPER */
 #study {
+    flex: 1;
+
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    min-height: 0;
+}
+
+.study-main {
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-height: 0;
 }
 
 /* FILTERS WRAPPER */
 .deck-filters {
-    display: flex;
+    width: 100%;
+    max-width: 100%;
+    
     gap: 8px;
+
+    display: flex;
+    flex-wrap: nowrap;
 
     overflow-x: auto;
     overflow-y: hidden;
 
-    flex-wrap: nowrap;
+    margin-top: clamp(4px, 1vh, 12px);
+    margin-bottom: clamp(0px, 1vh, 18px);
 
     padding-bottom: 10px;
     
-    justify-content: flex-start;
+    justify-content: center;
 
     scrollbar-width: thin;
     scroll-snap-type: x mandatory;
+
+    -webkit-overflow-scrolling: touch;
 }
 
-/* fade on edges to hint scroll */
-.deck-filters.has-overflow {
+.deck-filters.scrollable {
+    justify-content: flex-start;
+
+    /* fade on edges to hint scroll */
     mask-image: linear-gradient(
         to right,
         transparent,
@@ -79,15 +107,6 @@ body {
 
 @media (max-width: 600px) {
     .deck-filters {
-        margin: 0 0 0px;
-        gap: 6px;
-    }
-}
-
-@media (max-width: 2px) {
-    .deck-filters {
-        margin-top: 0px;
-        padding-top: 0px;
         gap: 6px;
     }
 }
@@ -103,6 +122,7 @@ body {
     color: #222;
     letter-spacing: 0.3px;
 }
+
 
 @media (max-width: 600px) {
     #study h1 {
@@ -123,6 +143,7 @@ body {
     }
 }
 
+/* horizontal line  */
 #study h1::after {
     content: "";
     display: block;
@@ -138,17 +159,19 @@ body {
    FOOTER
    ========================= */
 .app-footer {
+    flex-shrink: 0;
+
     width: 100%;
     box-sizing: border-box;
 
-    padding: 6px 8px calc(10px + env(safe-area-inset-bottom));
+    padding: 6px 8px calc(8px + env(safe-area-inset-bottom));
 
     background: rgba(20,20,20,0.9);
     color: rgba(255,255,255,0.75);
 
     backdrop-filter: blur(8px);
 
-    margin-top: auto;
+    margin-top: 6px;
 }
 
 .footer-content {

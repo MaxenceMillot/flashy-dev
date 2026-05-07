@@ -42,7 +42,6 @@ export function initHeaderMenu() {
 export function setAnswerText(card) {
     if (!card) return;
 
-    el.answer.style.display = "none";
     el.answer.classList.remove("visible");
 
     el.gradeButtons.style.display = "none";
@@ -81,8 +80,6 @@ export function stopLoading() {
 }
 
 export function showAnswer(){
-    el.answer.style.display = "block";
-
     requestAnimationFrame(() => {
         el.answer.classList.add("visible");
     });
@@ -106,7 +103,6 @@ export function showSkipMode() {
             Erreur : image non disponible
         </div>
     `;
-    el.answer.style.display = "block";
 }
 
 // =======================

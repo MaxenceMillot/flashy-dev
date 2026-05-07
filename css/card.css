@@ -1,48 +1,29 @@
 .card {
-    background: white;
-    padding: 20px;
-    border-radius: 18px;
-    text-align: center;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    width: min(92vw, 600px);
+    /* min-height: 0;
+    max-height: 480px; */
 
+    min-height: min(320px, 65dvh);
+    max-height: min(480px, 72dvh);
+
+    padding: clamp(12px, 2vw, 20px);
+    gap: clamp(8px, 1.5vh, 14px);
+    overflow: hidden;
+
+    flex: 0 1 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    height: 450px;
-    width: calc(100% - 80px);
-    max-width: 600px;
-
-    will-change: opacity, transform;
-    transform: translateZ(0);
-    transition: opacity 0.25s ease, transform 0.25s ease;
-
+    justify-content: flex-start;
+    text-align: center;
     position: relative;
-    overflow: hidden;
-}
 
-@media (max-width: 600px) {
-    .card {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 400px) {
-    .card {
-        height: 350px;
-    }
-}
-
-@media (max-width: 320px) {
-    .card {
-        /* height: 320px; */
-        width: 85%;
-        margin-top: 15px;
-    }
-
-    .container {
-        padding: 10px;
-    }
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease;
 }
 
 /* Skeleton active state */
@@ -91,11 +72,22 @@
     }
 }
 
-.card img,
+.card-content {
+    flex: 1;
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 0;
+}
+
+/* .card img,
 .card .answer {
     opacity: 1;
     transition: opacity 0.25s ease;
-}
+} */
 
 .card:not(.loading) img,
 .card:not(.loading) .answer {
@@ -124,55 +116,62 @@
    IMAGE
    ========================= */
 #img {
-    cursor: pointer;
-    opacity: 1;
-    /* transition: opacity 0.2s ease; */
-    transition: opacity 0.25s ease, filter 0.25s ease, transform 0.25s ease;
+    flex: 1;
+    object-fit: contain;
 
+    cursor: pointer;
+
+    width: 100%;
     max-width: 100%;
     height: auto;
-    max-height: 320px;
-    object-fit: contain;
+    min-height: 0;
+    max-height: clamp(180px, 42vh, 320px);
+    
     border-radius: 14px;
 
-    will-change: opacity;
-    z-index: 1;
-}
-
-@media (max-width: 600px) {
-    #img {
-        max-height: 250px;
-    }
-}
-
-@media (max-width: 320px) {
-    #img {
-        max-height: 220px;
-    }
+    transition:
+        opacity 0.25s ease,
+        filter 0.25s ease,
+        transform 0.25s ease;
 }
 
 /* ===================== */
 /* ANSWER */
 /* ===================== */
 .answer {
-    margin-top: 10px;
-    font-size: 1.25rem;
-    color: #111;
-
-    min-height: 50px;
-
     opacity: 0;
+    flex-shrink: 0;
+    min-height: clamp(48px, 9vh, 0px);
+    
+    margin-top: clamp(4px, 1vh, 0px);
+    margin-bottom: clamp(4px, 1vh, 0px);
+
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    font-size: clamp(1rem, 2.5vw, 1.35rem);
+    line-height: 1.2;
+
+    color: #111;
+    opacity: 0;
+    visibility: hidden;
+    overflow-wrap: break-word;
+
     transition: opacity 0.2s ease;
+}
+
+.answer.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 @media (max-width: 600px) {
     .answer {
         font-size: 1.15rem;
     }
-}
-
-.answer.visible {
-    opacity: 1;
 }
 
 .answer .mandatory-latin {

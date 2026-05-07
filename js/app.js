@@ -2,9 +2,9 @@ import { initState, cards } from "./state.js";
 import { getScheduledCards, gradeCard } from "./scheduler.js";
 import { loadImage, preloadAllImages, PLACEHOLDER } from "./imageLoader.js";
 import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading, showAnswer, showNormalMode, showSkipMode, fadeOut, fadeIn, el } from "./ui.js";
-import { initDeckSelector, getSelectedDecks, setDeckChangeCallback } from "./decks.js";
+import { initDeckSelector, getSelectedDecks, setDeckChangeCallback, updateDeckScrollbar } from "./decks.js";
 import { initZoom } from "./zoom.js";
-import { isInStandaloneMode,isIos, updateDeckOverflow, multiClick } from "./utilities.js";
+import { isInStandaloneMode,isIos, multiClick } from "./utilities.js";
 import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
 
 let current = null;
@@ -130,9 +130,6 @@ setDeckChangeCallback(() => {
     }
 });
 
-// DECK OVERFLOW
-updateDeckOverflow(el.deckContainer);
-
 // HIDDEN RESET BUTTON
 multiClick(document.getElementById("appVersion"), () => {
     if (confirm("Reset all progress?")) {
@@ -140,6 +137,8 @@ multiClick(document.getElementById("appVersion"), () => {
         location.reload();
     }
 });
+
+
 
 // =======================
 // INIT EVENT LISTENERS
@@ -196,8 +195,10 @@ function initEventListeners() {
 
     //     deferredPrompt = null;
     // });
-    
-    window.addEventListener("resize", () => updateDeckOverflow(el.deckContainer));
+
+    window.addEventListener("resize", () =>  {
+        updateDeckScrollbar(el.deckContainer)
+    });
 
     // When user comes back to tab
     document.addEventListener("visibilitychange", () => {

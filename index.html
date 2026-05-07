@@ -86,35 +86,40 @@
         <div class="deck-filters" id="deckContainer">
         </div>
 
-        <div class="card loading" id="card">
-            <div class="image-wrapper">
-                <img id="img" src="images/placeholder_image_not_found.png" alt="flashcard image">
-                <div class="image-skeleton"></div>
+        <div class="study-main">
+
+            <div class="card loading" id="card">
+                <div class="card-content">
+                    <div class="image-wrapper">
+                        <img id="img" src="images/placeholder_image_not_found.png" alt="flashcard image">
+                        <div class="image-skeleton"></div>
+                    </div>
+                    <div class="answer" id="answer"></div>
+                </div>
             </div>
-            <div class="answer" id="answer"></div>
-        </div>
 
-        <div class="buttons">
-            <button id="btnShow" class="btn-show" style="display:none;"">
-                Voir la réponse
-            </button>
-            <button id="btnSkip" class="btn-skip" style="display:none;">
-                Passer cette carte
-            </button>
+            <div class="buttons">
+                <button id="btnShow" class="btn-show" style="display:none;"">
+                    Voir la réponse
+                </button>
+                <button id="btnSkip" class="btn-skip" style="display:none;">
+                    Passer cette carte
+                </button>
 
-            <div id="gradeButtons" style="display:none;">
-                <button class="fail" data-grade="1">
-                    <i data-lucide="circle-x"></i>
-                    Raté
-                </button>
-                <button class="partial" data-grade="3">
-                    <i data-lucide="circle-dashed"></i>
-                    Presque
-                </button>
-                <button class="correct" data-grade="5">
-                    <i data-lucide="circle-check"></i>
-                    Correct
-                </button>
+                <div id="gradeButtons" style="display:none;">
+                    <button class="fail" data-grade="1">
+                        <i data-lucide="circle-x"></i>
+                        Raté
+                    </button>
+                    <button class="partial" data-grade="3">
+                        <i data-lucide="circle-dashed"></i>
+                        Presque
+                    </button>
+                    <button class="correct" data-grade="5">
+                        <i data-lucide="circle-check"></i>
+                        Correct
+                    </button>
+                </div>
             </div>
         </div>
 

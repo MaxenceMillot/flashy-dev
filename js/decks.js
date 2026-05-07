@@ -59,6 +59,15 @@ export function initDeckSelector(cards, container){
     });
 
     lucide.createIcons();
+
+    requestAnimationFrame(() => {
+        updateDeckScrollbar(container);
+    });
+}
+
+export function updateDeckScrollbar(container) {
+    const isScrollable = container.scrollWidth > container.clientWidth;
+    container.classList.toggle("scrollable", isScrollable);
 }
 
 function toggleDeck(deck, chip) {
@@ -102,4 +111,6 @@ function updateStateUI() {
             chip.classList.remove("disabled");
         }
     });
+
+    updateDeckScrollbar(document.getElementById("deckContainer"));
 }
