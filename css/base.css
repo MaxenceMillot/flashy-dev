@@ -5,14 +5,17 @@
 }
 
 /* DEBUG OUTLINE */
-/* * { 
+/* * {
     outline: 1px solid red;
 } */
 
-html, body {
+html,
+body {
     min-height: 100dvh;
+
     margin: 0;
     padding: 0;
+
     width: 100%;
 }
 
@@ -21,6 +24,7 @@ body {
     flex-direction: column;
 
     font-family: Arial, sans-serif;
+
     background: #f6f7fb;
 }
 
@@ -34,14 +38,16 @@ body {
     overflow: hidden;
 }
 
-/* STUDY WRAPPER */
+/* =========================
+   STUDY WRAPPER
+   ========================= */
 #study {
     flex: 1;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
     min-height: 0;
 }
 
@@ -57,15 +63,17 @@ body {
     min-height: 0;
 }
 
-/* FILTERS WRAPPER */
+/* =========================
+   FILTERS WRAPPER
+   ========================= */
 .deck-filters {
     width: 100%;
     max-width: 100%;
-    
-    gap: 8px;
 
     display: flex;
     flex-wrap: nowrap;
+
+    gap: clamp(6px, 1vw, 10px);
 
     overflow-x: auto;
     overflow-y: hidden;
@@ -73,8 +81,8 @@ body {
     margin-top: clamp(4px, 1vh, 12px);
     margin-bottom: clamp(0px, 1vh, 18px);
 
-    padding-bottom: 10px;
-    
+    padding-bottom: clamp(4px, 1vh, 10px);
+
     justify-content: center;
 
     scrollbar-width: thin;
@@ -105,54 +113,57 @@ body {
     border-radius: 4px;
 }
 
-@media (max-width: 600px) {
-    .deck-filters {
-        gap: 6px;
-    }
-}
-
 /* =========================
    TITLES
    ========================= */
 #study h1 {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.8vw, 1.5rem);
+
     font-weight: 600;
     text-align: center;
 
     color: #222;
+
     letter-spacing: 0.3px;
+
+    margin-top: clamp(4px, 1vh, 16px);
+    margin-bottom: clamp(4px, 1vh, 14px);
+
+    line-height: 1.15;
 }
 
-
-@media (max-width: 600px) {
-    #study h1 {
-        font-size: 1.3rem;
-    }
-}
-
-@media (max-width: 400px) {
-    #study h1 {
-        font-size: 1.2rem;
-    }
-}
-
-@media (max-width: 320px) {
-    #study h1 {
-        font-size: 1rem;
-        margin-top: 5px;
-    }
-}
-
-/* horizontal line  */
+/* horizontal line */
 #study h1::after {
     content: "";
+
     display: block;
-    width: 40px;
+
+    width: clamp(28px, 8vw, 40px);
     height: 3px;
-    margin: 10px auto 0;
+
+    margin: clamp(6px, 1vh, 10px) auto 0;
 
     background: #ddd;
+
     border-radius: 2px;
+}
+
+/* =========================
+   SHORT HEIGHT DEVICES
+   ========================= */
+@media (max-height: 640px) {
+
+    #study h1::after {
+        display: none;
+    }
+
+    #study h1 {
+        margin-bottom: 4px;
+    }
+
+    .deck-filters {
+        margin-bottom: 4px;
+    }
 }
 
 /* =========================
@@ -164,14 +175,18 @@ body {
     width: 100%;
     box-sizing: border-box;
 
-    padding: 6px 8px calc(8px + env(safe-area-inset-bottom));
+    padding:
+        clamp(4px, 0.8vh, 6px)
+        clamp(8px, 1vw, 12px)
+        calc(clamp(6px, 1vh, 10px) + env(safe-area-inset-bottom));
 
     background: rgba(20,20,20,0.9);
+
     color: rgba(255,255,255,0.75);
 
     backdrop-filter: blur(8px);
 
-    margin-top: 6px;
+    margin-top: clamp(4px, 1vh, 8px);
 }
 
 .footer-content {
@@ -179,7 +194,8 @@ body {
     justify-content: flex-start;
     align-items: center;
 
-    font-size: 0.7rem;
+    font-size: clamp(0.62rem, 1.5vw, 0.72rem);
+
     letter-spacing: 0.3px;
 }
 

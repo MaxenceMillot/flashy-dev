@@ -1,7 +1,5 @@
 .card {
     width: min(92vw, 600px);
-    /* min-height: 0;
-    max-height: 480px; */
 
     min-height: min(320px, 65dvh);
     max-height: min(480px, 72dvh);
@@ -83,12 +81,6 @@
     min-height: 0;
 }
 
-/* .card img,
-.card .answer {
-    opacity: 1;
-    transition: opacity 0.25s ease;
-} */
-
 .card:not(.loading) img,
 .card:not(.loading) .answer {
     opacity: 1;
@@ -125,8 +117,8 @@
     max-width: 100%;
     height: auto;
     min-height: 0;
-    max-height: clamp(180px, 42vh, 320px);
-    
+    max-height: clamp(140px, 40vh, 320px);    
+
     border-radius: 14px;
 
     transition:
@@ -140,16 +132,17 @@
 /* ===================== */
 .answer {
     opacity: 0;
-    flex-shrink: 0;
-    min-height: clamp(48px, 9vh, 0px);
-    
-    margin-top: clamp(4px, 1vh, 0px);
-    margin-bottom: clamp(4px, 1vh, 0px);
 
+    flex-shrink: 0;
     display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+
+    height: clamp(34px, 7vh, 64px);
+    min-height: clamp(40px, 8vh, 64px);
+    margin-top: clamp(4px, 1vh, 0px);
+    margin-bottom: clamp(4px, 1vh, 0px);
 
     font-size: clamp(1rem, 2.5vw, 1.35rem);
     line-height: 1.2;

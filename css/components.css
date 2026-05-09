@@ -8,18 +8,37 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: clamp(10px, 1.5vh, 16px);
 }
 
+/* ===================== */
+/* GENERIC BUTTON BASE */
+/* ===================== */
 button {
-    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(6px, 1vw, 10px);
+
+    padding:
+        clamp(8px, 1.8vh, 14px)
+        clamp(10px, 2vw, 18px);
+
     border: none;
-    border-radius: 8px;
+    border-radius: clamp(12px, 2vw, 18px);
+
     cursor: pointer;
-
-    font-size: 0.95rem;
-
     margin: 0;
+
+    font-size: clamp(0.85rem, 1.8vh, 1rem);
+    font-weight: 500;
+
+    transition:
+        transform 0.12s ease,
+        box-shadow 0.18s ease,
+        background 0.18s ease,
+        filter 0.18s ease,
+        opacity 0.18s ease;
 }
 
 button:disabled {
@@ -27,173 +46,177 @@ button:disabled {
     pointer-events: none;
 }
 
-button:active:not(:disabled) {
-    transform: scale(0.96);
+button:hover {
+    transform: translateY(-1px);
 }
 
+button:active:not(:disabled) {
+    transform: scale(0.97);
+    box-shadow: inset 0 2px 6px rgba(0,0,0,0.18);
+}
+
+/* ===================== */
+/* GENERIC BUTTON ICONS */
+/* ===================== */
+button svg {
+    width: clamp(16px, 2vh, 20px);
+    height: clamp(16px, 2vh, 20px);
+
+    stroke-width: 2;
+    opacity: 0.85;
+
+    flex-shrink: 0;
+
+    transition:
+        transform 0.18s ease,
+        opacity 0.18s ease;
+}
+
+button:hover svg {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* ===================== */
+/* SHOW / SKIP BUTTONS */
+/* ===================== */
+.btn-show,
+.btn-skip {
+    width: min(100%, 320px);
+
+    background: #444;
+    color: white;
+
+    font-weight: 550;
+}
+
+/* Slightly stronger CTA */
+.btn-show {
+    background: #3f3f3f;
+}
+
+.btn-show:hover,
+.btn-skip:hover {
+    filter: brightness(1.05);
+}
+
+/* ===================== */
+/* GRADE BUTTONS */
+/* ===================== */
 #gradeButtons {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px;
+
+    gap: clamp(8px, 1vw, 14px);
 
     width: 100%;
     max-width: 420px;
+
     margin: 0 auto;
 }
 
 #gradeButtons button {
+    flex: 1;
+    min-width: 0;
+
     position: relative;
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6px;
-
-    flex: 1;
-    text-align: center;
-
-    padding: 12px 8px;
 }
 
-#gradeButtons button:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2) inset;
-}
-
+/* subtle tap flash */
 #gradeButtons button::after {
     content: "";
+
     position: absolute;
     inset: 0;
-    background: rgba(255,255,255,0.2);
+
+    background: rgba(255,255,255,0.18);
+
     opacity: 0;
-    transition: opacity 0.2s;
+    transition: opacity 0.18s ease;
 }
 
 #gradeButtons button:active::after {
     opacity: 1;
 }
 
-#gradeButtons button svg {
-    width: 20px;
-    height: 20px;
-
-    stroke-width: 2;
-    opacity: 0.7;
-
-    flex-shrink: 0;
-
-    transition: all 0.18s ease;
-}
-
-#gradeButtons button:hover svg {
-    opacity: 1;
-    transform: scale(1.05);
-}
-
-.btn-show {
-    background: #444;
-    color: white;
-
-    width: 150px;
-    max-width: 90%;
-    
-    padding: 12px 8px;
-    margin: 1px auto;
-}
-
-.btn-show:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2) inset;
-}
-
-.btn-skip {
-    background: #444;
-    color: white;
-    width: 150px;
-}
-
-.btn-skip:hover {
-    filter: brightness(1.05);
-}
-
-.btn-show:active {
-    transform: scale(0.96);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.2) inset;
-}
-
+/* ===================== */
+/* MOBILE */
+/* ===================== */
 @media (max-width: 600px) {
 
     .buttons {
         width: 100%;
-        padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+
+        padding:
+            10px
+            12px
+            calc(10px + env(safe-area-inset-bottom));
 
         margin-top: auto;
 
         flex-shrink: 0;
 
         backdrop-filter: blur(6px);
+
         z-index: 5;
     }
 
-    /* ALL BUTTONS SAME BASE */
+    /* ALL BUTTONS */
     .buttons button {
-        min-height: 56px;
-
-        padding: 12px 14px;
-
-        border-radius: 16px;
-
-        font-size: 1rem;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        
-        font-size: clamp(0.85rem, 3vw, 1rem);
-
-        transition:
-            transform 0.10s ease,
-            box-shadow 0.10s ease,
-            filter 0.15s ease;
+        min-height: clamp(50px, 7vh, 58px);
     }
 
-    /* MAIN ACTION BUTTONS */
+    /* CTA BUTTONS */
     .btn-show,
     .btn-skip {
         width: 100%;
         max-width: 320px;
-
-        font-weight: 535;
     }
 
-    /* GRADE BUTTON CONTAINER */
+    /* GRADE GROUP */
     #gradeButtons {
         width: 100%;
         max-width: 420px;
 
-        margin: 0 auto;
-        gap: 12px;
+        gap: 10px;
     }
 
-    /* GRADE BUTTONS */
     #gradeButtons button {
         flex: 1;
         min-width: 0;
     }
+}
 
-    /* ICONS */
-    #gradeButtons button svg {
-        width: 20px;
-        height: 20px;
+/* ===================== */
+/* ULTRA SMALL DEVICES */
+/* ===================== */
+@media (max-height: 650px) {
 
-        opacity: 0.9;
+    .buttons {
+        gap: 8px;
+    }
 
-        flex-shrink: 0;
+    .buttons button {
+        min-height: 46px;
+
+        font-size: 0.82rem;
+    }
+
+    button svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    #gradeButtons {
+        gap: 8px;
     }
 }
 
+/* ===================== */
+/* BUTTON COLORS */
+/* ===================== */
 .fail {
     background: #f68275;
     color: rgb(20, 18, 18);
@@ -215,6 +238,7 @@ button:active:not(:disabled) {
 .zoom-overlay {
     position: fixed;
     inset: 0;
+
     background: rgba(0,0,0,0.75);
 
     display: flex;
@@ -223,6 +247,7 @@ button:active:not(:disabled) {
 
     opacity: 0;
     pointer-events: none;
+
     transition: opacity 0.25s ease;
 
     z-index: 1000;
@@ -235,11 +260,14 @@ button:active:not(:disabled) {
 
 .zoom-overlay img {
     cursor: pointer;
+
     max-width: 90%;
     max-height: 90%;
+
     border-radius: 14px;
 
     transform: scale(0.9);
+
     transition: transform 0.25s ease;
 }
 
@@ -249,12 +277,14 @@ button:active:not(:disabled) {
 
 .zoom-overlay img.has-bg {
     background: #f8f8f8;
+
     padding: 10px;
+
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 /* ===================== */
-/* DECKS FILTER CHIPS */
+/* DECK FILTER CHIPS */
 /* ===================== */
 .chip {
     display: flex;
@@ -274,6 +304,7 @@ button:active:not(:disabled) {
     border-radius: 999px;
 
     cursor: pointer;
+
     transition: all 0.18s ease;
 
     scroll-snap-align: start;
@@ -319,7 +350,6 @@ button:active:not(:disabled) {
     transform: scale(0.97);
 }
 
-
 .chip.disabled {
     cursor: default;
     pointer-events: none;
@@ -338,6 +368,7 @@ button:active:not(:disabled) {
 }
 
 @media (max-width: 600px) {
+
     .chip {
         padding: 6px 12px;
     }
@@ -353,9 +384,12 @@ button:active:not(:disabled) {
 /* ===================== */
 .update-toast {
     position: fixed;
+
     bottom: 40px;
     left: 50%;
+
     width: 350px;
+
     transform: translateX(-50%);
 
     background: #222;
@@ -373,7 +407,8 @@ button:active:not(:disabled) {
     z-index: 9999;
 }
 
-@media (max-width: 600px) {    
+@media (max-width: 600px) {
+
     .update-toast {
         width: 80%;
     }
@@ -381,9 +416,13 @@ button:active:not(:disabled) {
 
 .update-toast button {
     background: #4dabf7;
+
     border: none;
+
     padding: 6px 10px;
+
     border-radius: 8px;
+
     cursor: pointer;
 }
 
@@ -395,15 +434,16 @@ button:active:not(:disabled) {
 .toast-actions {
     display: flex;
     gap: 8px;
+
     margin-left: auto;
 }
 
 /* ===================== */
 /* QoL */
 /* ===================== */
-
-/* Prevent highlighting in blue */
-img, button, div {
+img,
+button,
+div {
     -webkit-tap-highlight-color: transparent;
 }
 
