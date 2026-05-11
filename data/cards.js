@@ -1887,7 +1887,7 @@ export const cards = [
 {
   id: "Cactus raquette, figuier de barbarie_1",
   deck: "flowers",
-  img: "images/flowers/Cactus raquette, figuier de barbarie_1.webp",
+  img: "images/flowers/Cactus raquette, figuier de barbarie_1.jpg",
   text: "Cactus raquette, figuier de barbarie",
   notes: "",
   EF: 2.5,
@@ -1901,6 +1901,19 @@ export const cards = [
   id: "Cactus raquette, figuier de barbarie_2",
   deck: "flowers",
   img: "images/flowers/Cactus raquette, figuier de barbarie_2.jpg",
+  text: "Cactus raquette, figuier de barbarie",
+  notes: "",
+  EF: 2.5,
+  interval: 0,
+  repetitions: 0,
+  due: 0,
+  score: 0,
+  custom: false
+},
+{
+  id: "Cactus raquette, figuier de barbarie_3",
+  deck: "flowers",
+  img: "images/flowers/Cactus raquette, figuier de barbarie_3.jpg",
   text: "Cactus raquette, figuier de barbarie",
   notes: "",
   EF: 2.5,
@@ -2327,10 +2340,10 @@ export const cards = [
   custom: false
 },
 {
-  id: "Caoutchouc-Ficus elastia_2",
+  id: "Caoutchouc-Ficus elastica_2",
   deck: "flowers",
-  img: "images/flowers/Caoutchouc-Ficus elastia_2.jpg",
-  text: "Caoutchouc - Ficus elastia",
+  img: "images/flowers/Caoutchouc-Ficus elastica_2.jpg",
+  text: "Caoutchouc - Ficus elastica",
   notes: "",
   EF: 2.5,
   interval: 0,
@@ -2340,10 +2353,10 @@ export const cards = [
   custom: false
 },
 {
-  id: "Caoutchouc-Ficus elastia_3",
+  id: "Caoutchouc-Ficus elastica_3",
   deck: "flowers",
-  img: "images/flowers/Caoutchouc-Ficus elastia_3.webp",
-  text: "Caoutchouc - Ficus elastia",
+  img: "images/flowers/Caoutchouc-Ficus elastica_3.webp",
+  text: "Caoutchouc - Ficus elastica",
   notes: "",
   EF: 2.5,
   interval: 0,
@@ -4370,7 +4383,7 @@ export const cards = [
 {
   id: "Ficus-Ficus benjamina_1",
   deck: "flowers",
-  img: "images/flowers/Ficus-Ficus benjamina_1.jpg",
+  img: "images/flowers/Ficus-Ficus benjamina_1.webp",
   text: "Ficus - Ficus benjamina",
   notes: "",
   EF: 2.5,
@@ -4396,7 +4409,7 @@ export const cards = [
 {
   id: "Ficus-Ficus benjamina_3",
   deck: "flowers",
-  img: "images/flowers/Ficus-Ficus benjamina_3.webp",
+  img: "images/flowers/Ficus-Ficus benjamina_3.png",
   text: "Ficus - Ficus benjamina",
   notes: "",
   EF: 2.5,
@@ -5852,7 +5865,20 @@ export const cards = [
 {
   id: "Jacinthe-Hyacinthus orientalis_2",
   deck: "flowers",
-  img: "images/flowers/Jacinthe-Hyacinthus orientalis_2.jpg",
+  img: "images/flowers/Jacinthe-Hyacinthus orientalis_2.webp",
+  text: "Jacinthe - Hyacinthus orientalis",
+  notes: "",
+  EF: 2.5,
+  interval: 0,
+  repetitions: 0,
+  due: 0,
+  score: 0,
+  custom: false
+},
+{
+  id: "Jacinthe-Hyacinthus orientalis_3",
+  deck: "flowers",
+  img: "images/flowers/Jacinthe-Hyacinthus orientalis_3.jpg",
   text: "Jacinthe - Hyacinthus orientalis",
   notes: "",
   EF: 2.5,
@@ -7321,7 +7347,7 @@ export const cards = [
 {
   id: "Nephrolepis-Nephrolepis exaltata_2",
   deck: "flowers",
-  img: "images/flowers/Nephrolepis-Nephrolepis exaltata_2.jpg",
+  img: "images/flowers/Nephrolepis-Nephrolepis exaltata_2.webp",
   text: "Nephrolepis - Nephrolepis exaltata",
   notes: "",
   EF: 2.5,
@@ -7633,7 +7659,7 @@ export const cards = [
 {
   id: "Ornithogale-Ornithogalum arabicum_3",
   deck: "flowers",
-  img: "images/flowers/Ornithogale-Ornithogalum arabicum_3.avif",
+  img: "images/flowers/Ornithogale-Ornithogalum arabicum_3.jpeg",
   text: "Ornithogale - Ornithogalum arabicum",
   notes: "",
   EF: 2.5,
@@ -7985,6 +8011,19 @@ export const cards = [
   id: "Peperomia_2",
   deck: "flowers",
   img: "images/flowers/Peperomia_2.jpg",
+  text: "Peperomia",
+  notes: "",
+  EF: 2.5,
+  interval: 0,
+  repetitions: 0,
+  due: 0,
+  score: 0,
+  custom: false
+},
+{
+  id: "Peperomia_3",
+  deck: "flowers",
+  img: "images/flowers/Peperomia_3.webp",
   text: "Peperomia",
   notes: "",
   EF: 2.5,
@@ -9462,7 +9501,7 @@ export const cards = [
   due: 0,
   score: 0,
   custom: false
-},
+},a
 {
   id: "Sansevière, langue de belle-mère-Sansevieria cylindrica_3",
   deck: "flowers",
@@ -10155,7 +10194,7 @@ export const cards = [
 {
   id: "Spathiphyllum-Spathiphyllum hybride_3",
   deck: "flowers",
-  img: "images/flowers/Spathiphyllum-Spathiphyllum hybride_3.jpg",
+  img: "images/flowers/Spathiphyllum-Spathiphyllum hybride_3.webp",
   text: "Spathiphyllum - Spathiphyllum hybride",
   notes: "",
   EF: 2.5,
