@@ -2940,7 +2940,7 @@ export const cards = [
 {
   id: "Cissus_1",
   deck: "flowers",
-  img: "images/flowers/Cissus_1.jpg",
+  img: "images/flowers/Cissus_1.jpeg",
   text: "Cissus",
   notes: "",
   EF: 2.5,
@@ -7659,7 +7659,7 @@ export const cards = [
 {
   id: "Ornithogale-Ornithogalum arabicum_3",
   deck: "flowers",
-  img: "images/flowers/Ornithogale-Ornithogalum arabicum_3.jpeg",
+  img: "images/flowers/Ornithogale-Ornithogalum arabicum_3.jpg",
   text: "Ornithogale - Ornithogalum arabicum",
   notes: "",
   EF: 2.5,
@@ -10299,19 +10299,6 @@ export const cards = [
   id: "Streptocarpus_4",
   deck: "flowers",
   img: "images/flowers/Streptocarpus_4.jpg",
-  text: "Streptocarpus",
-  notes: "",
-  EF: 2.5,
-  interval: 0,
-  repetitions: 0,
-  due: 0,
-  score: 0,
-  custom: false
-},
-{
-  id: "Streptocarpus_5",
-  deck: "flowers",
-  img: "images/flowers/Streptocarpus_5.jpg",
   text: "Streptocarpus",
   notes: "",
   EF: 2.5,
