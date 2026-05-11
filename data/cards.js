@@ -9480,7 +9480,7 @@ export const cards = [
   id: "Sansevière, langue de belle-mère-Sansevieria cylindrica_4",
   deck: "flowers",
   img: "images/flowers/Sansevière, langue de belle-mère-Sansevieria cylindrica_4.png",
-  text: "ansevière, langue de belle-mère (Sansevieria cylindrica)",
+  text: "Sansevière, langue de belle-mère (Sansevieria cylindrica)",
   notes: "",
   EF: 2.5,
   interval: 0,
