@@ -145,7 +145,7 @@ export const cards = [
 {
   id: "Aeschynanthus_1",
   deck: "flowers",
-  img: "images/flowers/Aeschynanthus_1.jpg",
+  img: "images/flowers/Aeschynanthus_1_v0.2.0.jpg",
   text: "Aeschynanthus",
   notes: "",
   EF: 2.5,
@@ -730,7 +730,7 @@ export const cards = [
 {
   id: "Amaryllis-Hippeastrum hybride_1",
   deck: "flowers",
-  img: "images/flowers/Amaryllis-Hippeastrum hybride_1.jpg",
+  img: "images/flowers/Amaryllis-Hippeastrum hybride_1.png",
   text: "Amaryllis - Hippeastrum hybride",
   notes: "",
   EF: 2.5,
@@ -964,7 +964,7 @@ export const cards = [
 {
   id: "Arum-Zantedeschia aethiopica_1",
   deck: "flowers",
-  img: "images/flowers/Arum-Zantedeschia aethiopica_1.jpg",
+  img: "images/flowers/Arum-Zantedeschia aethiopica_1_v0.2.0.jpg",
   text: "Arum - Zantedeschia aethiopica",
   notes: "",
   EF: 2.5,
@@ -1367,7 +1367,7 @@ export const cards = [
 {
   id: "Begonia d'intérieur-Begonia elatior_1",
   deck: "flowers",
-  img: "images/flowers/Begonia d'intérieur-Begonia elatior_1.jpg",
+  img: "images/flowers/Begonia d'intérieur-Begonia elatior_1_v0.2.0.jpg",
   text: "Begonia d'intérieur - Begonia elatior",
   notes: "",
   EF: 2.5,
@@ -1601,7 +1601,7 @@ export const cards = [
 {
   id: "Buis_1",
   deck: "flowers",
-  img: "images/flowers/Buis_1.jpg",
+  img: "images/flowers/Buis_1_v0.2.0.jpg",
   text: "Buis",
   notes: "",
   EF: 2.5,
@@ -1861,7 +1861,7 @@ export const cards = [
 {
   id: "Cactus de Paques-Rhipsalidopsis gaertneri_2",
   deck: "flowers",
-  img: "images/flowers/Cactus de Paques-Rhipsalidopsis gaertneri_2.jpg",
+  img: "images/flowers/Cactus de Paques-Rhipsalidopsis gaertneri_2_v0.2.0.jpg",
   text: "Cactus de Paques - Rhipsalidopsis gaertneri",
   notes: "",
   EF: 2.5,
@@ -1900,7 +1900,7 @@ export const cards = [
 {
   id: "Cactus raquette, figuier de barbarie_2",
   deck: "flowers",
-  img: "images/flowers/Cactus raquette, figuier de barbarie_2.jpg",
+  img: "images/flowers/Cactus raquette, figuier de barbarie_2_v0.2.0.jpg",
   text: "Cactus raquette, figuier de barbarie",
   notes: "",
   EF: 2.5,
@@ -1939,7 +1939,7 @@ export const cards = [
 {
   id: "Caladium_2",
   deck: "flowers",
-  img: "images/flowers/Caladium_2.jpg",
+  img: "images/flowers/Caladium_2_v0.2.0.jpg",
   text: "Caladium",
   notes: "",
   EF: 2.5,
@@ -2992,7 +2992,7 @@ export const cards = [
 {
   id: "Citronnier_2",
   deck: "flowers",
-  img: "images/flowers/Citronnier_2.jpg",
+  img: "images/flowers/Citronnier_2_v0.2.0.jpg",
   text: "Citronnier",
   notes: "",
   EF: 2.5,
@@ -3993,7 +3993,7 @@ export const cards = [
 {
   id: "Drosera_2",
   deck: "flowers",
-  img: "images/flowers/Drosera_2.jpg",
+  img: "images/flowers/Drosera_2.webp",
   text: "Drosera",
   notes: "",
   EF: 2.5,
@@ -4136,7 +4136,7 @@ export const cards = [
 {
   id: "Eucharis_1",
   deck: "flowers",
-  img: "images/flowers/Eucharis_1.webp",
+  img: "images/flowers/Eucharis_1_v0.2.0.webp",
   text: "Eucharis",
   notes: "",
   EF: 2.5,
@@ -4149,7 +4149,7 @@ export const cards = [
 {
   id: "Eucharis_2",
   deck: "flowers",
-  img: "images/flowers/Eucharis_2.webp",
+  img: "images/flowers/Eucharis_2_v0.2.0.webp",
   text: "Eucharis",
   notes: "",
   EF: 2.5,
@@ -4318,7 +4318,7 @@ export const cards = [
 {
   id: "Ficus lyre_2",
   deck: "flowers",
-  img: "images/flowers/Ficus lyre_2.jpg",
+  img: "images/flowers/Ficus lyre_2_v0.2.0.jpg",
   text: "Ficus lyre",
   notes: "",
   EF: 2.5,
@@ -4487,7 +4487,7 @@ export const cards = [
 {
   id: "Forsythia_2",
   deck: "flowers",
-  img: "images/flowers/Forsythia_2.jpg",
+  img: "images/flowers/Forsythia_2_v0.2.0.jpg",
   text: "Forsythia",
   notes: "",
   EF: 2.5,
@@ -4773,7 +4773,7 @@ export const cards = [
 {
   id: "Gentiane_2",
   deck: "flowers",
-  img: "images/flowers/Gentiane_2.jpg",
+  img: "images/flowers/Gentiane_2_v0.2.0.jpg",
   text: "Gentiane",
   notes: "",
   EF: 2.5,
@@ -5111,7 +5111,7 @@ export const cards = [
 {
   id: "Guzmania_2",
   deck: "flowers",
-  img: "images/flowers/Guzmania_2.jpg",
+  img: "images/flowers/Guzmania_2_v0.2.0.jpg",
   text: "Guzmania",
   notes: "",
   EF: 2.5,
@@ -5488,7 +5488,7 @@ export const cards = [
 {
   id: "Hibiscus-Hibiscus rosa sinensis_1",
   deck: "flowers",
-  img: "images/flowers/Hibiscus-Hibiscus rosa sinensis_1.jpg",
+  img: "images/flowers/Hibiscus-Hibiscus rosa sinensis_1_v0.2.0.jpg",
   text: "Hibiscus - Hibiscus rosa sinensis",
   notes: "",
   EF: 2.5,
@@ -5540,7 +5540,7 @@ export const cards = [
 {
   id: "Hibiscus-Hibiscus rosa sinensis_5",
   deck: "flowers",
-  img: "images/flowers/Hibiscus-Hibiscus rosa sinensis_5.jpg",
+  img: "images/flowers/Hibiscus-Hibiscus rosa sinensis_5_v0.2.0.jpg",
   text: "Hibiscus - Hibiscus rosa sinensis",
   notes: "",
   EF: 2.5,
@@ -7516,7 +7516,7 @@ export const cards = [
 {
   id: "Nutans_1",
   deck: "flowers",
-  img: "images/flowers/Nutans_1.webp",
+  img: "images/flowers/Nutans_1_v0.2.0.webp",
   text: "Nutans",
   notes: "",
   EF: 2.5,
@@ -7646,7 +7646,7 @@ export const cards = [
 {
   id: "Ornithogale-Ornithogalum arabicum_2",
   deck: "flowers",
-  img: "images/flowers/Ornithogale-Ornithogalum arabicum_2.jpg",
+  img: "images/flowers/Ornithogale-Ornithogalum arabicum_2_v0.2.0.jpg",
   text: "Ornithogale - Ornithogalum arabicum",
   notes: "",
   EF: 2.5,
@@ -7997,7 +7997,7 @@ export const cards = [
 {
   id: "Peperomia_1",
   deck: "flowers",
-  img: "images/flowers/Peperomia_1.jpg",
+  img: "images/flowers/Peperomia_1_v0.2.0.jpg",
   text: "Peperomia",
   notes: "",
   EF: 2.5,
@@ -8374,7 +8374,7 @@ export const cards = [
 {
   id: "Pied d'alouette annuel_1",
   deck: "flowers",
-  img: "images/flowers/Pied d'alouette annuel_1.jpg",
+  img: "images/flowers/Pied d'alouette annuel_1_v0.2.0.jpg",
   text: "Pied d'alouette annuel",
   notes: "",
   EF: 2.5,
@@ -10285,7 +10285,7 @@ export const cards = [
 {
   id: "Streptocarpus_3",
   deck: "flowers",
-  img: "images/flowers/Streptocarpus_3.jpg",
+  img: "images/flowers/Streptocarpus_3_v0.2.0.jpg",
   text: "Streptocarpus",
   notes: "",
   EF: 2.5,
@@ -10298,7 +10298,7 @@ export const cards = [
 {
   id: "Streptocarpus_4",
   deck: "flowers",
-  img: "images/flowers/Streptocarpus_4.jpg",
+  img: "images/flowers/Streptocarpus_4_v0.2.0.jpg",
   text: "Streptocarpus",
   notes: "",
   EF: 2.5,
