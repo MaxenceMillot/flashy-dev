@@ -44,13 +44,15 @@ self.addEventListener("install", (event) => {
 
 
             const cache = await caches.open(CACHE_NAME);
-            APP_SHELL.map(async (url) => {
-                try {
-                    await cache.add(url);
-                } catch (err) {
-                    console.warn("Failed to cache:", url);
-                }
-            })
+            await Promise.all(
+                APP_SHELL.map(async (url) => {
+                    try {
+                        await cache.add(url);
+                    } catch (err) {
+                        console.warn("Failed to cache:", url);
+                    }
+                })
+            )
         })()
     );
 
@@ -119,7 +121,16 @@ self.addEventListener("fetch", (event) => {
             }
 
             try {
-                return await fetch(request);
+                const fresh = await fetch(request);
+
+                if (
+                    request.destination === "script" ||
+                    request.url.includes("/data/")
+                ) {
+                    cache.put(request, fresh.clone());
+                }
+
+                return fresh;
             } catch {
                 return cache.match(request);
             }

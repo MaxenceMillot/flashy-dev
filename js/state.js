@@ -1,9 +1,22 @@
 import { cards as baseCards } from "../data/cards.js";
+
 export let cards = [];
-export let current = null;
-export let nextCard = null;
+
+// Increment on breaking updates
+// WARNING : delete user progression (as of version 0.2.0)
+const STORAGE_VERSION = "2"; 
 
 export function initState(){
+
+    const savedVersion = localStorage.getItem("storageVersion");
+
+    // FORCE RESET if schema changed
+    if (savedVersion !== STORAGE_VERSION) {
+
+        localStorage.removeItem("cards");
+        localStorage.setItem("storageVersion", STORAGE_VERSION);
+    }
+
     const saved = JSON.parse(localStorage.getItem("cards") || "null");
 
     if (saved && Array.isArray(saved)) {
@@ -17,10 +30,11 @@ export function initState(){
             due: 0,
             score: 0
         }));
+
+        save();
     }
 }
 
-// Save in local storage
 export function save(){
     localStorage.setItem("cards", JSON.stringify(cards));
 }
