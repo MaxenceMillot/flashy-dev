@@ -9501,7 +9501,7 @@ export const cards = [
   due: 0,
   score: 0,
   custom: false
-},a
+},
 {
   id: "Sansevière, langue de belle-mère-Sansevieria cylindrica_3",
   deck: "flowers",
