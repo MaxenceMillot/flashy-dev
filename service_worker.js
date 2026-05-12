@@ -1,3 +1,4 @@
+// SW version 0.2.0
 let APP_VERSION = null;
 let CACHE_NAME = null;
 
@@ -127,7 +128,9 @@ self.addEventListener("fetch", (event) => {
                     request.destination === "script" ||
                     request.url.includes("/data/")
                 ) {
-                    cache.put(request, fresh.clone());
+                    if (fresh.ok) {
+                        await cache.put(request, fresh.clone());
+                    }
                 }
 
                 return fresh;
