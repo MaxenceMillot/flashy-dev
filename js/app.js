@@ -176,25 +176,25 @@ function initEventListeners() {
         nextCardFlow();
     });
 
-    // DOWNLOAD BUTTON - COMMENTED BEFORE V1.0
-    // el.btnDownload.addEventListener("click", async () => {
-    //     if (isIos()) {
-    //         alert("Pour installer l'application :\n\n1. Appuyez sur le bouton “Partager”\n2. Puis sur “Ajouter à l'écran d'accueil”");
-    //         return;
-    //     }
+    // DOWNLOAD BUTTON
+    el.btnDownload.addEventListener("click", async () => {
+        if (isIos()) {
+            alert("Pour installer l'application :\n\n1. Appuyez sur le bouton “Partager”\n2. Puis sur “Ajouter à l'écran d'accueil”");
+            return;
+        }
 
-    //     if (!deferredPrompt){
-    //         console.error("could not trigger manual download : deferredPrompt is null")
-    //         alert("Pour installer l'application : utilisez le menu du navigateur ( ⋮ ) puis “Ajouter à l'écran d'accueil”")
-    //         return;
-    //     }
+        if (!deferredPrompt){
+            console.error("could not trigger manual download : deferredPrompt is null")
+            alert("Pour installer l'application : utilisez le menu du navigateur ( ⋮ ) puis “Ajouter à l'écran d'accueil”")
+            return;
+        }
 
-    //     await deferredPrompt.prompt();
+        await deferredPrompt.prompt();
 
-    //     const { outcome } = await deferredPrompt.userChoice;
+        const { outcome } = await deferredPrompt.userChoice;
 
-    //     deferredPrompt = null;
-    // });
+        deferredPrompt = null;
+    });
 
     window.addEventListener("resize", () =>  {
         updateDeckScrollbar(el.deckContainer)

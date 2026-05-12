@@ -1,4 +1,6 @@
 export const PLACEHOLDER = "images/placeholder_image_not_found.png";
+import { cards } from "./state.js";
+import { getAppVersion } from "./versionManager.js"
 
 export function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
     return new Promise((resolve) => {
@@ -48,19 +50,44 @@ export function loadImage(src, { timeout = 5000, retries = 1 } = {}) {
 }
 
 // PRELOAD ALL IMAGES (in cache)
-export function preloadAllImages() {
-    const images = cards.map(c => c.img);
+export async function preloadAllImages() {
+    if (!("caches" in window)) {
+        console.warn("Cache API unsupported, could not preload images for PWA");
+        return;
+    }
+
+    const appVersion = getAppVersion();
+    const cache = await caches.open(`flashy-v${appVersion}`);
     let i = 0;
 
-    function queue() {
-        if (i >= images.length) return;
+    async function queue() {
+        if (i >= cards.length) {
+            console.log("Preloading DONE");
+            return;
+        }
 
-        const img = new Image();
-        img.src = images[i++];
+        const url = cards[i++].img;
 
-        setTimeout(queue, 15);
+        try {
+            const alreadyCached = await cache.match(url);
+
+            if (!alreadyCached) {
+
+                const response = await fetch(url, {
+                    cache: "force-cache"
+                });
+
+                if (response.ok) {
+                    await cache.put(url, response.clone());
+                }
+            }
+
+        } catch (err) {
+            console.warn("Preload failed for:", url);
+        }
+
+        setTimeout(queue, 80);
     }
 
     queue();
-    console.log("Preloading DONE");
 }
