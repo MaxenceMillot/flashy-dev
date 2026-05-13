@@ -15,6 +15,31 @@ export async function getAppVersion() {
     return data.version;
 }
 
+export function registerServiceWorker() {
+    navigator.serviceWorker.register("./service_worker.js")
+        .then((registration) => {
+            console.log("Service Worker registered");
+
+            // already waiting
+            if (registration.waiting) {
+                showUpdateToast(registration.waiting);
+            }
+
+            // new update found
+            registration.addEventListener("updatefound", () => {
+                const newWorker = registration.installing;
+                newWorker.addEventListener("statechange", () => {
+                    if (newWorker.state === "installed" &&
+                        navigator.serviceWorker.controller) 
+                    {
+                        showUpdateToast(newWorker);
+                    }
+                });
+            });
+        })
+        .catch(err => console.error("SW registration failed:", err));
+}
+
 export async function checkForUpdate() {
     try {
         let newVersion = await getAppVersion();
@@ -31,7 +56,8 @@ export async function checkForUpdate() {
     }
 }
 
-function showUpdateToast(newVersion) {
+function showUpdateToast(worker) {
+    const newVersion = getAppVersion();
     const toast = document.createElement("div");
     toast.className = "update-toast";
 
@@ -45,18 +71,18 @@ function showUpdateToast(newVersion) {
 
     document.body.appendChild(toast);
 
-    document.getElementById("refreshApp").addEventListener("click", async () => {
-         if ("serviceWorker" in navigator) {
-            const reg = await navigator.serviceWorker.getRegistration();
-            if (reg) await reg.update();
-        }
+    document.getElementById("refreshApp")
+        .addEventListener("click", () => {
 
-        window.location.reload();
-    });
+            worker.postMessage({
+                type: "SKIP_WAITING"
+            });
+        });
 
-    document.getElementById("dismissUpdate").addEventListener("click", () => {
-        toast.remove();
-    });
+    document.getElementById("dismissUpdate")
+        .addEventListener("click", () => {
+            toast.remove();
+        });
 }
 
 export async function setVersionInFooter(){

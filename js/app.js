@@ -5,7 +5,7 @@ import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading,
 import { initDeckSelector, getSelectedDecks, setDeckChangeCallback, updateDeckScrollbar } from "./decks.js";
 import { initZoom } from "./zoom.js";
 import { isInStandaloneMode,isIos, multiClick } from "./utilities.js";
-import { initVersion, setVersionInFooter, checkForUpdate } from "./versionManager.js";
+import { initVersion, registerServiceWorker, setVersionInFooter, checkForUpdate } from "./versionManager.js";
 
 let current = null;
 let nextCard = null;
@@ -23,11 +23,7 @@ window.addEventListener("beforeinstallprompt", (e) => {
 
 // REGISTER SERVICE WORKER
 if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-        navigator.serviceWorker.register("./service_worker.js")
-            .then(() => console.log("Service Worker registered"))
-            .catch(err => console.error("SW registration failed:", err));
-    });
+    registerServiceWorker();
 }
 
 // LOAD ICONS FROM LIBRARY
@@ -138,8 +134,6 @@ multiClick(document.getElementById("appVersion"), () => {
     }
 });
 
-
-
 // =======================
 // INIT EVENT LISTENERS
 // =======================
@@ -205,5 +199,10 @@ function initEventListeners() {
         if (document.visibilityState === "visible") {
             checkForUpdate();
         }
+    });
+
+    // Reload when new SW controls page
+    navigator.serviceWorker.addEventListener("controllerchange", () => {
+        window.location.reload();
     });
 }
