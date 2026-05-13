@@ -50,8 +50,6 @@ setTimeout(() => {
     
     await initVersion();
     setVersionInFooter();
-
-    checkForUpdate();
 })();
 
 // =======================

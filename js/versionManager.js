@@ -4,10 +4,6 @@ export async function initVersion(){
     CURRENT_VERSION = await getAppVersion();
 }
 
-export function getCurrentVersion(){
-    return CURRENT_VERSION;
-}
-
 // get app version from SERVER
 export async function getAppVersion() {
     const res = await fetch("./data/version.json", { cache: "no-store" });
@@ -43,19 +39,11 @@ export function registerServiceWorker() {
 export async function checkForUpdate() {
     try {
         const registration = await navigator.serviceWorker.getRegistration();
-        if (!registration?.waiting) return;
+        if (!registration) return;
 
-        let newVersion = await getAppVersion();
-        let isToastShowed = document.querySelector(".update-toast");
-
-        if (!CURRENT_VERSION) return;
-
-        if (newVersion !== CURRENT_VERSION && !isToastShowed) {
-            showUpdateToast(registration.waiting);
-        }
-
+        await registration.update();
     } catch (err) {
-        console.warn("Update check failed: ", err);
+        console.warn("Update check failed:", err);
     }
 }
 
@@ -77,10 +65,7 @@ async function showUpdateToast(worker) {
 
     document.getElementById("refreshApp")
         .addEventListener("click", () => {
-
-            worker.postMessage({
-                type: "SKIP_WAITING"
-            });
+            worker.postMessage("SKIP_WAITING");
         });
 
     document.getElementById("dismissUpdate")
