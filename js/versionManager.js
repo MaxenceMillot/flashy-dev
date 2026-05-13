@@ -56,8 +56,8 @@ export async function checkForUpdate() {
     }
 }
 
-function showUpdateToast(worker) {
-    const newVersion = getAppVersion();
+async function showUpdateToast(worker) {
+    const newVersion = await getAppVersion();
     const toast = document.createElement("div");
     toast.className = "update-toast";
 
