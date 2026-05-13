@@ -42,13 +42,16 @@ export function registerServiceWorker() {
 
 export async function checkForUpdate() {
     try {
+        const registration = await navigator.serviceWorker.getRegistration();
+        if (!registration?.waiting) return;
+
         let newVersion = await getAppVersion();
         let isToastShowed = document.querySelector(".update-toast");
 
         if (!CURRENT_VERSION) return;
 
         if (newVersion !== CURRENT_VERSION && !isToastShowed) {
-            showUpdateToast(newVersion);
+            showUpdateToast(registration.waiting);
         }
 
     } catch (err) {
@@ -57,6 +60,7 @@ export async function checkForUpdate() {
 }
 
 async function showUpdateToast(worker) {
+    if (document.querySelector(".update-toast")) return;
     const newVersion = await getAppVersion();
     const toast = document.createElement("div");
     toast.className = "update-toast";
