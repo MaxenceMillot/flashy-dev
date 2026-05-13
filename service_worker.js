@@ -1,4 +1,4 @@
-// SW version 0.2.0.7
+// SW version 0.2.0.8
 let APP_VERSION = null;
 let CACHE_NAME = null;
 
