@@ -438,10 +438,6 @@ button:hover svg {
     margin-left: auto;
 }
 
-.update-toast.updating {
-    opacity: 0.92;
-}
-
 .update-toast.updating span::after {
     content: "";
     animation: dots 1s infinite;
