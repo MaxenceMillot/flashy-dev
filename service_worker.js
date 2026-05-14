@@ -71,7 +71,8 @@ self.addEventListener("activate", (event) => {
             const keys = await caches.keys();
 
             if (!CACHE_NAME) {
-                CACHE_NAME = keys.find(k => k.startsWith("flashy-v"));
+                CACHE_NAME = keys.find(k => k.startsWith("flashy-v"))
+                    || "flashy-fallback";
             }
 
             await Promise.all(
@@ -82,7 +83,7 @@ self.addEventListener("activate", (event) => {
                 })
             );
 
-            self.clients.claim();
+            await self.clients.claim();
         })()
     );
 });
@@ -95,11 +96,33 @@ self.addEventListener("fetch", (event) => {
         (async () => {
             if (!CACHE_NAME) {
                 const keys = await caches.keys();
-                CACHE_NAME = keys.find(k => k.startsWith("flashy-v"));
+
+                CACHE_NAME =
+                    keys.find(k => k.startsWith("flashy-v"))
+                    || "flashy-fallback";
             }
 
             const cache = await caches.open(CACHE_NAME);
 
+            // NAVIGATE request
+            if (request.mode === "navigate") {
+                try {
+                    return await fetch(request);
+                } catch {
+                    const cached = await cache.match("./index.html");
+
+                    if (cached) {
+                        return cached;
+                    }
+
+                    return new Response("Offline", {
+                        status: 503,
+                        statusText: "Offline"
+                    });
+                }
+            }
+
+            // IMAGE request
             if (request.destination === "image") {
                 const cached = await cache.match(request);
                 if (cached) return cached;
@@ -111,7 +134,7 @@ self.addEventListener("fetch", (event) => {
                     const response = await fetch(request, { signal: controller.signal });
 
                     clearTimeout(timeout);
-                    cache.put(request, response.clone());
+                    await cache.put(request, response.clone());
 
                     return response;
                 } catch {
@@ -123,7 +146,7 @@ self.addEventListener("fetch", (event) => {
                 const fresh = await fetch(request);
 
                 if (
-                    request.destination === "script" ||
+                    ["script", "style"].includes(request.destination) ||
                     request.url.includes("/data/")
                 ) {
                     if (fresh.ok) {
@@ -133,7 +156,15 @@ self.addEventListener("fetch", (event) => {
 
                 return fresh;
             } catch {
-                return cache.match(request);
+                const cached = await cache.match(request);
+                if (cached) {
+                    return cached;
+                }
+
+                return new Response("Offline", {
+                    status: 503,
+                    statusText: "Offline"
+                });
             }
         })()
     );
