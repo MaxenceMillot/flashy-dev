@@ -24,6 +24,7 @@ export function registerServiceWorker() {
             // new update found
             registration.addEventListener("updatefound", () => {
                 const newWorker = registration.installing;
+                if (!newWorker) return;
                 newWorker.addEventListener("statechange", () => {
                     if (newWorker.state === "installed" &&
                         navigator.serviceWorker.controller) 
@@ -65,7 +66,12 @@ async function showUpdateToast(worker) {
 
     document.getElementById("refreshApp")
         .addEventListener("click", () => {
-            toast.remove();
+            sessionStorage.setItem("updating-app", "true");
+
+            toast.classList.add("updating");
+            toast.innerHTML = `
+                <span>⏳ Activation</span>
+            `;
             worker.postMessage("SKIP_WAITING");
         });
 

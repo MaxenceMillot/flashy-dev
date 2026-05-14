@@ -201,6 +201,11 @@ function initEventListeners() {
 
     // Reload when new SW controls page
     navigator.serviceWorker.addEventListener("controllerchange", () => {
+        const isUpdating = sessionStorage.getItem("updating-app") === "true";
+
+        if (!isUpdating) return;
+
+        sessionStorage.removeItem("updating-app");
         window.location.reload();
     });
 }
