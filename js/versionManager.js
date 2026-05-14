@@ -1,7 +1,16 @@
-let CURRENT_VERSION = null;
+let INSTALLED_VERSION = null;
 
 export async function initVersion(){
-    CURRENT_VERSION = await getAppVersion();
+     INSTALLED_VERSION = localStorage.getItem("installedVersion");
+
+    // first install fallback
+    if (!INSTALLED_VERSION) {
+        INSTALLED_VERSION = await getAppVersion();
+        localStorage.setItem(
+            "installedVersion",
+            INSTALLED_VERSION
+        );
+    }
 }
 
 // get app version from SERVER
@@ -82,9 +91,9 @@ async function showUpdateToast(worker) {
 }
 
 export async function setVersionInFooter(){
-    if(!CURRENT_VERSION){
-        console.warn("could not load CURRENT_VERSION");
+    if(!INSTALLED_VERSION){
+        console.warn("could not load INSTALLED_VERSION");
         return;
     }
-    document.getElementById("appVersion").textContent += `${CURRENT_VERSION}`;
+    document.getElementById("appVersion").textContent += `${INSTALLED_VERSION}`;
 }

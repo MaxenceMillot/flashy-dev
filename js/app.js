@@ -200,12 +200,20 @@ function initEventListeners() {
     });
 
     // Reload when new SW controls page
-    navigator.serviceWorker.addEventListener("controllerchange", () => {
+    navigator.serviceWorker.addEventListener("controllerchange", async () => {
         const isUpdating = sessionStorage.getItem("updating-app") === "true";
 
         if (!isUpdating) return;
 
         sessionStorage.removeItem("updating-app");
+
+        // save newly ACTIVE version
+        const latestVersion = await getAppVersion();
+        localStorage.setItem(
+            "installedVersion",
+            latestVersion
+        );
+
         window.location.reload();
     });
 }
