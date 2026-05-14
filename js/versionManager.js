@@ -90,7 +90,22 @@ async function showUpdateToast(worker) {
             toast.innerHTML = `
                 <span>⏳ Activation</span>
             `;
-            worker.postMessage("SKIP_WAITING");
+
+            // Timeout fallback
+            setTimeout(() => {
+                window.location.reload();
+            }, 4000);
+
+            navigator.serviceWorker.getRegistration()
+                .then((registration) => {
+
+                    if (!registration?.waiting) {
+                        window.location.reload();
+                        return;
+                    }
+
+                    registration.waiting.postMessage("SKIP_WAITING");
+                });
         });
 
     document.getElementById("dismissUpdate")
