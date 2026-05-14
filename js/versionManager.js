@@ -9,11 +9,19 @@ export async function initVersion() {
 
     // Fallback
     if (!activeCache) {
-        INSTALLED_VERSION = "unknown";
+        INSTALLED_VERSION = await getAppVersion();
         return;
     }
 
     INSTALLED_VERSION = activeCache.replace("flashy-v", "");
+}
+
+export async function setVersionInFooter(){
+    if(!INSTALLED_VERSION){
+        document.getElementById("appVersion").textContent += "X";
+        return;
+    }
+    document.getElementById("appVersion").textContent += `${INSTALLED_VERSION}`;
 }
 
 // get app version from SERVER
@@ -66,6 +74,9 @@ export async function checkForUpdate() {
     }
 }
 
+// =======================
+// UPDATE TOAST
+// =======================
 async function showUpdateToast(worker) {
     if (document.querySelector(".update-toast")) return;
     const newVersion = await getAppVersion();
@@ -91,15 +102,11 @@ async function showUpdateToast(worker) {
                 <span>⏳ Activation</span>
             `;
 
-            // Timeout fallback
-            setTimeout(() => {
-                window.location.reload();
-            }, 4000);
-
             navigator.serviceWorker.getRegistration()
                 .then((registration) => {
 
                     if (!registration?.waiting) {
+                        sessionStorage.removeItem("updating-app");
                         window.location.reload();
                         return;
                     }
@@ -112,12 +119,4 @@ async function showUpdateToast(worker) {
         .addEventListener("click", () => {
             toast.remove();
         });
-}
-
-export async function setVersionInFooter(){
-    if(!INSTALLED_VERSION){
-        console.warn("could not load INSTALLED_VERSION");
-        return;
-    }
-    document.getElementById("appVersion").textContent += `${INSTALLED_VERSION}`;
 }

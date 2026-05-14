@@ -5,7 +5,7 @@ import { initHeaderMenu, setAnswerText, setCardImage, startLoading, stopLoading,
 import { initDeckSelector, getSelectedDecks, setDeckChangeCallback, updateDeckScrollbar } from "./decks.js";
 import { initZoom } from "./zoom.js";
 import { isInStandaloneMode,isIos, multiClick } from "./utilities.js";
-import { initVersion, registerServiceWorker, setVersionInFooter, checkForUpdate } from "./versionManager.js";
+import { initVersion, setVersionInFooter, getAppVersion, registerServiceWorker, checkForUpdate } from "./versionManager.js";
 
 let current = null;
 let nextCard = null;
