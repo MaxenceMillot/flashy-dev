@@ -1,4 +1,4 @@
-// SW version 0.3.0.2
+// SW version 0.3.0.3
 let APP_VERSION = null;
 let CACHE_NAME = null;
 
@@ -81,10 +81,10 @@ self.addEventListener("activate", (event) => {
                     }
                 })
             );
+
+            self.clients.claim();
         })()
     );
-
-    self.clients.claim();
 });
 
 // FETCH: runtime caching

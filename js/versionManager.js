@@ -66,6 +66,7 @@ async function showUpdateToast(worker) {
     document.getElementById("refreshApp")
         .addEventListener("click", () => {
             worker.postMessage("SKIP_WAITING");
+            toast.remove();
         });
 
     document.getElementById("dismissUpdate")
