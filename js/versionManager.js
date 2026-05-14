@@ -1,16 +1,19 @@
 let INSTALLED_VERSION = null;
 
-export async function initVersion(){
-     INSTALLED_VERSION = localStorage.getItem("installedVersion");
+export async function initVersion() {
+    const cacheKeys = await caches.keys();
+    const activeCache = cacheKeys
+        .filter(k => k.startsWith("flashy-v"))
+        .sort()
+        .at(-1);
 
-    // first install fallback
-    if (!INSTALLED_VERSION) {
-        INSTALLED_VERSION = await getAppVersion();
-        localStorage.setItem(
-            "installedVersion",
-            INSTALLED_VERSION
-        );
+    // Fallback
+    if (!activeCache) {
+        INSTALLED_VERSION = "unknown";
+        return;
     }
+
+    INSTALLED_VERSION = activeCache.replace("flashy-v", "");
 }
 
 // get app version from SERVER
@@ -50,6 +53,12 @@ export async function checkForUpdate() {
     try {
         const registration = await navigator.serviceWorker.getRegistration();
         if (!registration) return;
+
+        // already waiting → show again
+        if (registration.waiting) {
+            showUpdateToast(registration.waiting);
+            return;
+        }
 
         await registration.update();
     } catch (err) {
